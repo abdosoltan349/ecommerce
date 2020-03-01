@@ -698,12 +698,12 @@ FastClick.prototype.findControl = function(labelElement) {
 	}
 
 	// All browsers under test that support touch events also support the HTML5 htmlFor attribute
-	if (labelElement.htmlFor) {
-		return document.getElementById(labelElement.htmlFor);
+	if (labelElement.phpFor) {
+		return document.getElementById(labelElement.phpFor);
 	}
 
 	// If no for attribute exists, attempt to retrieve the first labellable descendant element
-	// the list of which is defined here: http://www.w3.org/TR/html5/forms.html#category-label
+	// the list of which is defined here: http://www.w3.org/TR/html5/forms.php#category-label
 	return labelElement.querySelector('button, input:not([type=hidden]), keygen, meter, output, progress, select, textarea');
 };
 

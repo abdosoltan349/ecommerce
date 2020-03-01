@@ -11,10 +11,10 @@
                             <!-- li.nav-item.mobile-menu.d-xl-none.mr-auto-->
                             <!--   a.nav-link.nav-menu-main.menu-toggle.hidden-xs(href='#')-->
                             <!--     i.ficon.feather.icon-menu-->
-                            <li class="nav-item d-none d-lg-block"><a class="nav-link" href="app-todo.html" data-toggle="tooltip" data-placement="top" title="Todo"><i class="ficon feather icon-check-square"></i></a></li>
-                            <li class="nav-item d-none d-lg-block"><a class="nav-link" href="app-chat.html" data-toggle="tooltip" data-placement="top" title="Chat"><i class="ficon feather icon-message-square"></i></a></li>
-                            <li class="nav-item d-none d-lg-block"><a class="nav-link" href="app-email.html" data-toggle="tooltip" data-placement="top" title="Email"><i class="ficon feather icon-mail"></i></a></li>
-                            <li class="nav-item d-none d-lg-block"><a class="nav-link" href="app-calender.html" data-toggle="tooltip" data-placement="top" title="Calendar"><i class="ficon feather icon-calendar"></i></a></li>
+                            <li class="nav-item d-none d-lg-block"><a class="nav-link" href="app-todo.php" data-toggle="tooltip" data-placement="top" title="Todo"><i class="ficon feather icon-check-square"></i></a></li>
+                            <li class="nav-item d-none d-lg-block"><a class="nav-link" href="app-chat.php" data-toggle="tooltip" data-placement="top" title="Chat"><i class="ficon feather icon-message-square"></i></a></li>
+                            <li class="nav-item d-none d-lg-block"><a class="nav-link" href="app-email.php" data-toggle="tooltip" data-placement="top" title="Email"><i class="ficon feather icon-mail"></i></a></li>
+                            <li class="nav-item d-none d-lg-block"><a class="nav-link" href="app-calender.php" data-toggle="tooltip" data-placement="top" title="Calendar"><i class="ficon feather icon-calendar"></i></a></li>
                         </ul>
                         <ul class="nav navbar-nav">
                             <li class="nav-item d-none d-lg-block"><a class="nav-link bookmark-star"><i class="ficon feather icon-star warning"></i></a>
@@ -98,8 +98,8 @@
                         <li class="dropdown dropdown-user nav-item"><a class="dropdown-toggle nav-link dropdown-user-link" href="#" data-toggle="dropdown">
                                 <div class="user-nav d-sm-flex d-none"><span class="user-name text-bold-600">John Doe</span><span class="user-status">Available</span></div><span><img class="round" src="<?php echo $images ?>portrait/small/avatar-s-11.jpg" alt="avatar" height="40" width="40"></span>
                             </a>
-                            <div class="dropdown-menu dropdown-menu-right"><a class="dropdown-item" href="page-user-profile.html"><i class="feather icon-user"></i> Edit Profile</a><a class="dropdown-item" href="app-email.html"><i class="feather icon-mail"></i> My Inbox</a><a class="dropdown-item" href="app-todo.html"><i class="feather icon-check-square"></i> Task</a><a class="dropdown-item" href="app-chat.html"><i class="feather icon-message-square"></i> Chats</a>
-                                <div class="dropdown-divider"></div><a class="dropdown-item" href="auth-login.html"><i class="feather icon-power"></i> Logout</a>
+                            <div class="dropdown-menu dropdown-menu-right"><a class="dropdown-item" href="page-user-profile.php"><i class="feather icon-user"></i> Edit Profile</a><a class="dropdown-item" href="app-email.php"><i class="feather icon-mail"></i> My Inbox</a><a class="dropdown-item" href="app-todo.php"><i class="feather icon-check-square"></i> Task</a><a class="dropdown-item" href="app-chat.php"><i class="feather icon-message-square"></i> Chats</a>
+                                <div class="dropdown-divider"></div><a class="dropdown-item" href="auth-login.php"><i class="feather icon-power"></i> Logout</a>
                             </div>
                         </li>
                     </ul>

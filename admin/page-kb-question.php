@@ -69,13 +69,13 @@
                             <h2 class="content-header-title float-left mb-0">Question</h2>
                             <div class="breadcrumb-wrapper col-12">
                                 <ol class="breadcrumb">
-                                    <li class="breadcrumb-item"><a href="index.html">Home</a>
+                                    <li class="breadcrumb-item"><a href="index.php">Home</a>
                                     </li>
                                     <li class="breadcrumb-item"><a href="#">Pages</a>
                                     </li>
-                                    <li class="breadcrumb-item"><a href="page-knowledge-base.html">Knowledge Base</a>
+                                    <li class="breadcrumb-item"><a href="page-knowledge-base.php">Knowledge Base</a>
                                     </li>
-                                    <li class="breadcrumb-item"><a href="page-kb-category.html">Category</a>
+                                    <li class="breadcrumb-item"><a href="page-kb-category.php">Category</a>
                                     </li>
                                     <li class="breadcrumb-item active">Question
                                     </li>

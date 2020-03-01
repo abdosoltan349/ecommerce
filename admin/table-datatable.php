@@ -69,7 +69,7 @@
                             <h2 class="content-header-title float-left mb-0">DataTables</h2>
                             <div class="breadcrumb-wrapper col-12">
                                 <ol class="breadcrumb">
-                                    <li class="breadcrumb-item"><a href="index.html">Home</a>
+                                    <li class="breadcrumb-item"><a href="index.php">Home</a>
                                     </li>
                                     <li class="breadcrumb-item active">Datatable
                                     </li>
@@ -1928,7 +1928,7 @@
     <script src="<?php echo $vendors ?>js/tables/datatable/vfs_fonts.js"></script>
     <script src="<?php echo $vendors ?>js/tables/datatable/datatables.min.js"></script>
     <script src="<?php echo $vendors ?>js/tables/datatable/datatables.buttons.min.js"></script>
-    <script src="<?php echo $vendors ?>js/tables/datatable/buttons.html5.min.js"></script>
+    <script src="<?php echo $vendors ?>js/tables/datatable/buttons.php5.min.js"></script>
     <script src="<?php echo $vendors ?>js/tables/datatable/buttons.print.min.js"></script>
     <script src="<?php echo $vendors ?>js/tables/datatable/buttons.bootstrap.min.js"></script>
     <script src="<?php echo $vendors ?>js/tables/datatable/datatables.bootstrap4.min.js"></script>

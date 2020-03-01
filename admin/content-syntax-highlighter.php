@@ -67,7 +67,7 @@
                             <h2 class="content-header-title float-left mb-0">Syntax Highlighter</h2>
                             <div class="breadcrumb-wrapper col-12">
                                 <ol class="breadcrumb">
-                                    <li class="breadcrumb-item"><a href="index.html">Home</a>
+                                    <li class="breadcrumb-item"><a href="index.php">Home</a>
                                     </li>
                                     <li class="breadcrumb-item"><a href="#">Content</a>
                                     </li>
@@ -101,7 +101,7 @@
                                     <p>Prism does its best to encourage good authoring practices. Therefore, it only works with
                                         <code>&lt;code&gt;</code>elements, since marking up code without a <code>&lt;code&gt; </code>element is
                                         semantically invalid.
-                                        <a href="http://www.w3.org/TR/html5/text-level-semantics.html#the-code-element">According to the HTML5
+                                        <a href="http://www.w3.org/TR/html5/text-level-semantics.php#the-code-element">According to the HTML5
                                             spec</a>, the recommended way to define a code language is a <code>language-xxxx</code>class, which is
                                         what Prism uses. To make things easier however, Prism assumes that this language definition is inherited.
                                         Therefore, if multiple <code>&lt;code&gt; </code>elements have the same language, you can add the

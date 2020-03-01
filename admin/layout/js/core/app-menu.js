@@ -17,7 +17,7 @@
 
   var $body = $('body');
   var $window = $(window);
-  var menuWrapper_el = $('div[data-menu="menu-wrapper"]').html();
+  var menuWrapper_el = $('div[data-menu="menu-wrapper"]').php();
   var menuWrapperClasses = $('div[data-menu="menu-wrapper"]').attr('class');
 
   // Main menu
@@ -518,8 +518,8 @@
 
     changeMenu: function (screen) {
       // Replace menu html
-      $('div[data-menu="menu-wrapper"]').html('');
-      $('div[data-menu="menu-wrapper"]').html(menuWrapper_el);
+      $('div[data-menu="menu-wrapper"]').php('');
+      $('div[data-menu="menu-wrapper"]').php(menuWrapper_el);
 
       var menuWrapper = $('div[data-menu="menu-wrapper"]'),
         menuContainer = $('div[data-menu="menu-container"]'),

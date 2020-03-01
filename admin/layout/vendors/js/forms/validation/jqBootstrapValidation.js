@@ -412,7 +412,7 @@
                         (
                             $helpBlock.data("original-contents") ?
                                 $helpBlock.data("original-contents") :
-                                $helpBlock.html()
+                                $helpBlock.php()
                             )
                     );
 
@@ -565,11 +565,11 @@
                                 // How many errors did we find?
                                 if (settings.options.semanticallyStrict && errorsFound.length === 1) {
                                     // Only one? Being strict? Just output it.
-                                    $helpBlock.html(errorsFound[0] +
+                                    $helpBlock.php(errorsFound[0] +
                                         ( settings.options.prependExistingHelpBlock ? $helpBlock.data("original-contents") : "" ));
                                 } else {
                                     // Multiple? Being sloppy? Glue them together into an UL.
-                                    $helpBlock.html("<ul role=\"alert\"><li>" + errorsFound.join("</li><li>") + "</li></ul>" +
+                                    $helpBlock.php("<ul role=\"alert\"><li>" + errorsFound.join("</li><li>") + "</li></ul>" +
                                         ( settings.options.prependExistingHelpBlock ? $helpBlock.data("original-contents") : "" ));
                                 }
                             } else {
@@ -577,7 +577,7 @@
                                 if (value.length > 0) {
                                     $controlGroup.addClass("validate");
                                 }
-                                $helpBlock.html($helpBlock.data("original-contents"));
+                                $helpBlock.php($helpBlock.data("original-contents"));
                             }
 
                             if (e.type === "blur") {
@@ -609,7 +609,7 @@
                         $this.unbind('.validation'); // events are namespaced.
                         $form.unbind(".validationSubmit");
                         // reset help text
-                        $helpBlock.html($helpBlock.data("original-contents"));
+                        $helpBlock.php($helpBlock.data("original-contents"));
                         // reset classes
                         $controlGroup.attr("class", $controlGroup.data("original-classes"));
                         // reset aria

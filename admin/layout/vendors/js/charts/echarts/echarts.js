@@ -2980,7 +2980,7 @@ Transformable.getLocalTransform = function (target, m) {
 
 /**
  * 缓动代码来自 https://github.com/sole/tween.js/blob/master/src/Tween.js
- * @see http://sole.github.io/tween.js/examples/03_graphs.html
+ * @see http://sole.github.io/tween.js/examples/03_graphs.php
  * @exports zrender/animation/easing
  */
 var easing = {
@@ -15488,7 +15488,7 @@ function createPathOptions(str, opts) {
 
 /**
  * Create a Path object from path string data
- * http://www.w3.org/TR/SVG/paths.html#PathData
+ * http://www.w3.org/TR/SVG/paths.php#PathData
  * @param  {Object} opts Other options
  */
 function createFromString(str, opts) {
@@ -20344,7 +20344,7 @@ var globalDefault = {
     // It is recommended that `hoverLayerThreshold` is equivalent to or less than
     // `progressiveThreshold`, otherwise hover will cause restart of progressive,
     // which is unexpected.
-    // see example <echarts/test/heatmap-large.html>.
+    // see example <echarts/test/heatmap-large.php>.
     hoverLayerThreshold: 3000,
 
     // See: module:echarts/scale/Time
@@ -23378,7 +23378,7 @@ var rawValueGetters = {
 
     original: function (dataItem, dataIndex, dimIndex, dimName) {
         // FIXME
-        // In some case (markpoint in geo (geo-map.html)), dataItem
+        // In some case (markpoint in geo (geo-map.php)), dataItem
         // is {coord: [...]}
         var value = getDataItemValue(dataItem);
         return (dimIndex == null || !(value instanceof Array))
@@ -24324,7 +24324,7 @@ var SeriesModel = ComponentModel.extend({
 
         function formatArrayValue(value) {
             // ??? TODO refactor these logic.
-            // check: category-no-encode-has-axis-data in dataset.html
+            // check: category-no-encode-has-axis-data in dataset.php
             var vertially = reduce(value, function (vertially, val, idx) {
                 var dimItem = data.getDimensionInfo(idx);
                 return vertially |= dimItem && dimItem.tooltip !== false && dimItem.displayName != null;
@@ -25760,7 +25760,7 @@ proto.updateStreamModes = function (seriesModel, view) {
     var large = seriesModel.get('large') && dataLen >= seriesModel.get('largeThreshold');
 
     // TODO: modDataCount should not updated if `appendData`, otherwise cause whole repaint.
-    // see `test/candlestick-large3.html`
+    // see `test/candlestick-large3.php`
     var modDataCount = seriesModel.get('progressiveChunkMode') === 'mod' ? dataLen : null;
 
     seriesModel.pipelineContext = pipeline.context = {
@@ -33680,7 +33680,7 @@ function isInLargeMode(seriesModel) {
     return seriesModel.pipelineContext && seriesModel.pipelineContext.large;
 }
 
-// See cases in `test/bar-start.html` and `#7412`, `#8747`.
+// See cases in `test/bar-start.php` and `#7412`, `#8747`.
 function getValueAxisStart(baseAxis, valueAxis, stacked) {
     var extent = valueAxis.getGlobalExtent();
     var min;
@@ -34258,7 +34258,7 @@ function getScaleExtent(scale, model) {
     //     Should not depend on series type `bar`?
     // (3) Fix that might overlap when using dataZoom.
     // (4) Consider other chart types using `barGrid`?
-    // See #6728, #4862, `test/bar-overflow-time-plot.html`
+    // See #6728, #4862, `test/bar-overflow-time-plot.php`
     var ecModel = model.ecModel;
     if (ecModel && (scaleType === 'time' /*|| scaleType === 'interval' */)) {
         var barSeriesModels = prepareLayoutBarSeries('bar', ecModel);
@@ -37679,7 +37679,7 @@ function createGridClipShape(cartesian, hasAnimation, forSymbol, seriesModel) {
     var height = Math.max(yExtent[0], yExtent[1]) - y;
 
     // Avoid float number rounding error for symbol on the edge of axis extent.
-    // See #7913 and `test/dataZoom-clip.html`.
+    // See #7913 and `test/dataZoom-clip.php`.
     if (forSymbol) {
         x -= 0.5;
         width += 0.5;
@@ -79571,7 +79571,7 @@ registerPreprocessor(function (option) {
         if (toolboxOpt && toolboxOpt.feature) {
             var dataZoomOpt = toolboxOpt.feature.dataZoom;
             // FIXME: If add dataZoom when setOption in merge mode,
-            // no axis info to be added. See `test/dataZoom-extreme.html`
+            // no axis info to be added. See `test/dataZoom-extreme.php`
             addForAxis('xAxis', dataZoomOpt);
             addForAxis('yAxis', dataZoomOpt);
         }
@@ -80709,7 +80709,7 @@ extendComponentView({
 
                         var html;
                         if (isObject$1(seriesTooltip)) {
-                            html = seriesTooltip.html;
+                            html = seriesTooltip.php;
                             var newMarkers = seriesTooltip.markers;
                             merge(markers, newMarkers);
                         }
@@ -80795,7 +80795,7 @@ extendComponentView({
         var defaultHtml;
         var markers;
         if (isObject$1(seriesTooltip)) {
-            defaultHtml = seriesTooltip.html;
+            defaultHtml = seriesTooltip.php;
             markers = seriesTooltip.markers;
         }
         else {
@@ -90379,7 +90379,7 @@ var ContinuousView = VisualMapView.extend({
             linearMap$3(hoverRange[0], sizeExtent, dataExtent, true),
             linearMap$3(hoverRange[1], sizeExtent, dataExtent, true)
         ];
-        // Consider data range is out of visualMap range, see test/visualMap-continuous.html,
+        // Consider data range is out of visualMap range, see test/visualMap-continuous.php,
         // where china and india has very large population.
         hoverRange[0] < sizeExtent[0] && (valueRange[0] = -Infinity);
         hoverRange[1] > sizeExtent[1] && (valueRange[1] = Infinity);
@@ -90400,7 +90400,7 @@ var ContinuousView = VisualMapView.extend({
 
         // When realtime is set as false, handles, which are in barGroup,
         // also trigger hoverLink, which help user to realize where they
-        // focus on when dragging. (see test/heatmap-large.html)
+        // focus on when dragging. (see test/heatmap-large.php)
         // When realtime is set as true, highlight will not show when hover
         // handle, because the label on handle, which displays a exact value
         // but not range, might mislead users.
@@ -93871,7 +93871,7 @@ GradientManager.prototype.updateDom = function (gradient, dom) {
             // The opacity value used for the gradient calculation is the
             // *product* of the value of stop-opacity and the opacity of the
             // value of stop-color.
-            // See https://www.w3.org/TR/SVG2/pservers.html#StopOpacityProperty
+            // See https://www.w3.org/TR/SVG2/pservers.php#StopOpacityProperty
             stop.setAttribute('stop-color', '#' + hex);
             stop.setAttribute('stop-opacity', opacity);
         }
@@ -94241,7 +94241,7 @@ ShadowManager.prototype.updateDom = function (displayable, dom) {
     domChild.setAttribute('flood-color', color);
 
     // Divide by two here so that it looks the same as in canvas
-    // See: https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-shadowblur
+    // See: https://html.spec.whatwg.org/multipage/canvas.php#dom-context-2d-shadowblur
     var stdDx = blur / 2 / scaleX;
     var stdDy = blur / 2 / scaleY;
     var stdDeviation = stdDx + ' ' + stdDy;

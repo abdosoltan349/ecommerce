@@ -71,7 +71,7 @@
                                         <p class="px-2">Fill the below form to create a new account.</p>
                                         <div class="card-content">
                                             <div class="card-body pt-0">
-                                                <form action="index.html">
+                                                <form action="index.php">
                                                     <div class="form-label-group">
                                                         <input type="text" id="inputName" class="form-control" placeholder="Name" required>
                                                         <label for="inputName">Name</label>
@@ -103,7 +103,7 @@
                                                             </fieldset>
                                                         </div>
                                                     </div>
-                                                    <a href="auth-login.html" class="btn btn-outline-primary float-left btn-inline mb-50">Login</a>
+                                                    <a href="auth-login.php" class="btn btn-outline-primary float-left btn-inline mb-50">Login</a>
                                                     <button type="submit" class="btn btn-primary float-right btn-inline mb-50">Register</a>
                                                 </form>
                                             </div>

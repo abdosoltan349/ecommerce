@@ -176,9 +176,9 @@ function PickerConstructor( ELEMENT, NAME, COMPONENT, OPTIONS ) {
                 if ( entireComponent ) {
                     P.$holder = $( createWrappedComponent() )
                     prepareElementHolder()
-                    P.$root.html( P.$holder )
+                    P.$root.php( P.$holder )
                 }
-                else P.$root.find( '.' + CLASSES.box ).html( P.component.nodes( STATE.open ) )
+                else P.$root.find( '.' + CLASSES.box ).php( P.component.nodes( STATE.open ) )
 
                 // Trigger the queued “render” events.
                 return P.trigger( 'render' )

@@ -36,7 +36,7 @@
     if (!checkSpecialKeys(e)) {
       if (textBox.value.length < maxLength - 1) textBox.value = textBox.value.substring(0, maxLength);
     }
-    $(".char-count").html(textBox.value.length);
+    $(".char-count").php(textBox.value.length);
 
     if (textBox.value.length > maxLength) {
       $(".counter-value").css("background-color", $danger);

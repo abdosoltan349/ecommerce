@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function () {
     danger: "Personal",
     warning: "Work"
   };
-  var categoryBullets = $(".cal-category-bullets").html(),
+  var categoryBullets = $(".cal-category-bullets").php(),
     evtColor = "",
     eventColor = "";
 

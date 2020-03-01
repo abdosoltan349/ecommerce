@@ -70,7 +70,7 @@
                                         </div>
                                         <div class="card-content">
                                             <div class="card-body pt-1">
-                                                <form action="index.html">
+                                                <form action="index.php">
                                                     <fieldset class="form-label-group position-relative has-icon-left">
                                                         <input type="text" class="form-control" id="user-name" placeholder="Username" required>
                                                         <div class="form-control-position">
@@ -86,7 +86,7 @@
                                                         </div>
                                                         <label for="user-password">Password</label>
                                                     </fieldset>
-                                                    <a href="auth-login.html">Are you not John Doe ?</a>
+                                                    <a href="auth-login.php">Are you not John Doe ?</a>
                                                     <button type="submit" class="btn btn-primary float-right">Unlock</button>
                                                 </form>
                                             </div>

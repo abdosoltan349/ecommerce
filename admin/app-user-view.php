@@ -110,7 +110,7 @@
                                             </table>
                                         </div>
                                         <div class="col-12">
-                                            <a href="app-user-edit.html" class="btn btn-primary mr-1"><i class="feather icon-edit-1"></i> Edit</a>
+                                            <a href="app-user-edit.php" class="btn btn-primary mr-1"><i class="feather icon-edit-1"></i> Edit</a>
                                             <button class="btn btn-outline-danger"><i class="feather icon-trash-2"></i> Delete</button>
                                         </div>
                                     </div>

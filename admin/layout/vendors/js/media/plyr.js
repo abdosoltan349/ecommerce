@@ -1100,8 +1100,8 @@ typeof navigator === "object" && (function (global, factory) {
     // https://webkit.org/blog/6784/new-video-policies-for-ios/
     playsinline: 'playsInline' in document.createElement('video'),
     // Check for mime type support against a player instance
-    // Credits: http://diveintohtml5.info/everything.html
-    // Related: http://www.leanbackplayer.com/test/h5mt.html
+    // Credits: http://diveintohtml5.info/everything.php
+    // Related: http://www.leanbackplayer.com/test/h5mt.php
     mime: function mime(input) {
       if (is$1.empty(input)) {
         return false;
@@ -7753,7 +7753,7 @@ typeof navigator === "object" && (function (global, factory) {
         var _sources = _slicedToArray(sources, 1),
             _sources$ = _sources[0],
             _sources$$provider = _sources$.provider,
-            provider = _sources$$provider === void 0 ? providers.html5 : _sources$$provider,
+            provider = _sources$$provider === void 0 ? providers.php5 : _sources$$provider,
             src = _sources$.src;
 
         var tagName = provider === 'html5' ? type : 'div';
@@ -8030,7 +8030,7 @@ typeof navigator === "object" && (function (global, factory) {
         case 'video':
         case 'audio':
           this.type = type;
-          this.provider = providers.html5; // Get config from attributes
+          this.provider = providers.php5; // Get config from attributes
 
           if (this.media.hasAttribute('crossorigin')) {
             this.config.crossorigin = true;
@@ -8477,7 +8477,7 @@ typeof navigator === "object" && (function (global, factory) {
     }, {
       key: "isHTML5",
       get: function get() {
-        return Boolean(this.provider === providers.html5);
+        return Boolean(this.provider === providers.php5);
       }
     }, {
       key: "isEmbed",

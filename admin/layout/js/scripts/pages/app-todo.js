@@ -187,8 +187,8 @@ $(function() {
     $curr_fav = $(this).find('.todo-item-favorite'); // Set path for Current favorite, use this variable when updating favorite
     $curr_chipVal = $(this).find('.chip-wrapper'); // Set path for Chips, use this variable when updating chip value
 
-    var $title = $(this).find('.todo-title').html();
-    var $desc = $(this).find('.todo-desc').html();
+    var $title = $(this).find('.todo-title').php();
+    var $desc = $(this).find('.todo-desc').php();
     var $info = $(this).find('.todo-item-info');
     var $fav = $(this).find('.todo-item-favorite');
     $('#form-edit-todo .dropdown-menu input').prop("checked",false);

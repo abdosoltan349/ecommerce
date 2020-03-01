@@ -221,7 +221,7 @@
     $(".custom-file input").change(function (e) {
       $(this)
         .next(".custom-file-label")
-        .html(e.target.files[0].name);
+        .php(e.target.files[0].name);
     });
 
     /* Text Area Counter Set Start */
@@ -248,7 +248,7 @@
         if (textBox.value.length < maxLength - 1)
           textBox.value = textBox.value.substring(0, maxLength);
       }
-      $(".char-count").html(textBox.value.length);
+      $(".char-count").php(textBox.value.length);
 
       if (textBox.value.length > maxLength) {
         counterValue.css("background-color", $danger);
@@ -779,16 +779,16 @@
               a++;
             }
           }
-          $defaultList = $(".main-search-list-defaultlist").html();
+          $defaultList = $(".main-search-list-defaultlist").php();
           if ($startList == "" && $otherList == "") {
-            $otherList = $(".main-search-list-defaultlist-other-list").html();
+            $otherList = $(".main-search-list-defaultlist-other-list").php();
           }
           // concatinating startlist, otherlist, defalutlist with pagelist
           $htmlList = $pageList.concat($startList, $otherList, $defaultList);
-          $("ul.search-list").html($htmlList);
+          $("ul.search-list").php($htmlList);
           // concatinating otherlist with startlist
           $bookmarkhtmlList = $startList.concat($otherList);
-          $("ul.search-list-bookmark").html($bookmarkhtmlList);
+          $("ul.search-list-bookmark").php($bookmarkhtmlList);
         });
       } else {
         if (bookmark === true) {
