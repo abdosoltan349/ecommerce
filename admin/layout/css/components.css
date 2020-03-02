@@ -100,7 +100,7 @@ html {
     html body p {
       line-height: 1.5rem; }
     html body.bg-full-screen-image {
-      background: url(../../app-assets/images/pages/vuexy-login-bg.jpg) no-repeat center center;
+      background: url(../images/pages/vuexy-login-bg.jpg) no-repeat center center;
       background-size: cover; }
     html body.blank-page .content {
       margin-left: 0; }
@@ -542,7 +542,7 @@ body.fixed-footer footer.footer-dark {
       align-items: center;
       margin-top: 1.35rem; }
       .main-menu .navbar-header .navbar-brand .brand-logo {
-        background: url("../../app-assets/images/logo/vuexy-logo.png") no-repeat;
+        background: url("../images/logo/vuexy-logo.png") no-repeat;
         background-position: -65px -54px;
         height: 24px;
         width: 35px; }
