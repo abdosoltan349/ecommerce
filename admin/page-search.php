@@ -67,7 +67,7 @@
                             <h2 class="content-header-title float-left mb-0">Search</h2>
                             <div class="breadcrumb-wrapper col-12">
                                 <ol class="breadcrumb">
-                                    <li class="breadcrumb-item"><a href="index.html">Home</a>
+                                    <li class="breadcrumb-item"><a href="index.php">Home</a>
                                     </li>
                                     <li class="breadcrumb-item"><a href="#">Pages</a>
                                     </li>
@@ -182,7 +182,7 @@
                                             <!--search with list-->
                                             <li class="media">
                                                 <div class="media-body">
-                                                    <h3 class="mb-0 text-bold-400"><a href="https://Error 404.com/modern-admin-clean-bootstrap-4-dashboard-html-template/html/ltr/vertical-modern-menu-template/search-website.html" target="_blank">Modern Admin - Clean Bootstrap 4 Dashboard HTML Template</a></h3>
+                                                    <h3 class="mb-0 text-bold-400"><a href="#" target="_blank">Modern Admin - Clean Bootstrap 4 Dashboard HTML Template</a></h3>
                                                     <p class="mb-0"><a href="http://www.abdosoltan.me" class="success" target="_blank">http://www.abdosoltan.me</a></p>
                                                     <ul class="list-inline list-inline-pipe">
                                                         <li>
@@ -202,7 +202,7 @@
                                                             <div class="col-lg-4 col-sm-6 col-12 pl-0">
                                                                 <div class="content-group">
                                                                     <div class="media-body">
-                                                                        <p class="mb-0"><a href="https://Error 404.com/modern-admin-clean-bootstrap-4-dashboard-html-template/html/ltr/vertical-modern-menu-template/search-website.html" target="_blank">Dashboard</a></p>
+                                                                        <p class="mb-0"><a href="#" target="_blank">Dashboard</a></p>
                                                                         <p>Halvah marzipan icing chocolate caramels candy can...</p>
                                                                     </div>
                                                                 </div>
@@ -210,7 +210,7 @@
                                                             <div class="col-lg-4 col-sm-6 col-12 pl-0">
                                                                 <div class="content-group">
                                                                     <div class="media-body">
-                                                                        <p class="mb-0"><a href="https://Error 404.com/modern-admin-clean-bootstrap-4-dashboard-html-template/html/ltr/vertical-modern-menu-template/search-website.html" target="_blank">Support</a></p>
+                                                                        <p class="mb-0"><a href="#" target="_blank">Support</a></p>
                                                                         <p>Carrot cake sweet soufflé cake bear claw lollipop....</p>
                                                                     </div>
                                                                 </div>
@@ -218,7 +218,7 @@
                                                             <div class="col-lg-4 col-sm-6 col-12 pl-0">
                                                                 <div class="content-group">
                                                                     <div class="media-body">
-                                                                        <p class="mb-0"><a href="https://Error 404.com/modern-admin-clean-bootstrap-4-dashboard-html-template/html/ltr/vertical-modern-menu-template/search-website.html" target="_blank">UI Components</a></p>
+                                                                        <p class="mb-0"><a href="#" target="_blank">UI Components</a></p>
                                                                         <p>Brownie lollipop chocolate bar chocolate cake maca...</p>
                                                                     </div>
                                                                 </div>
@@ -226,7 +226,7 @@
                                                             <div class="col-lg-4 col-sm-6 col-12 pl-0">
                                                                 <div class="content-group">
                                                                     <div class="media-body">
-                                                                        <p class="mb-0"><a href="https://Error 404.com/modern-admin-clean-bootstrap-4-dashboard-html-template/html/ltr/vertical-modern-menu-template/search-website.html" target="_blank">Charts</a></p>
+                                                                        <p class="mb-0"><a href="#" target="_blank">Charts</a></p>
                                                                         <p>Gingerbread chupa chups toffee jelly chocolate cak...</p>
                                                                     </div>
                                                                 </div>
@@ -234,7 +234,7 @@
                                                             <div class="col-lg-4 col-sm-6 col-12 pl-0">
                                                                 <div class="content-group">
                                                                     <div class="media-body">
-                                                                        <p class="mb-0"><a href="https://Error 404.com/modern-admin-clean-bootstrap-4-dashboard-html-template/html/ltr/vertical-modern-menu-template/search-website.html" target="_blank">Form Elements</a></p>
+                                                                        <p class="mb-0"><a href="#" target="_blank">Form Elements</a></p>
                                                                         <p>Lollipop cake wafer. Candy chocolate toffee icing....</p>
                                                                     </div>
                                                                 </div>
@@ -242,7 +242,7 @@
                                                             <div class="col-lg-4 col-sm-6 col-12 pl-0">
                                                                 <div class="content-group">
                                                                     <div class="media-body">
-                                                                        <p class="mb-0"><a href="https://Error 404.com/modern-admin-clean-bootstrap-4-dashboard-html-template/html/ltr/vertical-modern-menu-template/search-website.html" target="_blank">Documentation</a></p>
+                                                                        <p class="mb-0"><a href="#" target="_blank">Documentation</a></p>
                                                                         <p>Powder brownie candy toffee soufflé. Gingerbread s...</p>
                                                                     </div>
                                                                 </div>
@@ -259,7 +259,7 @@
                                                     </a>
                                                 </div>
                                                 <div class="media-body pr-sm-50 pr-0">
-                                                    <h3 class="text-bold-400 mb-0"><a href="https://Error 404.com/modern-admin-clean-bootstrap-4-dashboard-html-template/html/ltr/vertical-modern-menu-template/search-website.html" target="_blank">Attire bench - Quick win shoot me an email</a></h3>
+                                                    <h3 class="text-bold-400 mb-0"><a href="#" target="_blank">Attire bench - Quick win shoot me an email</a></h3>
                                                     <p class="mb-0"><a href="http://www.abdosoltan.me" class="success" target="_blank">http://www.abdosoltan.me</a></p>
                                                     <ul class="list-inline list-inline-pipe">
                                                         <li>
@@ -282,7 +282,7 @@
                                                     <iframe src="https://www.youtube.com/embed/oNBX7Ag2Wgc"></iframe>
                                                 </div>
                                                 <div class="media-body pl-sm-50 pl-0">
-                                                    <h3 class="text-bold-400 mb-0"><a href="https://Error 404.com/modern-admin-clean-bootstrap-4-dashboard-html-template/html/ltr/vertical-modern-menu-template/search-website.html" target="_blank">The Table - for what do you feel you would</a></h3>
+                                                    <h3 class="text-bold-400 mb-0"><a href="#" target="_blank">The Table - for what do you feel you would</a></h3>
                                                     <p class="mb-0"><a href="http://www.abdosoltan.me" class="success" target="_blank">http://www.abdosoltan.me</a></p>
                                                     <ul class="list-inline list-inline-pipe">
                                                         <li>1M Views</li>
@@ -293,21 +293,21 @@
                                             </li>
                                             <li class="media">
                                                 <div class="media-body">
-                                                    <h3 class="text-bold-400 mb-0"><a href="https://Error 404.com/modern-admin-clean-bootstrap-4-dashboard-html-template/html/ltr/vertical-modern-menu-template/search-website.html" target="_blank">Microdosing - deep v actually schlitz chia</a></h3>
+                                                    <h3 class="text-bold-400 mb-0"><a href="#" target="_blank">Microdosing - deep v actually schlitz chia</a></h3>
                                                     <p class="mb-0"><a href="http://www.abdosoltan.me" class="success" target="_blank">http://www.abdosoltan.me</a></p>
                                                     <p>Wafer liquorice sweet roll jelly beans cake soufflé. Oat cake marzipan chocolate cake sesame snaps jujubes. Dragée biscuit dessert. Chocolate muffin wafer. Sugar plum icing tootsie roll gummi bears marzipan candy canes biscui...</p>
                                                 </div>
                                             </li>
                                             <li class="media">
                                                 <div class="media-body">
-                                                    <h3 class="text-bold-400 mb-0"><a href="https://Error 404.com/modern-admin-clean-bootstrap-4-dashboard-html-template/html/ltr/vertical-modern-menu-template/search-website.html" target="_blank">Aesthetic neutra freegan, mlkshk literally</a></h3>
+                                                    <h3 class="text-bold-400 mb-0"><a href="#" target="_blank">Aesthetic neutra freegan, mlkshk literally</a></h3>
                                                     <p class="mb-0"><a href="http://www.abdosoltan.me" class="success" target="_blank">http://www.abdosoltan.me</a></p>
                                                     <p>30 Jun 2017 - Donut jelly cake chupa chups powder chocolate cake cheesecake. Wafer macaroon sweet roll gingerbread cheesecake gummi bears. Marzipan jujubes sweet roll tootsie roll cookie apple pie brownie bear claw jelly beans....</p>
                                                 </div>
                                             </li>
                                             <li class="media">
                                                 <div class="media-body">
-                                                    <h3 class="text-bold-400 mb-0"><a href="https://Error 404.com/modern-admin-clean-bootstrap-4-dashboard-html-template/html/ltr/vertical-modern-menu-template/search-website.html" target="_blank">iCell - disrupt butcher pitchfork.</a></h3>
+                                                    <h3 class="text-bold-400 mb-0"><a href="#" target="_blank">iCell - disrupt butcher pitchfork.</a></h3>
                                                     <p class="mb-0"><a href="http://www.abdosoltan.me" class="success" target="_blank">http://www.abdosoltan.me</a></p>
                                                     <p>12 DEC 2015 - Cake fruitcake cake caramels jelly beans chocolate bar. Macaroon gingerbread pastry. Gummies ice cream chocolate lollipop brownie cotton candy. Topping cotton candy brownie. Cake tiramisu macaroon sugar plum. Sweet cotton can...</p>
                                                 </div>

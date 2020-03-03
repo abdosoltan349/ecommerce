@@ -71,7 +71,7 @@
                                         <p class="px-2">Welcome back, please login to your account.</p>
                                         <div class="card-content">
                                             <div class="card-body pt-1">
-                                                <form action="index.html">
+                                                <form action="index.php">
                                                     <fieldset class="form-label-group form-group position-relative has-icon-left">
                                                         <input type="text" class="form-control" id="user-name" placeholder="Username" required>
                                                         <div class="form-control-position">
@@ -101,9 +101,9 @@
                                                                 </div>
                                                             </fieldset>
                                                         </div>
-                                                        <div class="text-right"><a href="auth-forgot-password.html" class="card-link">Forgot Password?</a></div>
+                                                        <div class="text-right"><a href="auth-forgot-password.php" class="card-link">Forgot Password?</a></div>
                                                     </div>
-                                                    <a href="auth-register.html" class="btn btn-outline-primary float-left btn-inline">Register</a>
+                                                    <a href="auth-register.php" class="btn btn-outline-primary float-left btn-inline">Register</a>
                                                     <button type="submit" class="btn btn-primary float-right btn-inline">Login</button>
                                                 </form>
                                             </div>

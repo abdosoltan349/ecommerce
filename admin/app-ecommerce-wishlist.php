@@ -65,7 +65,7 @@
                             <h2 class="content-header-title float-left mb-0">WishList</h2>
                             <div class="breadcrumb-wrapper col-12">
                                 <ol class="breadcrumb">
-                                    <li class="breadcrumb-item"><a href="index.html">Home</a>
+                                    <li class="breadcrumb-item"><a href="index.php">Home</a>
                                     </li>
                                     <li class="breadcrumb-item"><a href="#">eCommerce</a>
                                     </li>
@@ -92,7 +92,7 @@
                     <div class="card ecommerce-card">
                         <div class="card-content">
                             <div class="item-img text-center">
-                                <a href="app-ecommerce-details.html">
+                                <a href="app-ecommerce-details.php">
                                     <img src="<?php echo $images ?>pages/eCommerce/1.png" class="img-fluid" alt="img-placeholder">
                                 </a>
                             </div>
@@ -110,7 +110,7 @@
                                     </div>
                                 </div>
                                 <div class="item-name">
-                                    <a href="app-ecommerce-details.html">
+                                    <a href="app-ecommerce-details.php">
                                         Sony - ZX Series On-Ear Headphones - Black
                                     </a>
                                 </div>
@@ -136,7 +136,7 @@
                     <div class="card ecommerce-card">
                         <div class="card-content">
                             <div class="item-img text-center">
-                                <a href="app-ecommerce-details.html">
+                                <a href="app-ecommerce-details.php">
                                     <img src="<?php echo $images ?>pages/eCommerce/2.png" class="img-fluid" alt="img-placeholder">
                                 </a>
                             </div>
@@ -154,7 +154,7 @@
                                     </div>
                                 </div>
                                 <div class="item-name">
-                                    <a href="app-ecommerce-details.html">
+                                    <a href="app-ecommerce-details.php">
                                         Asus - ROG Desktop - Intel Core i7 - 16GB Memory - Double NVIDIA GeForce GTX1080 - 1TB Hard Drive +
                                         2x512GB Solid State Drive - Gray
                                     </a>
@@ -182,7 +182,7 @@
                     <div class="card ecommerce-card">
                         <div class="card-content">
                             <div class="item-img text-center">
-                                <a href="app-ecommerce-details.html">
+                                <a href="app-ecommerce-details.php">
                                     <img src="<?php echo $images ?>pages/eCommerce/3.png" class="img-fluid" alt="img-placeholder">
                                 </a>
                             </div>
@@ -200,7 +200,7 @@
                                     </div>
                                 </div>
                                 <div class="item-name">
-                                    <a href="app-ecommerce-details.html">
+                                    <a href="app-ecommerce-details.php">
                                         Sony - 75" Class (74.5" diag) - LED - 2160p - Smart - 3D - 4K Ultra HD TV with High Dynamic Range -
                                         Black
                                     </a>
@@ -219,7 +219,7 @@
                                     <i class="feather icon-x align-middle"></i> Remove
                                 </div>
                                 <div class="cart view-cart">
-                                    <i class="feather icon-shopping-cart"></i> <a href="app-ecommerce-checkout.html" class="view-in-cart">View
+                                    <i class="feather icon-shopping-cart"></i> <a href="app-ecommerce-checkout.php" class="view-in-cart">View
                                         cart</a>
                                 </div>
                             </div>
@@ -229,7 +229,7 @@
                     <div class="card ecommerce-card">
                         <div class="card-content">
                             <div class="item-img text-center">
-                                <a href="app-ecommerce-details.html">
+                                <a href="app-ecommerce-details.php">
                                     <img src="<?php echo $images ?>pages/eCommerce/4.png" class="img-fluid" alt="img-placeholder">
                                 </a>
                             </div>
@@ -247,7 +247,7 @@
                                     </div>
                                 </div>
                                 <div class="item-name">
-                                    <a href="app-ecommerce-details.html">
+                                    <a href="app-ecommerce-details.php">
                                         Garmin - fēnix 5 GPS Heart Rate Monitor Watch - Slate gray
                                     </a>
                                 </div>
@@ -273,7 +273,7 @@
                     <div class="card ecommerce-card">
                         <div class="card-content">
                             <div class="item-img text-center">
-                                <a href="app-ecommerce-details.html">
+                                <a href="app-ecommerce-details.php">
                                     <img src="<?php echo $images ?>pages/eCommerce/5.png" class="img-fluid" alt="img-placeholder">
                                 </a>
                             </div>
@@ -291,7 +291,7 @@
                                     </div>
                                 </div>
                                 <div class="item-name">
-                                    <a href="app-ecommerce-details.html">
+                                    <a href="app-ecommerce-details.php">
                                         Garmin - fenix 3 Sapphire GPS Watch - Silver
                                     </a>
                                 </div>
@@ -319,7 +319,7 @@
                     <div class="card ecommerce-card">
                         <div class="card-content">
                             <div class="item-img text-center">
-                                <a href="app-ecommerce-details.html">
+                                <a href="app-ecommerce-details.php">
                                     <img src="<?php echo $images ?>pages/eCommerce/6.png" class="img-fluid" alt="img-placeholder">
                                 </a>
                             </div>
@@ -337,7 +337,7 @@
                                     </div>
                                 </div>
                                 <div class="item-name">
-                                    <a href="app-ecommerce-details.html">
+                                    <a href="app-ecommerce-details.php">
                                         Alienware - 17.3" Laptop - Intel Core i7 - 16GB Memory - NVIDIA GeForce GTX 1070 - 1TB Hard Drive +
                                         128GB Solid State Drive - Silver
                                     </a>
@@ -366,7 +366,7 @@
                     <div class="card ecommerce-card">
                         <div class="card-content">
                             <div class="item-img text-center">
-                                <a href="app-ecommerce-details.html">
+                                <a href="app-ecommerce-details.php">
                                     <img src="<?php echo $images ?>pages/eCommerce/7.png" class="img-fluid" alt="img-placeholder">
                                 </a>
                             </div>
@@ -384,7 +384,7 @@
                                     </div>
                                 </div>
                                 <div class="item-name">
-                                    <a href="app-ecommerce-details.html">
+                                    <a href="app-ecommerce-details.php">
                                         Amazon - Fire TV Stick with Alexa Voice Remote - Black
                                     </a>
                                 </div>
@@ -412,7 +412,7 @@
                     <div class="card ecommerce-card">
                         <div class="card-content">
                             <div class="item-img text-center">
-                                <a href="app-ecommerce-details.html">
+                                <a href="app-ecommerce-details.php">
                                     <img src="<?php echo $images ?>pages/eCommerce/8.png" class="img-fluid" alt="img-placeholder">
                                 </a>
                             </div>
@@ -430,7 +430,7 @@
                                     </div>
                                 </div>
                                 <div class="item-name">
-                                    <a href="app-ecommerce-details.html">
+                                    <a href="app-ecommerce-details.php">
                                         Apple - 27" iMac with Retina 5K display - Intel Core i7 - 32GB Memory - 2TB Fusion Drive - Silver
                                     </a>
                                 </div>
@@ -457,7 +457,7 @@
                     <div class="card ecommerce-card">
                         <div class="card-content">
                             <div class="item-img text-center">
-                                <a href="app-ecommerce-details.html">
+                                <a href="app-ecommerce-details.php">
                                     <img src="<?php echo $images ?>pages/eCommerce/9.png" class="img-fluid" alt="img-placeholder">
                                 </a>
                             </div>
@@ -475,7 +475,7 @@
                                     </div>
                                 </div>
                                 <div class="item-name">
-                                    <a href="app-ecommerce-details.html">
+                                    <a href="app-ecommerce-details.php">
                                         Canon - EOS 5D Mark IV DSLR Camera with 24-70mm f/4L IS USM Lens
                                     </a>
                                 </div>
@@ -503,7 +503,7 @@
                     <div class="card ecommerce-card">
                         <div class="card-content">
                             <div class="item-img text-center">
-                                <a href="app-ecommerce-details.html">
+                                <a href="app-ecommerce-details.php">
                                     <img src="<?php echo $images ?>pages/eCommerce/10.png" class="img-fluid" alt="img-placeholder">
                                 </a>
                             </div>
@@ -521,7 +521,7 @@
                                     </div>
                                 </div>
                                 <div class="item-name">
-                                    <a href="app-ecommerce-details.html">
+                                    <a href="app-ecommerce-details.php">
                                         Samsung - Chef Collection 34.3 Cu. Ft. 4-Door Flex French Door Refrigerator with Thru-the-Door Ice and
                                         Water - Stainless Steel
                                     </a>
@@ -550,7 +550,7 @@
                     <div class="card ecommerce-card">
                         <div class="card-content">
                             <div class="item-img text-center">
-                                <a href="app-ecommerce-details.html">
+                                <a href="app-ecommerce-details.php">
                                     <img src="<?php echo $images ?>pages/eCommerce/11.png" class="img-fluid" alt="img-placeholder">
                                 </a>
                             </div>
@@ -568,7 +568,7 @@
                                     </div>
                                 </div>
                                 <div class="item-name">
-                                    <a href="app-ecommerce-details.html">
+                                    <a href="app-ecommerce-details.php">
                                         Bowers & Wilkins - CM10 S2 Triple 6-1/2" 3-Way Floorstanding Speaker (Each) - Gloss Black
                                     </a>
                                 </div>

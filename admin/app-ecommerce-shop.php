@@ -70,7 +70,7 @@
                             <h2 class="content-header-title float-left mb-0">Shop</h2>
                             <div class="breadcrumb-wrapper col-12">
                                 <ol class="breadcrumb">
-                                    <li class="breadcrumb-item"><a href="index.html">Home</a>
+                                    <li class="breadcrumb-item"><a href="index.php">Home</a>
                                     </li>
                                     <li class="breadcrumb-item"><a href="#">eCommerce</a>
                                     </li>
@@ -149,7 +149,7 @@
                         <div class="card ecommerce-card">
                             <div class="card-content">
                                 <div class="item-img text-center">
-                                    <a href="app-ecommerce-details.html">
+                                    <a href="app-ecommerce-details.php">
                                         <img class="img-fluid" src="<?php echo $images ?>pages/eCommerce/1.png" alt="img-placeholder"></a>
                                 </div>
                                 <div class="card-body">
@@ -166,7 +166,7 @@
                                         </div>
                                     </div>
                                     <div class="item-name">
-                                        <a href="app-ecommerce-details.html">Amazon - Fire TV Stick with Alexa Voice Remote - Black</a>
+                                        <a href="app-ecommerce-details.php">Amazon - Fire TV Stick with Alexa Voice Remote - Black</a>
                                         <p class="item-company">By <span class="company-name">Google</span></p>
                                     </div>
                                     <div>
@@ -195,7 +195,7 @@
                                         <i class="fa fa-heart-o"></i> <span>Wishlist</span>
                                     </div>
                                     <div class="cart">
-                                        <i class="feather icon-shopping-cart"></i> <span class="add-to-cart">Add to cart</span> <a href="app-ecommerce-checkout.html" class="view-in-cart d-none">View In Cart</a>
+                                        <i class="feather icon-shopping-cart"></i> <span class="add-to-cart">Add to cart</span> <a href="app-ecommerce-checkout.php" class="view-in-cart d-none">View In Cart</a>
                                     </div>
                                 </div>
                             </div>
@@ -203,7 +203,7 @@
                         <div class="card ecommerce-card">
                             <div class="card-content">
                                 <div class="item-img text-center">
-                                    <a href="app-ecommerce-details.html">
+                                    <a href="app-ecommerce-details.php">
                                         <img class="img-fluid" src="<?php echo $images ?>pages/eCommerce/2.png" alt="img-placeholder">
                                     </a>
                                 </div>
@@ -221,7 +221,7 @@
                                         </div>
                                     </div>
                                     <div class="item-name">
-                                        <a href="app-ecommerce-details.html">Google - Chromecast - Black</a>
+                                        <a href="app-ecommerce-details.php">Google - Chromecast - Black</a>
                                         <p class="item-company">By <span class="company-name">Amazon</span></p>
                                     </div>
                                     <div>
@@ -249,7 +249,7 @@
                                         <i class="fa fa-heart-o mr-25"></i> Wishlist
                                     </div>
                                     <div class="cart">
-                                        <i class="feather icon-shopping-cart mr-25"></i> <span class="add-to-cart">Add to cart</span> <a href="app-ecommerce-checkout.html" class="view-in-cart d-none">View In Cart</a>
+                                        <i class="feather icon-shopping-cart mr-25"></i> <span class="add-to-cart">Add to cart</span> <a href="app-ecommerce-checkout.php" class="view-in-cart d-none">View In Cart</a>
                                     </div>
                                 </div>
                             </div>
@@ -257,7 +257,7 @@
                         <div class="card ecommerce-card">
                             <div class="card-content">
                                 <div class="item-img text-center">
-                                    <a href="app-ecommerce-details.html"><img class="img-fluid" src="<?php echo $images ?>pages/eCommerce/3.png" alt="img-placeholder"></a>
+                                    <a href="app-ecommerce-details.php"><img class="img-fluid" src="<?php echo $images ?>pages/eCommerce/3.png" alt="img-placeholder"></a>
                                 </div>
                                 <div class="card-body">
                                     <div class="item-wrapper">
@@ -275,7 +275,7 @@
                                         </div>
                                     </div>
                                     <div class="item-name">
-                                        <a href="app-ecommerce-details.html">Dell - Inspiron 15.6" Touch-Screen Laptop - Black</a>
+                                        <a href="app-ecommerce-details.php">Dell - Inspiron 15.6" Touch-Screen Laptop - Black</a>
                                         <p class="item-company">By <span class="company-name">Dell</span></p>
                                     </div>
                                     <div>
@@ -307,7 +307,7 @@
                                         <i class="fa fa-heart-o mr-25"></i> Wishlist
                                     </div>
                                     <div class="cart">
-                                        <i class="feather icon-shopping-cart mr-25"></i> <span class="add-to-cart">Add to cart</span> <a href="app-ecommerce-checkout.html" class="view-in-cart d-none">View In Cart</a>
+                                        <i class="feather icon-shopping-cart mr-25"></i> <span class="add-to-cart">Add to cart</span> <a href="app-ecommerce-checkout.php" class="view-in-cart d-none">View In Cart</a>
                                     </div>
                                 </div>
                             </div>
@@ -315,7 +315,7 @@
                         <div class="card ecommerce-card">
                             <div class="card-content">
                                 <div class="item-img text-center">
-                                    <a href="app-ecommerce-details.html"> <img class="img-fluid" src="<?php echo $images ?>pages/eCommerce/4.png" alt="img-placeholder"></a>
+                                    <a href="app-ecommerce-details.php"> <img class="img-fluid" src="<?php echo $images ?>pages/eCommerce/4.png" alt="img-placeholder"></a>
                                 </div>
                                 <div class="card-body">
                                     <div class="item-wrapper">
@@ -331,7 +331,7 @@
                                         </div>
                                     </div>
                                     <div class="item-name">
-                                        <a href="app-ecommerce-details.html">Amazon - Echo Dot</a>
+                                        <a href="app-ecommerce-details.php">Amazon - Echo Dot</a>
                                         <p class="item-company">By <span class="company-name">Amazon</span></p>
                                     </div>
                                     <div>
@@ -361,7 +361,7 @@
                                         <i class="fa fa-heart-o mr-25"></i> Wishlist
                                     </div>
                                     <div class="cart">
-                                        <i class="feather icon-shopping-cart mr-25"></i> <span class="add-to-cart">Add to cart</span> <a href="app-ecommerce-checkout.html" class="view-in-cart d-none">View In Cart</a>
+                                        <i class="feather icon-shopping-cart mr-25"></i> <span class="add-to-cart">Add to cart</span> <a href="app-ecommerce-checkout.php" class="view-in-cart d-none">View In Cart</a>
                                     </div>
                                 </div>
                             </div>
@@ -369,7 +369,7 @@
                         <div class="card ecommerce-card">
                             <div class="card-content">
                                 <div class="item-img text-center">
-                                    <a href="app-ecommerce-details.html">
+                                    <a href="app-ecommerce-details.php">
                                         <img class="img-fluid" src="<?php echo $images ?>pages/eCommerce/5.png" alt="img-placeholder">
                                     </a>
                                 </div>
@@ -387,7 +387,7 @@
                                         </div>
                                     </div>
                                     <div class="item-name">
-                                        <a href="app-ecommerce-details.html">
+                                        <a href="app-ecommerce-details.php">
                                             Apple - MacBook Air® (Latest Model) - 13.3" Display - Silver
                                         </a>
                                         <p class="item-company">By <span class="company-name">Apple</span></p>
@@ -418,7 +418,7 @@
                                         <i class="fa fa-heart-o mr-25"></i> Wishlist
                                     </div>
                                     <div class="cart">
-                                        <i class="feather icon-shopping-cart mr-25"></i> <span class="add-to-cart">Add to cart</span> <a href="app-ecommerce-checkout.html" class="view-in-cart d-none">View In Cart</a>
+                                        <i class="feather icon-shopping-cart mr-25"></i> <span class="add-to-cart">Add to cart</span> <a href="app-ecommerce-checkout.php" class="view-in-cart d-none">View In Cart</a>
                                     </div>
                                 </div>
                             </div>
@@ -426,7 +426,7 @@
                         <div class="card ecommerce-card">
                             <div class="card-content">
                                 <div class="item-img text-center">
-                                    <a href="app-ecommerce-details.html">
+                                    <a href="app-ecommerce-details.php">
                                         <img class="img-fluid" src="<?php echo $images ?>pages/eCommerce/6.png" alt="img-placeholder">
                                     </a>
                                 </div>
@@ -444,7 +444,7 @@
                                         </div>
                                     </div>
                                     <div class="item-name">
-                                        <a href="app-ecommerce-details.html">
+                                        <a href="app-ecommerce-details.php">
                                             Sharp - 50" Class (49.5" Diag.) - LED - 1080p - Black
                                         </a>
                                         <p class="item-company">By <span class="company-name">Sharp</span></p>
@@ -477,7 +477,7 @@
                                         <i class="fa fa-heart-o mr-25"></i> Wishlist
                                     </div>
                                     <div class="cart">
-                                        <i class="feather icon-shopping-cart mr-25"></i> <span class="add-to-cart">Add to cart</span> <a href="app-ecommerce-checkout.html" class="view-in-cart d-none">View In Cart</a>
+                                        <i class="feather icon-shopping-cart mr-25"></i> <span class="add-to-cart">Add to cart</span> <a href="app-ecommerce-checkout.php" class="view-in-cart d-none">View In Cart</a>
                                     </div>
                                 </div>
                             </div>
@@ -485,7 +485,7 @@
                         <div class="card ecommerce-card">
                             <div class="card-content">
                                 <div class="item-img text-center">
-                                    <a href="app-ecommerce-details.html">
+                                    <a href="app-ecommerce-details.php">
                                         <img class="img-fluid" src="<?php echo $images ?>pages/eCommerce/7.png" alt="img-placeholder">
                                     </a>
                                 </div>
@@ -503,7 +503,7 @@
                                         </div>
                                     </div>
                                     <div class="item-name">
-                                        <a href="app-ecommerce-details.html">
+                                        <a href="app-ecommerce-details.php">
                                             Google - Google Home - White/Slate fabric
                                         </a>
                                         <p class="item-company">By <span class="company-name">Google</span></p>
@@ -537,7 +537,7 @@
                                         <i class="fa fa-heart-o mr-25"></i> Wishlist
                                     </div>
                                     <div class="cart">
-                                        <i class="feather icon-shopping-cart mr-25"></i> <span class="add-to-cart">Add to cart</span> <a href="app-ecommerce-checkout.html" class="view-in-cart d-none">View In Cart</a>
+                                        <i class="feather icon-shopping-cart mr-25"></i> <span class="add-to-cart">Add to cart</span> <a href="app-ecommerce-checkout.php" class="view-in-cart d-none">View In Cart</a>
                                     </div>
                                 </div>
                             </div>
@@ -545,7 +545,7 @@
                         <div class="card ecommerce-card">
                             <div class="card-content">
                                 <div class="item-img text-center">
-                                    <a href="app-ecommerce-details.html">
+                                    <a href="app-ecommerce-details.php">
                                         <img class="img-fluid" src="<?php echo $images ?>pages/eCommerce/10.png" alt="img-placeholder">
                                     </a>
                                 </div>
@@ -563,7 +563,7 @@
                                         </div>
                                     </div>
                                     <div class="item-name">
-                                        <a href="app-ecommerce-details.html">
+                                        <a href="app-ecommerce-details.php">
                                             Apple - EarPods™ with Remote and Mic - White
                                         </a>
                                         <p class="item-company">By <span class="company-name">Apple</span></p>
@@ -593,7 +593,7 @@
                                         <i class="fa fa-heart-o mr-25"></i> Wishlist
                                     </div>
                                     <div class="cart">
-                                        <i class="feather icon-shopping-cart mr-25"></i> <span class="add-to-cart">Add to cart</span> <a href="app-ecommerce-checkout.html" class="view-in-cart d-none">View In Cart</a>
+                                        <i class="feather icon-shopping-cart mr-25"></i> <span class="add-to-cart">Add to cart</span> <a href="app-ecommerce-checkout.php" class="view-in-cart d-none">View In Cart</a>
                                     </div>
                                 </div>
                             </div>
@@ -601,7 +601,7 @@
                         <div class="card ecommerce-card">
                             <div class="card-content">
                                 <div class="item-img text-center">
-                                    <a href="app-ecommerce-details.html">
+                                    <a href="app-ecommerce-details.php">
                                         <img class="img-fluid" src="<?php echo $images ?>pages/eCommerce/9.png" alt="img-placeholder">
                                     </a>
                                 </div>
@@ -619,7 +619,7 @@
                                         </div>
                                     </div>
                                     <div class="item-name">
-                                        <a href="app-ecommerce-details.html">
+                                        <a href="app-ecommerce-details.php">
                                             Philips - hue A19 Smart LED Light Bulb - White Only
                                         </a>
                                         <p class="item-company">By <span class="company-name">Philips</span></p>
@@ -649,7 +649,7 @@
                                         <i class="fa fa-heart-o mr-25"></i> Wishlist
                                     </div>
                                     <div class="cart">
-                                        <i class="feather icon-shopping-cart mr-25"></i> <span class="add-to-cart">Add to cart</span> <a href="app-ecommerce-checkout.html" class="view-in-cart d-none">View In Cart</a>
+                                        <i class="feather icon-shopping-cart mr-25"></i> <span class="add-to-cart">Add to cart</span> <a href="app-ecommerce-checkout.php" class="view-in-cart d-none">View In Cart</a>
                                     </div>
 
                                 </div>

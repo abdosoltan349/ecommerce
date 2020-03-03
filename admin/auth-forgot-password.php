@@ -71,14 +71,14 @@
                                         <p class="px-2 mb-0">Please enter your email address and we'll send you instructions on how to reset your password.</p>
                                         <div class="card-content">
                                             <div class="card-body">
-                                                <form action="index.html">
+                                                <form action="index.php">
                                                     <div class="form-label-group">
                                                         <input type="email" id="inputEmail" class="form-control" placeholder="Email">
                                                         <label for="inputEmail">Email</label>
                                                     </div>
                                                 </form>
                                                 <div class="float-md-left d-block mb-1">
-                                                    <a href="auth-login.html" class="btn btn-outline-primary btn-block px-75">Back to Login</a>
+                                                    <a href="auth-login.php" class="btn btn-outline-primary btn-block px-75">Back to Login</a>
                                                 </div>
                                                 <div class="float-md-right d-block mb-1">
                                                     <a href="#" class="btn btn-primary btn-block px-75">Recover Password</a>

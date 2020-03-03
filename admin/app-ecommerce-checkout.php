@@ -70,7 +70,7 @@
                             <h2 class="content-header-title float-left mb-0">Checkout</h2>
                             <div class="breadcrumb-wrapper col-12">
                                 <ol class="breadcrumb">
-                                    <li class="breadcrumb-item"><a href="index.html">Home</a>
+                                    <li class="breadcrumb-item"><a href="index.php">Home</a>
                                     </li>
                                     <li class="breadcrumb-item"><a href="#">eCommerce</a>
                                     </li>
@@ -100,13 +100,13 @@
                                 <div class="card ecommerce-card">
                                     <div class="card-content">
                                         <div class="item-img text-center">
-                                            <a href="app-ecommerce-details.html">
+                                            <a href="app-ecommerce-details.php">
                                                 <img src="<?php echo $images ?>pages/eCommerce/9.png" alt="img-placeholder">
                                             </a>
                                         </div>
                                         <div class="card-body">
                                             <div class="item-name">
-                                                <a href="app-ecommerce-details.html">Amazon - Fire TV Stick with Alexa Voice Remote - Black</a>
+                                                <a href="app-ecommerce-details.php">Amazon - Fire TV Stick with Alexa Voice Remote - Black</a>
                                                 <span></span>
                                                 <p class="item-company">By <span class="company-name">Amazon</span></p>
                                                 <p class="stock-status-in">In Stock</p>
@@ -148,13 +148,13 @@
                                 <div class="card ecommerce-card">
                                     <div class="card-content">
                                         <div class="item-img text-center">
-                                            <a href="app-ecommerce-details.html">
+                                            <a href="app-ecommerce-details.php">
                                                 <img src="<?php echo $images ?>pages/eCommerce/2.png" alt="img-placeholder">
                                             </a>
                                         </div>
                                         <div class="card-body">
                                             <div class="item-name">
-                                                <a href="app-ecommerce-details.html">Apple - Macbook® - Intel Core M5</a>
+                                                <a href="app-ecommerce-details.php">Apple - Macbook® - Intel Core M5</a>
                                                 <p class="item-company">By <span class="company-name">Apple</span></p>
                                                 <p class="stock-status-in">In Stock</p>
                                             </div>
@@ -195,13 +195,13 @@
                                 <div class="card ecommerce-card">
                                     <div class="card-content">
                                         <div class="item-img text-center">
-                                            <a href="app-ecommerce-details.html">
+                                            <a href="app-ecommerce-details.php">
                                                 <img src="<?php echo $images ?>pages/eCommerce/3.png" alt="img-placeholder">
                                             </a>
                                         </div>
                                         <div class="card-body">
                                             <div class="item-name">
-                                                <a href="app-ecommerce-details.html">
+                                                <a href="app-ecommerce-details.php">
                                                     <span>Google - Chromecast - Black</span>
                                                 </a>
                                                 <p class="item-company">By <span class="company-name">Google</span></p>
@@ -241,13 +241,13 @@
                                 <div class="card ecommerce-card">
                                     <div class="card-content">
                                         <div class="item-img text-center">
-                                            <a href="app-ecommerce-details.html">
+                                            <a href="app-ecommerce-details.php">
                                                 <img src="<?php echo $images ?>pages/eCommerce/4.png" alt="img-placeholder">
                                             </a>
                                         </div>
                                         <div class="card-body">
                                             <div class="item-name">
-                                                <a href="app-ecommerce-details.html">
+                                                <a href="app-ecommerce-details.php">
                                                     <span>Sharp - 50" Class (49.5" Diag.) - LED - 1080p - Black</span>
                                                 </a>
                                                 <p class="item-company">By <span class="company-name">Sharp</span></p>
@@ -290,13 +290,13 @@
                                 <div class="card ecommerce-card">
                                     <div class="card-content">
                                         <div class="item-img text-center">
-                                            <a href="app-ecommerce-details.html">
+                                            <a href="app-ecommerce-details.php">
                                                 <img src="<?php echo $images ?>pages/eCommerce/10.png" alt="img-placeholder">
                                             </a>
                                         </div>
                                         <div class="card-body">
                                             <div class="item-name">
-                                                <a href="app-ecommerce-details.html">
+                                                <a href="app-ecommerce-details.php">
                                                     <span>Dell - Inspiron 15.6" Touch-Screen Laptop - Black</span>
                                                 </a>
                                                 <p class="item-company">By <span class="company-name">Dell</span></p>
@@ -339,13 +339,13 @@
                                 <div class="card ecommerce-card">
                                     <div class="card-content">
                                         <div class="item-img text-center">
-                                            <a href="app-ecommerce-details.html">
+                                            <a href="app-ecommerce-details.php">
                                                 <img src="<?php echo $images ?>pages/eCommerce/6.png" alt="img-placeholder">
                                             </a>
                                         </div>
                                         <div class="card-body">
                                             <div class="item-name">
-                                                <a href="app-ecommerce-details.html">
+                                                <a href="app-ecommerce-details.php">
                                                     <span>Amazon - Echo Dot</span>
                                                 </a>
                                                 <p class="item-company">By <span class="company-name">Amazon</span></p>

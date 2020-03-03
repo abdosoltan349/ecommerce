@@ -69,11 +69,11 @@
                             <h2 class="content-header-title float-left mb-0">Category</h2>
                             <div class="breadcrumb-wrapper col-12">
                                 <ol class="breadcrumb">
-                                    <li class="breadcrumb-item"><a href="index.html">Home</a>
+                                    <li class="breadcrumb-item"><a href="index.php">Home</a>
                                     </li>
                                     <li class="breadcrumb-item"><a href="#">Pages</a>
                                     </li>
-                                    <li class="breadcrumb-item"><a href="page-knowledge-base.html">Knowledge Base</a>
+                                    <li class="breadcrumb-item"><a href="page-knowledge-base.php">Knowledge Base</a>
                                     </li>
                                     <li class="breadcrumb-item active">Category
                                     </li>
@@ -104,7 +104,7 @@
                             <div class="card">
                                 <div class="card-body">
                                     <h4>Buying</h4>
-                                    <a href="page-kb-question.html" class="knowledge-base-category">
+                                    <a href="page-kb-question.php" class="knowledge-base-category">
                                         <ul class="list-group list-group-flush mt-1">
                                             <li class="list-group-item">Cake icing gummi bears?</li>
                                             <li class="list-group-item">Jelly soufflé apple pie?</li>
@@ -121,7 +121,7 @@
                             <div class="card">
                                 <div class="card-body">
                                     <h4>Item Support</h4>
-                                    <a href="page-kb-question.html" class="knowledge-base-category">
+                                    <a href="page-kb-question.php" class="knowledge-base-category">
                                         <ul class="list-group list-group-flush mt-1">
                                             <li class="list-group-item">Dessert halvah carrot cake sweet?</li>
                                             <li class="list-group-item">Jelly beans bonbon marshmallow?</li>
@@ -136,7 +136,7 @@
                             <div class="card">
                                 <div class="card-body">
                                     <h4>Payments</h4>
-                                    <a href="page-kb-question.html" class="knowledge-base-category">
+                                    <a href="page-kb-question.php" class="knowledge-base-category">
                                         <ul class="list-group list-group-flush mt-1">
                                             <li class="list-group-item">Oat cake lemon drops sweet sweet?</li>
                                             <li class="list-group-item">Cotton candy brownie ice cream wafer roll?</li>
@@ -152,7 +152,7 @@
                             <div class="card">
                                 <div class="card-body">
                                     <h4>Downloads</h4>
-                                    <a href="page-kb-question.html" class="knowledge-base-category">
+                                    <a href="page-kb-question.php" class="knowledge-base-category">
                                         <ul class="list-group list-group-flush mt-1">
                                             <li class="list-group-item">Marshmallow jelly beans oat cake?</li>
                                             <li class="list-group-item">Cake ice cream jujubes cookie?</li>
@@ -169,7 +169,7 @@
                             <div class="card">
                                 <div class="card-body">
                                     <h4>Licenses</h4>
-                                    <a href="page-kb-question.html" class="knowledge-base-category">
+                                    <a href="page-kb-question.php" class="knowledge-base-category">
                                         <ul class="list-group list-group-flush mt-1">
                                             <li class="list-group-item">Macaroon tootsie roll?</li>
                                             <li class="list-group-item">Cheesecake sweet soufflé jelly tiramisu chocolate?</li>
@@ -186,7 +186,7 @@
                             <div class="card">
                                 <div class="card-body">
                                     <h4>Documents</h4>
-                                    <a href="page-kb-question.html" class="knowledge-base-category">
+                                    <a href="page-kb-question.php" class="knowledge-base-category">
                                         <ul class="list-group list-group-flush mt-1">
                                             <li class="list-group-item">Brownie dessert gummies?</li>
                                             <li class="list-group-item">Cookie tiramisu lollipop?</li>

@@ -69,7 +69,7 @@
                             <h2 class="content-header-title float-left mb-0">Knowledge-base</h2>
                             <div class="breadcrumb-wrapper col-12">
                                 <ol class="breadcrumb">
-                                    <li class="breadcrumb-item"><a href="index.html">Home</a>
+                                    <li class="breadcrumb-item"><a href="index.php">Home</a>
                                     </li>
                                     <li class="breadcrumb-item"><a href="#">Pages</a>
                                     </li>
@@ -122,7 +122,7 @@
                         <div class="col-md-4 col-sm-6 col-12 search-content">
                             <div class="card">
                                 <div class="card-body text-center">
-                                    <a href="page-kb-category.html">
+                                    <a href="page-kb-category.php">
                                         <img src="<?php echo $images ?>pages/graphic-1.png" class="mx-auto mb-2" width="180" alt="knowledge-base-image">
                                         <h4>SALES AUTOMATION</h4>
                                         <small class="text-dark">Muffin lemon drops chocolate carrot cake chocolate bar sweet roll.</small>
@@ -133,7 +133,7 @@
                         <div class="col-md-4 col-sm-6 col-12 search-content">
                             <div class="card">
                                 <div class="card-body text-center">
-                                    <a href="page-kb-category.html">
+                                    <a href="page-kb-category.php">
                                         <img src="<?php echo $images ?>pages/graphic-2.png" class="mx-auto mb-2" width="180" alt="knowledge-base-image">
                                         <h4>MARKETING AUTOMATION</h4>
                                         <small class="text-dark">Gingerbread sesame snaps wafer soufflé. Macaroon brownie ice cream</small>
@@ -144,7 +144,7 @@
                         <div class="col-md-4 col-sm-6 col-12 search-content">
                             <div class="card">
                                 <div class="card-body text-center">
-                                    <a href="page-kb-category.html">
+                                    <a href="page-kb-category.php">
                                         <img src="<?php echo $images ?>pages/graphic-3.png" class="mx-auto mb-2" width="180" alt="knowledge-base-image">
                                         <h4>MARKETING BI</h4>
                                         <small class="text-dark">cotton candy caramels danish chocolate cake pie candy. Lemon drops tart.</small>
@@ -155,7 +155,7 @@
                         <div class="col-md-4 col-sm-6 col-12 search-content">
                             <div class="card">
                                 <div class="card-body text-center">
-                                    <a href="page-kb-category.html">
+                                    <a href="page-kb-category.php">
                                         <img src="<?php echo $images ?>pages/graphic-4.png" class="mx-auto mb-2" width="180" alt="knowledge-base-image">
                                         <h4>PERSONALIZATION</h4>
                                         <small class="text-dark">Pudding oat cake carrot cake lemon drops gummies marshmallow.</small>
@@ -166,7 +166,7 @@
                         <div class="col-md-4 col-sm-6 col-12 search-content">
                             <div class="card">
                                 <div class="card-body text-center">
-                                    <a href="page-kb-category.html">
+                                    <a href="page-kb-category.php">
                                         <img src="<?php echo $images ?>pages/graphic-5.png" class="mx-auto mb-2" width="180" alt="knowledge-base-image">
                                         <h4>EMAIL MARKETING</h4>
                                         <small class="text-dark">Gummi bears pudding icing sweet caramels chocolate.Muffin croissant</small>
@@ -177,7 +177,7 @@
                         <div class="col-md-4 col-sm-6 col-12 search-content">
                             <div class="card">
                                 <div class="card-body text-center">
-                                    <a href="page-kb-category.html">
+                                    <a href="page-kb-category.php">
                                         <img src="<?php echo $images ?>pages/graphic-6.png" class="mx-auto mb-2" width="180" alt="knowledge-base-image">
                                         <h4>DEMAND GENERATION</h4>
                                         <small class="text-dark">Dragée jelly beans candy canes pudding cake wafer. Muffin croissant.</small>
