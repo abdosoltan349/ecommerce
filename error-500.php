@@ -1,102 +1,441 @@
+
+
 <!DOCTYPE html>
-
-<?php
- include "admin/init.php";
-	?>
-<html class="loading" lang="en" data-textdirection="ltr">
-<!-- BEGIN: Head-->
-
+<html lang="en">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
-    <meta name="description" content="Vuexy admin is super flexible, powerful, clean &amp; modern responsive bootstrap 4 admin template with unlimited possibilities.">
-    <meta name="keywords" content="admin template, Vuexy admin template, dashboard template, flat admin template, responsive admin template, web app">
-    <meta name="author" content="Error 404">
-    <title>Error 500 - Vuexy - Bootstrap HTML admin template</title>
-    <link rel="apple-touch-icon" href="admin/<?php echo $images ?>ico/apple-icon-120.png">
-    <link rel="shortcut icon" type="image/x-icon" href="<?php echo $images ?>ico/favicon.ico">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600" rel="stylesheet">
+<meta charset="UTF-8">
+<link rel="apple-touch-icon" type="image/png" href="https://static.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png" />
+<meta name="apple-mobile-web-app-title" content="CodePen">
+<link rel="shortcut icon" type="image/x-icon" href="https://static.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico" />
+<link rel="mask-icon" type="" href="https://static.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111" />
+<title>500 Error</title>
+<style>
+body,
+html {
+    padding: 0;
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+    overflow: hidden;
+}
 
-    <!-- BEGIN: Vendor CSS-->
-    <link rel="stylesheet" type="text/css" href="admin/<?php echo $vendors ?>css/vendors.min.css">
-    <!-- END: Vendor CSS-->
+.writing {
+    width: 320px;
+    height: 200px;
+    background-color: #3f3f3f;
+    border: 1px solid #bbbbbb;
+    border-radius: 6px 6px 4px 4px;
+    position: relative;
+}
 
-    <!-- BEGIN: Theme CSS-->
-    <link rel="stylesheet" type="text/css" href="admin/<?php echo $css ?>bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="admin/<?php echo $css ?>bootstrap-extended.css">
-    <link rel="stylesheet" type="text/css" href="admin/<?php echo $css ?>colors.css">
-    <link rel="stylesheet" type="text/css" href="admin/<?php echo $css ?>components.css">
-    <link rel="stylesheet" type="text/css" href="admin/<?php echo $css ?>themes/dark-layout.css">
-    <link rel="stylesheet" type="text/css" href="admin/<?php echo $css ?>themes/semi-dark-layout.css">
+.writing .topbar{
+    position: absolute;
+    width: 100%;
+    height: 12px;
+    background-color: #f1f1f1;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
 
-    <!-- BEGIN: Page CSS-->
-    <link rel="stylesheet" type="text/css" href="admin/<?php echo $css ?>core/menu/menu-types/vertical-menu.css">
-    <link rel="stylesheet" type="text/css" href="admin/<?php echo $css ?>core/colors/palette-gradient.css">
-    <link rel="stylesheet" type="text/css" href="admin/<?php echo $css ?>pages/error.css">
-    <!-- END: Page CSS-->
+.writing .topbar div{
+    height: 6px;
+    width: 6px;
+    border-radius: 50%;
+    margin: 3px;
+    float: left;
+}
 
-    <!-- BEGIN: Custom CSS-->
-    <link rel="stylesheet" type="text/css" href="admin/<?php echo $css ?>style.css">
-    <!-- END: Custom CSS-->
+.writing .topbar div.green{
+    background-color: #60d060;
+}
+.writing .topbar div.red{
+    background-color: red;
+}
+.writing .topbar div.yellow{
+    background-color: #e6c015;
+}
 
+.writing .code {
+    padding: 15px;
+}
+
+.writing .code ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.writing .code ul li {
+    background-color: #9e9e9e;
+    width: 0;
+    height: 7px;
+    border-radius: 6px;
+    margin: 10px 0;
+}
+
+.container {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+            justify-content: center;
+    height: 100vh;
+    width: 100%;
+    -webkit-transition: -webkit-transform .5s;
+    transition: -webkit-transform .5s;
+    transition: transform .5s;
+    transition: transform .5s, -webkit-transform .5s;
+}
+
+.stack-container {
+    position: relative;
+    width: 420px;
+    height: 210px;
+    -webkit-transition: width 1s, height 1s;
+    transition: width 1s, height 1s;
+}
+
+.pokeup {
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+.pokeup:hover {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+    -webkit-transition: .3s ease;
+    transition: .3s ease;
+}
+
+
+.error {
+    width: 400px;
+    padding: 40px;
+    text-align: center;
+}
+
+.error h1 {
+    font-size: 125px;
+    padding: 0;
+    margin: 0;
+    font-weight: 700;
+}
+
+.error h2 {
+    margin: -30px 0 0 0;
+    padding: 0px;
+    font-size: 47px;
+    letter-spacing: 12px;
+}
+
+.perspec {
+    -webkit-perspective: 1000px;
+            perspective: 1000px;
+}
+
+.writeLine{
+    -webkit-animation: writeLine .4s linear forwards;
+            animation: writeLine .4s linear forwards;
+}
+
+.explode{
+    -webkit-animation: explode .5s ease-in-out forwards;
+            animation: explode .5s ease-in-out forwards;
+}
+
+.card {
+    -webkit-animation: tiltcard .5s ease-in-out 1s forwards;
+            animation: tiltcard .5s ease-in-out 1s forwards;
+    position: absolute;
+}
+
+@-webkit-keyframes tiltcard {
+    0% {
+        -webkit-transform: rotateY(0deg);
+                transform: rotateY(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotateY(-30deg);
+                transform: rotateY(-30deg);
+    }
+}
+
+@keyframes tiltcard {
+    0% {
+        -webkit-transform: rotateY(0deg);
+                transform: rotateY(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotateY(-30deg);
+                transform: rotateY(-30deg);
+    }
+}
+
+@-webkit-keyframes explode {
+    0% {
+        -webkit-transform: translate(0, 0) scale(1);
+                transform: translate(0, 0) scale(1);
+    }
+
+    100% {
+        -webkit-transform: translate(var(--spreaddist), var(--vertdist)) scale(var(--scaledist));
+                transform: translate(var(--spreaddist), var(--vertdist)) scale(var(--scaledist));
+    }
+}
+
+@keyframes explode {
+    0% {
+        -webkit-transform: translate(0, 0) scale(1);
+                transform: translate(0, 0) scale(1);
+    }
+
+    100% {
+        -webkit-transform: translate(var(--spreaddist), var(--vertdist)) scale(var(--scaledist));
+                transform: translate(var(--spreaddist), var(--vertdist)) scale(var(--scaledist));
+    }
+}
+
+@-webkit-keyframes writeLine {
+    0% {
+        width:0;
+    }
+
+    100% {
+        width: var(--linelength);
+    }
+}
+
+@keyframes writeLine {
+    0% {
+        width:0;
+    }
+
+    100% {
+        width: var(--linelength);
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .container {
+      -webkit-transform: scale(.85);
+              transform: scale(.85);
+    }
+  }
+
+  @media screen and (max-width: 850px) {
+    .container {
+      -webkit-transform: scale(.75);
+              transform: scale(.75);
+    }
+  }
+
+  @media screen and (max-width: 775px) {
+    .container {
+      flex-wrap: wrap-reverse;
+      -webkit-box-align: inherit;
+              align-items: inherit;
+    }
+  }
+
+  @media screen and (max-width: 370px) {
+    .container {
+        -webkit-transform: scale(.6);
+                transform: scale(.6);
+      }
+  }
+</style>
+<script>
+  window.console = window.console || function(t) {};
+</script>
+<script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage("resize", "*");
+  }
+</script>
 </head>
-<!-- END: Head-->
+<body translate="no">
+<div class="container">
+<div class="error">
+<h1>500</h1>
+<h2>error</h2>
+<p>An unexpected error occurred, please try again</p>
+</div>
+<div class="stack-container">
+<div class="card-container">
+<div class="perspec" style="--spreaddist: 125px; --scaledist: .75; --vertdist: -25px;">
+<div class="card">
+<div class="writing">
+<div class="topbar">
+<div class="red"></div>
+<div class="yellow"></div>
+<div class="green"></div>
+</div>
+<div class="code">
+<ul>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="card-container">
+<div class="perspec" style="--spreaddist: 100px; --scaledist: .8; --vertdist: -20px;">
+<div class="card">
+<div class="writing">
+<div class="topbar">
+<div class="red"></div>
+<div class="yellow"></div>
+<div class="green"></div>
+</div>
+<div class="code">
+<ul>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="card-container">
+<div class="perspec" style="--spreaddist:75px; --scaledist: .85; --vertdist: -15px;">
+<div class="card">
+<div class="writing">
+<div class="topbar">
+<div class="red"></div>
+<div class="yellow"></div>
+<div class="green"></div>
+</div>
+<div class="code">
+<ul>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="card-container">
+<div class="perspec" style="--spreaddist: 50px; --scaledist: .9; --vertdist: -10px;">
+<div class="card">
+<div class="writing">
+<div class="topbar">
+<div class="red"></div>
+<div class="yellow"></div>
+<div class="green"></div>
+</div>
+<div class="code">
+<ul>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="card-container">
+<div class="perspec" style="--spreaddist: 25px; --scaledist: .95; --vertdist: -5px;">
+<div class="card">
+<div class="writing">
+<div class="topbar">
+<div class="red"></div>
+<div class="yellow"></div>
+<div class="green"></div>
+</div>
+<div class="code">
+<ul>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="card-container">
+<div class="perspec" style="--spreaddist: 0px; --scaledist: 1; --vertdist: 0px;">
+<div class="card">
+<div class="writing">
+<div class="topbar">
+<div class="red"></div>
+<div class="yellow"></div>
+<div class="green"></div>
+</div>
+<div class="code">
+<ul>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script src="https://static.codepen.io/assets/common/stopExecutionOnTimeout-157cd5b220a5c80d4ff8e0e70ac069bffd87a61252088146915e8726e5d9f147.js"></script>
+<script id="rendered-js">
+const stackContainer = document.querySelector('.stack-container');
+const cardNodes = document.querySelectorAll('.card-container');
+const perspecNodes = document.querySelectorAll('.perspec');
+const perspec = document.querySelector('.perspec');
+const card = document.querySelector('.card');
 
-<!-- BEGIN: Body-->
+let counter = stackContainer.children.length;
 
-<body class="vertical-layout vertical-menu-modern 1-column  navbar-floating footer-static bg-full-screen-image  menu-collapsed blank-page blank-page" data-open="click" data-menu="vertical-menu-modern" data-col="1-column">
-    <!-- BEGIN: Content-->
-    <div class="app-content content">
-        <div class="content-overlay"></div>
-        <div class="header-navbar-shadow"></div>
-        <div class="content-wrapper">
-            <div class="content-header row">
-            </div>
-            <div class="content-body">
-                <!-- error 500 -->
-                <section class="row flexbox-container">
-                    <div class="col-xl-7 col-md-8 col-12 d-flex justify-content-center">
-                        <div class="card auth-card bg-transparent shadow-none rounded-0 mb-0 w-100">
-                            <div class="card-content">
-                                <div class="card-body text-center">
-                                    <img src="admin/<?php echo $images ?>pages/500.png" class="img-fluid align-self-center" alt="branding logo">
-                                    <h1 class="font-large-2 mt-1 mb-0">Internal Server Error!</h1>
-                                    <p class="p-3">
-                                        susceptive nonturbinated indoctrination formulary dyskinetic deafforest Strumella frolicsomeness encrustment
-                                        portia myelination lachrymatory bestain hoople piscator pyramidoidal parter clipt.
-                                    </p>
-                                    <a class="btn btn-primary btn-lg" href="index.php">Back to Home</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <!-- error 500 end -->
+//function to generate random number
+function randomIntFromInterval(min, max) {
+  return Math.floor(Math.random() * (max - min + 1) + min);
+}
 
-            </div>
-        </div>
-    </div>
-    <!-- END: Content-->
+//after tilt animation, fire the explode animation
+card.addEventListener('animationend', function () {
+  perspecNodes.forEach(function (elem, index) {
+    elem.classList.add('explode');
+  });
+});
 
+//after explode animation do a bunch of stuff
+perspec.addEventListener('animationend', function (e) {
+  if (e.animationName === 'explode') {
+    cardNodes.forEach(function (elem, index) {
 
-    <!-- BEGIN: Vendor JS-->
-    <script src="admin/<?php echo $vendors ?>js/vendors.min.js"></script>
-    <!-- BEGIN Vendor JS-->
+      //add hover animation class
+      elem.classList.add('pokeup');
 
-    <!-- BEGIN: Page Vendor JS-->
-    <!-- END: Page Vendor JS-->
+      //add event listner to throw card on click
+      elem.addEventListener('click', function () {
+        let updown = [800, -800];
+        let randomY = updown[Math.floor(Math.random() * updown.length)];
+        let randomX = Math.floor(Math.random() * 1000) - 1000;
+        elem.style.transform = `translate(${randomX}px, ${randomY}px) rotate(-540deg)`;
+        elem.style.transition = "transform 1s ease, opacity 2s";
+        elem.style.opacity = "0";
+        counter--;
+        if (counter === 0) {
+          stackContainer.style.width = "0";
+          stackContainer.style.height = "0";
+        }
+      });
 
-    <!-- BEGIN: Theme JS-->
-    <script src="admin/layout/js/core/app-menu.js"></script>
-    <script src="admin/layout/js/core/app.js"></script>
-    <script src="admin/layout/js/scripts/components.js"></script>
-    <!-- END: Theme JS-->
+      //generate random number of lines of code between 4 and 10 and add to each card
+      let numLines = randomIntFromInterval(5, 10);
 
-    <!-- BEGIN: Page JS-->
-    <!-- END: Page JS-->
+      //loop through the lines and add them to the DOM
+      for (let index = 0; index < numLines; index++) {if (window.CP.shouldStopExecution(0)) break;
+        let lineLength = randomIntFromInterval(25, 97);
+        var node = document.createElement("li");
+        node.classList.add('node-' + index);
+        elem.querySelector('.code ul').appendChild(node).setAttribute('style', '--linelength: ' + lineLength + '%;');
 
+        //draw lines of code 1 by 1
+        if (index == 0) {
+          elem.querySelector('.code ul .node-' + index).classList.add('writeLine');
+        } else {
+          elem.querySelector('.code ul .node-' + (index - 1)).addEventListener('animationend', function (e) {
+            elem.querySelector('.code ul .node-' + index).classList.add('writeLine');
+          });
+        }
+      }window.CP.exitedLoop(0);
+    });
+  }
+});
+//# sourceURL=pen.js
+    </script>
 </body>
-<!-- END: Body-->
-
 </html>
