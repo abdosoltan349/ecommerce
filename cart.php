@@ -3,6 +3,9 @@
 <?php
  include "init.php";
 	?>
+	<?php
+	include $tpl."nav.php";
+?>
 
 <html lang="en">
 <head>
@@ -193,6 +196,11 @@
 			</div>
 		</div>
 	</div>
+
+	<?php
+	include $tpl."footer.php";
+?>
+
 	<!-- Jquery -->
     <script src="<?php echo $js ?>jquery.min.js"></script>
     <script src="<?php echo $js ?>jquery-migrate-3.0.0.js"></script>
