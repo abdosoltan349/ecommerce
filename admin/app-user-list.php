@@ -39,9 +39,7 @@
     <link rel="stylesheet" type="text/css" href="<?php echo $css ?>pages/aggrid.css">
     <!-- END: Page CSS-->
 
-    <!-- BEGIN: Custom CSS-->
-    <link rel="stylesheet" type="text/css" href="<?php echo $css ?>style.css">
-    <!-- END: Custom CSS-->
+  
 
 </head>
 <!-- END: Head-->
@@ -174,7 +172,9 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div id="myGrid" class="aggrid ag-theme-material"></div>
+                                    <div id="myGrid" class="aggrid ag-theme-material">
+								
+									</div>
                                 </div>
                             </div>
                         </div>
