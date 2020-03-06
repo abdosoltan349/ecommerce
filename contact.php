@@ -1,49 +1,17 @@
 <!DOCTYPE html>
 <?php
-include "init.php"
+include "init.php";
 ?>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name='copyright' content=''>
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Contact US</title>
-	<link rel="icon" type="image/png" href="images/favicon.png">
-	<link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
-	
-	<!-- Bootstrap -->
-	<link rel="stylesheet" href="<?php echo $css ?>bootstrap.css">
-	<!-- Magnific Popup -->
-    <link rel="stylesheet" href="<?php echo $css ?>magnific-popup.min.css">
-	<!-- Font Awesome -->
-    <link rel="stylesheet" href="<?php echo $css ?>font-awesome.css">
-	<!-- Fancybox -->
-	<link rel="stylesheet" href="<?php echo $css ?>jquery.fancybox.min.css">
-	<!-- Themify Icons -->
-    <link rel="stylesheet" href="<?php echo $css ?>themify-icons.css">
-	<!-- Nice Select CSS -->
-    <link rel="stylesheet" href="<?php echo $css ?>niceselect.css">
-	<!-- Animate CSS -->
-    <link rel="stylesheet" href="<?php echo $css ?>animate.css">
-	<!-- Flex Slider CSS -->
-    <link rel="stylesheet" href="<?php echo $css ?>flex-slider.min.css">
-	<!-- Owl Carousel -->
-    <link rel="stylesheet" href="<?php echo $css ?>owl-carousel.css">
-	<!-- Slicknav -->
-    <link rel="stylesheet" href="<?php echo $css ?>slicknav.min.css">
-	
-	<!-- Eshop StyleSheet -->
-	<link rel="stylesheet" href="<?php echo $css ?>reset.css">
-	<link rel="stylesheet" href="<?php echo $css ?>style.css">
-    <link rel="stylesheet" href="<?php echo $css ?>responsive.css">
-
-	
-	
-</head>
+	<?php
+	include $tpl."head.php";
+	?>
 <body class="js">
-	
+	<?php
+	include $tpl."header.php";
+	?>
 	<!-- Preloader -->
 	<div class="preloader">
 		<div class="preloader-inner">
@@ -190,50 +158,9 @@ include "init.php"
 	</section>
 	<!-- End Shop Newsletter -->
 	
-	
-	
- 
-	<!-- Jquery -->
-    <script src="<?php echo $js ?>jquery.min.js"></script>
-    <script src="<?php echo $js ?>jquery-migrate-3.0.0.js"></script>
-	<script src="<?php echo $js ?>jquery-ui.min.js"></script>
-	<!-- Popper JS -->
-	<script src="<?php echo $js ?>popper.min.js"></script>
-	<!-- Bootstrap JS -->
-	<script src="<?php echo $js ?>bootstrap.min.js"></script>
-	<!-- Color JS -->
-	<script src="<?php echo $js ?>colors.js"></script>
-	<!-- Slicknav JS -->
-	<script src="<?php echo $js ?>slicknav.min.js"></script>
-	<!-- Owl Carousel JS -->
-	<script src="<?php echo $js ?>owl-carousel.js"></script>
-	<!-- Magnific Popup JS -->
-	<script src="<?php echo $js ?>magnific-popup.js"></script>
-	<!-- Fancybox JS -->
-	<script src="<?php echo $js ?>facnybox.min.js"></script>
-	<!-- Waypoints JS -->
-	<script src="<?php echo $js ?>waypoints.min.js"></script>
-	<!-- Jquery Counterup JS -->
-	<script src="<?php echo $js ?>jquery-counterup.min.js"></script>
-	<!-- Countdown JS -->
-	<script src="<?php echo $js ?>finalcountdown.min.js"></script>
-	<!-- Nice Select JS -->
-	<script src="<?php echo $js ?>nicesellect.js"></script>
-	<!-- Ytplayer JS -->
-	<script src="<?php echo $js ?>ytplayer.min.js"></script>
-	<!-- Flex Slider JS -->
-	<script src="<?php echo $js ?>flex-slider.js"></script>
-	<!-- ScrollUp JS -->
-	<script src="<?php echo $js ?>scrollup.js"></script>
-	<!-- Onepage Nav JS -->
-	<script src="<?php echo $js ?>onepage-nav.min.js"></script>
-	<!-- Easing JS -->
-	<script src="<?php echo $js ?>easing.js"></script>
-	<!-- Google Map JS -->
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDnhgNBg6jrSuqhTeKKEFDWI0_5fZLx0vM"></script>	
-	<script src="<?php echo $js ?>gmap.min.js"></script>
-	<script src="<?php echo $js ?>map-script.js"></script>
-	<!-- Active JS -->
-	<script src="<?php echo $js ?>active.js"></script>
+	<?php
+	include $tpl."footer.php";
+	include $tpl."jslink.php";
+	?>
 </body>
 </html>

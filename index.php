@@ -1,29 +1,14 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<title>Home Page</title>
-</head>
 <?php
 	include "init.php";
 ?>
-<?php
-	include $tpl."nav.php";
-?>
- <link rel="stylesheet" href="layout/css/magnific-popup.min.css">
-	<!-- Font Awesome -->
-   
-	<!-- Fancybox -->
-	<link rel="stylesheet" href="layout/css/jquery.fancybox.min.css">
-	<!-- Themify Icons -->
-    
-	<!-- Animate CSS -->
-    <link rel="stylesheet" href="layout/css/animate.css">
-	<!-- Flex Slider CSS -->
-    <link rel="stylesheet" href="layout/css/flex-slider.min.css">
-	<!-- Owl Carousel -->
-    <link rel="stylesheet" href="layout/css/owl-carousel.css">
-	<!-- Slicknav -->
-    <link rel="stylesheet" href="layout/slicknav.min.css">
+<html>
+<head>
+	<title>Home Page</title>
+	<?php
+	include $tpl."head.php";
+	include $tpl."header.php";
+	?>
 	<!-- Slider Area -->
 	<section class="hero-slider">
 		<!-- Single Slider -->
@@ -2068,29 +2053,8 @@
                     </div>
                 </div>
             </div>
-	</div>
-	
-		
-	<!-- Owl Carousel JS -->
-	<script src="layout/js/owl-carousel.js"></script>
-	<!-- Magnific Popup JS -->
-	<script src="layout/js/magnific-popup.js"></script>
-	<!-- Waypoints JS -->
-	<script src="layout/js/waypoints.min.js"></script>
-	<!-- Countdown JS -->
-	<script src="layout/js/finalcountdown.min.js"></script>
-	<!-- Nice Select JS -->
-	
-	<!-- Flex Slider JS -->
-	<script src="layout/js/flex-slider.js"></script>
-	<!-- ScrollUp JS -->
-	<script src="layout/js/scrollup.js"></script>
-	<!-- Onepage Nav JS -->
-	<script src="layout/js/onepage-nav.min.js"></script>
-	<!-- Easing JS -->
-	<script src="layout/js/easing.js"></script>
-	<!-- Active JS -->
-
+	</div>	
 <?php
 	include $tpl."footer.php";
+	include $tpl."jslink.php";
 ?>
