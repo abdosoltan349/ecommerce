@@ -79,7 +79,7 @@
 					<div class="row">
 						<div class="col-lg-6 col-12">
 							<div class="left">
-								<p>Copyright © 2020 <a href="http://www.wpthemesgrid.com" target="_blank">Wpthemesgrid</a>  -  All Rights Reserved.</p>
+								<p>Copyright © 2020 <a href="#" target="_blank">Wpthemesgrid</a>  -  All Rights Reserved.</p>
 							</div>
 						</div>
 						<div class="col-lg-6 col-12">
@@ -92,20 +92,3 @@
 			</div>
 		</div>
 	</footer>
-
-
-<script src="layout/js/jquery.min.js"></script>
-<script src="layout/js/jquery-migrate-3.0.0.js"></script>
-<script src="layout/js/jquery-ui.min.js"></script>
-<script src="layout/js/popper.min.js"></script>
-	<!-- Bootstrap JS -->
-    <script src="layout/js/bootstrap.min.js"></script>
-    
- 
-
-	<!-- Color JS -->
-	<script src="layouyt/js/colors.js"></script>
-	<!-- Slicknav JS -->
-	<script src="layout/js/slicknav.min.js"></script>
-	<script src="layout/js/nicesellect.js"></script>
-	<script src="layout/js/active.js"></script>
