@@ -68,11 +68,11 @@
                             <h2 class="content-header-title float-left mb-0">Product Details</h2>
                             <div class="breadcrumb-wrapper col-12">
                                 <ol class="breadcrumb">
-                                    <li class="breadcrumb-item"><a href="index.php">Home</a>
+                                    <li class="breadcrumb-item"><a href="index">Home</a>
                                     </li>
                                     <li class="breadcrumb-item"><a href="#">eCommerce</a>
                                     </li>
-                                    <li class="breadcrumb-item"><a href="app-ecommerce-shop.php">Shop</a>
+                                    <li class="breadcrumb-item"><a href="app-ecommerce-shop">Shop</a>
                                     </li>
                                     <li class="breadcrumb-item active">Details
                                     </li>

@@ -66,7 +66,7 @@
                             <h2 class="content-header-title float-left mb-0">Badges</h2>
                             <div class="breadcrumb-wrapper col-12">
                                 <ol class="breadcrumb">
-                                    <li class="breadcrumb-item"><a href="index.php">Home</a>
+                                    <li class="breadcrumb-item"><a href="index">Home</a>
                                     </li>
                                     <li class="breadcrumb-item"><a href="#">Components</a>
                                     </li>

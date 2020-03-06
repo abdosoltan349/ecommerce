@@ -65,23 +65,23 @@
                 
                
                
-                <li class=" nav-item"><a href="maps-google.php"><i class="feather icon-map"></i><span class="menu-title" data-i18n="Google Maps">Google Maps</span></a>
+                <li class=" nav-item"><a href="maps-google"><i class="feather icon-map"></i><span class="menu-title" data-i18n="Google Maps">Google Maps</span></a>
                 </li>
                 <li class=" navigation-header"><span>Extensions</span>
                 </li>
-                <li class=" nav-item"><a href="ext-component-sweet-alerts.php"><i class="feather icon-alert-circle"></i><span class="menu-title" data-i18n="Sweet Alert">Sweet Alert</span></a>
+                <li class=" nav-item"><a href="ext-component-sweet-alerts"><i class="feather icon-alert-circle"></i><span class="menu-title" data-i18n="Sweet Alert">Sweet Alert</span></a>
                 </li>
-                <li class=" nav-item"><a href="ext-component-toastr.php"><i class="feather icon-zap"></i><span class="menu-title" data-i18n="Toastr">Toastr</span></a>
+                <li class=" nav-item"><a href="ext-component-toastr"><i class="feather icon-zap"></i><span class="menu-title" data-i18n="Toastr">Toastr</span></a>
                 </li>
-                <li class=" nav-item"><a href="ext-component-noui-slider.php"><i class="feather icon-sliders"></i><span class="menu-title" data-i18n="NoUi Slider">NoUi Slider</span></a>
+                <li class=" nav-item"><a href="ext-component-noui-slider"><i class="feather icon-sliders"></i><span class="menu-title" data-i18n="NoUi Slider">NoUi Slider</span></a>
                 </li>
-                <li class=" nav-item"><a href="ext-component-file-uploader.php"><i class="feather icon-upload-cloud"></i><span class="menu-title" data-i18n="File Uploader">File Uploader</span></a>
+                <li class=" nav-item"><a href="ext-component-file-uploader"><i class="feather icon-upload-cloud"></i><span class="menu-title" data-i18n="File Uploader">File Uploader</span></a>
                 </li>
-                <li class="active nav-item"><a href="ext-component-quill-editor.php"><i class="feather icon-edit"></i><span class="menu-title" data-i18n="Quill Editor">Quill Editor</span></a>
+                <li class="active nav-item"><a href="ext-component-quill-editor"><i class="feather icon-edit"></i><span class="menu-title" data-i18n="Quill Editor">Quill Editor</span></a>
                 </li>
-                <li class=" nav-item"><a href="ext-component-drag-drop.php"><i class="feather icon-droplet"></i><span class="menu-title" data-i18n="Drag &amp; Drop">Drag &amp; Drop</span></a>
+                <li class=" nav-item"><a href="ext-component-drag-drop"><i class="feather icon-droplet"></i><span class="menu-title" data-i18n="Drag &amp; Drop">Drag &amp; Drop</span></a>
                 </li>
-                <li class=" nav-item"><a href="ext-component-tour.php"><i class="feather icon-info"></i><span class="menu-title" data-i18n="Tour">Tour</span></a>
+                <li class=" nav-item"><a href="ext-component-tour"><i class="feather icon-info"></i><span class="menu-title" data-i18n="Tour">Tour</span></a>
                 </li>
                 <li class=" nav-item"><a href="ext-
 
@@ -97,7 +97,7 @@
                             <h2 class="content-header-title float-left mb-0">Quill Editor</h2>
                             <div class="breadcrumb-wrapper col-12">
                                 <ol class="breadcrumb">
-                                    <li class="breadcrumb-item"><a href="index.php">Home</a>
+                                    <li class="breadcrumb-item"><a href="index">Home</a>
                                     </li>
                                     <li class="breadcrumb-item"><a href="#">Extensions</a>
                                     </li>

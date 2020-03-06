@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 
-<?php
- include "init.php";
-	?>
+
  <?php
 			include "init.php";
 	 ?>
