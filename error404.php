@@ -140,12 +140,12 @@ body {
 				<h1>404</h1>
 				<h2>Page not found</h2>
 			</div>
-			<a href="index.php">Homepage</a>
+			<a href="index">Homepage</a>
 		</div>
 	</div>
 <script>
 setTimeout(function () {
-   window.location.href= 'index.php';
+   window.location.href= 'index';
 }, 5000);
 </script>
 </body>
