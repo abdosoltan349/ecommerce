@@ -7,6 +7,9 @@
 	<title>Home Page</title>
 	<?php
 	include $tpl."head.php";
+	?>
+	<body class="js">
+	<?php
 	include $tpl."header.php";
 	?>
 	<!-- Slider Area -->
@@ -2059,3 +2062,5 @@
 	include $tpl."jslink.php";
 ?>
 
+</body>
+</html>
