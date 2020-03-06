@@ -2056,5 +2056,5 @@
 	</div>	
 <?php
 	include $tpl."footer.php";
-	include $tpl."jslink.php";
 ?>
+
