@@ -1,4 +1,5 @@
 
+
 	<!-- Jquery -->
     <script src="<?php echo $js ?>jquery.min.js"></script>
     <script src="<?php echo $js ?>jquery-migrate-3.0.0.js"></script>
@@ -71,3 +72,6 @@
 	
 	
 	
+
+   
+

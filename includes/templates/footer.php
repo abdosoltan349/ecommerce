@@ -11,7 +11,7 @@
 						<!-- Single Widget -->
 						<div class="single-footer about">
 							<div class="logo">
-								<a href="index.html"><img src="images/logo2.png" alt="#"></a>
+								<a href="index.html"><img src="<?php echo $images?>logo2.png" alt="#"></a>
 							</div>
 							<p class="text">Praesent dapibus, neque id cursus ucibus, tortor neque egestas augue,  magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus.</p>
 							<p class="call">Got Question? Call us 24/7<span><a href="tel:123456789">+0123 456 789</a></span></p>
@@ -79,12 +79,12 @@
 					<div class="row">
 						<div class="col-lg-6 col-12">
 							<div class="left">
-								<p>Copyright © 2020 <a href="http://www.wpthemesgrid.com" target="_blank">Wpthemesgrid</a>  -  All Rights Reserved.</p>
+								<p>Copyright © 2020 <a href="#" target="_blank">Wpthemesgrid</a>  -  All Rights Reserved.</p>
 							</div>
 						</div>
 						<div class="col-lg-6 col-12">
 							<div class="right">
-								<img src="images/payments.png" alt="#">
+								<img src="<?php echo $images?>payments.png" alt="#">
 							</div>
 						</div>
 					</div>
@@ -92,20 +92,3 @@
 			</div>
 		</div>
 	</footer>
-
-
-<script src="layout/js/jquery.min.js"></script>
-<script src="layout/js/jquery-migrate-3.0.0.js"></script>
-<script src="layout/js/jquery-ui.min.js"></script>
-<script src="layout/js/popper.min.js"></script>
-	<!-- Bootstrap JS -->
-    <script src="layout/js/bootstrap.min.js"></script>
-    
- 
-
-	<!-- Color JS -->
-	<script src="layouyt/js/colors.js"></script>
-	<!-- Slicknav JS -->
-	<script src="layout/js/slicknav.min.js"></script>
-	<script src="layout/js/nicesellect.js"></script>
-	<script src="layout/js/active.js"></script>
