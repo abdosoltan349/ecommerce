@@ -26,7 +26,7 @@
     <!-- Favicon
     ============================================ -->
    
-    <link rel="shortcut icon" type="layout/image/png" href="ico/favicon-16x16.png"/>
+    <link rel="shortcut icon" type="layout/images/png" href="ico/favicon-16x16.png"/>
     
    
     <!-- Libs CSS
@@ -102,13 +102,13 @@
                                 <div class="btn-group languages-block ">
                                     <form action="http://demo.smartaddons.com/templates/html/emarket/index.html" method="post" enctype="multipart/form-data" id="bt-language">
                                         <a class="btn btn-link dropdown-toggle" data-toggle="dropdown">
-                                            <img src="layout/image/catalog/flags/gb.png" alt="English" title="English">
+                                            <img src="layout/images/catalog/flags/gb.png" alt="English" title="English">
                                             <span class="">English</span>
                                             <span class="fa fa-angle-down"></span>
                                         </a>
                                         <ul class="dropdown-menu">
-                                            <li><a href="index.html"><img class="image_flag" src="layout/image/catalog/flags/gb.png" alt="English" title="English" /> English </a></li>
-                                            <li> <a href="index.html"> <img class="image_flag" src="layout/image/catalog/flags/ar.png" alt="Arabic" title="Arabic" /> Arabic </a> </li>
+                                            <li><a href="index.html"><img class="images_flag" src="layout/images/catalog/flags/gb.png" alt="English" title="English" /> English </a></li>
+                                            <li> <a href="index.html"> <img class="images_flag" src="layout/images/catalog/flags/ar.png" alt="Arabic" title="Arabic" /> Arabic </a> </li>
                                         </ul>
                                     </form>
                                 </div>
@@ -130,7 +130,7 @@
                 <div class="row">
                     <!-- Logo -->
                     <div class="navbar-logo col-lg-2 col-md-2 col-sm-12 col-xs-12">
-                        <div class="logo"><a href="index.html"><img src="layout/image/catalog/logo.png" title="Your Store" alt="Your Store" /></a></div>
+                        <div class="logo"><a href="index.html"><img src="layout/images/catalog/logo.png" title="Your Store" alt="Your Store" /></a></div>
                     </div>
                     <!-- //end Logo -->
 
@@ -158,9 +158,9 @@
                                                             <div class="content" >
                                                                 <div class="row">
                                                                     <div class="col-md-3">
-                                                                        <a href="index.html" class="image-link"> 
+                                                                        <a href="index.html" class="images-link"> 
                                                                             <span class="thumbnail">
-                                                                                <img class="img-responsive img-border" src="layout/image/catalog/menu/home-1.jpg" alt="">
+                                                                                <img class="img-responsive img-border" src="layout/images/catalog/menu/home-1.jpg" alt="">
                                                                                 
                                                                             </span> 
                                                                             <h3 class="figcaption">Home page - (Default)</h3> 
@@ -168,9 +168,9 @@
                                                                         
                                                                     </div>
                                                                     <div class="col-md-3">
-                                                                        <a href="home2.html" class="image-link"> 
+                                                                        <a href="home2.html" class="images-link"> 
                                                                             <span class="thumbnail">
-                                                                                <img class="img-responsive img-border" src="layout/image/catalog/menu/home-2.jpg" alt="">
+                                                                                <img class="img-responsive img-border" src="layout/images/catalog/menu/home-2.jpg" alt="">
                                                                                
                                                                             </span> 
                                                                             <h3 class="figcaption">Home page - Layout 2</h3> 
@@ -178,9 +178,9 @@
                                                                         
                                                                     </div>
                                                                     <div class="col-md-3">
-                                                                        <a href="home3.html" class="image-link"> 
+                                                                        <a href="home3.html" class="images-link"> 
                                                                             <span class="thumbnail">
-                                                                                <img class="img-responsive img-border" src="layout/image/catalog/menu/home-3.jpg" alt="">
+                                                                                <img class="img-responsive img-border" src="layout/images/catalog/menu/home-3.jpg" alt="">
                                                                                
                                                                             </span> 
                                                                             <h3 class="figcaption">Home page - Layout 3</h3> 
@@ -188,9 +188,9 @@
                                                                         
                                                                     </div>
                                                                     <div class="col-md-3">
-                                                                        <a href="home4.html" class="image-link"> 
+                                                                        <a href="home4.html" class="images-link"> 
                                                                             <span class="thumbnail">
-                                                                                <img class="img-responsive img-border" src="layout/image/catalog/menu/home-4.jpg" alt="">
+                                                                                <img class="img-responsive img-border" src="layout/images/catalog/menu/home-4.jpg" alt="">
                                                                                 
                                                                             </span> 
                                                                             <h3 class="figcaption">Home page - Layout 4</h3> 
@@ -199,9 +199,9 @@
                                                                     </div>
                                                                     
                                                                     <!-- <div class="col-md-15">
-                                                                        <a href="#" class="image-link"> 
+                                                                        <a href="#" class="images-link"> 
                                                                             <span class="thumbnail">
-                                                                                <img class="img-responsive img-border" src="image/demo/feature/comming-soon.png" alt="">
+                                                                                <img class="img-responsive img-border" src="images/demo/feature/comming-soon.png" alt="">
                                                                                 
                                                                             </span> 
                                                                             <h3 class="figcaption">Comming soon</h3> 
@@ -216,7 +216,7 @@
                                                         <p class="close-menu"></p>
                                                         <a href="#" class="clearfix">
                                                             <strong>Features</strong>
-                                                            <img class="label-hot" src="layout/image/catalog/menu/new-icon.png" alt="icon items">
+                                                            <img class="label-hot" src="layout/images/catalog/menu/new-icon.png" alt="icon items">
                                                             <b class="caret"></b>
                                                         </a>
                                                         <div class="sub-menu" style="width: 100%; right: auto;">
@@ -242,7 +242,7 @@
                                                                                 <ul class="row-list">
                                                                                     <li><a href="product.html">Product page 1</a></li>
                                                                                     <li><a href="product-v2.html">Product page 2</a></li>
-                                                                                    <!-- <li><a href="product-v3.html">Image size - small</a></li> -->
+                                                                                    <!-- <li><a href="product-v3.html">images size - small</a></li> -->
                                                                                 </ul>
                                                                             </div>
                                                                         </div>
@@ -315,7 +315,7 @@
                                                         <p class="close-menu"></p>
                                                         <a href="#" class="clearfix">
                                                             <strong>Categories</strong>
-                                                            <img class="label-hot" src="layout/image/catalog/menu/hot-icon.png" alt="icon items">
+                                                            <img class="label-hot" src="layout/images/catalog/menu/hot-icon.png" alt="icon items">
                                                   
                                                             <b class="caret"></b>
                                                         </a>
@@ -325,16 +325,16 @@
                                                                     <div class="col-sm-12">
                                                                         <div class="row">
                                                                             <div class="col-md-3 img img1">
-                                                                                <a href="#"><img src="layout/image/catalog/menu/megabanner/image-1.jpg" alt="banner1"></a>
+                                                                                <a href="#"><img src="layout/images/catalog/menu/megabanner/images-1.jpg" alt="banner1"></a>
                                                                             </div>
                                                                             <div class="col-md-3 img img2">
-                                                                                <a href="#"><img src="layout/image/catalog/menu/megabanner/image-2.jpg" alt="banner2"></a>
+                                                                                <a href="#"><img src="layout/images/catalog/menu/megabanner/images-2.jpg" alt="banner2"></a>
                                                                             </div>
                                                                             <div class="col-md-3 img img3">
-                                                                                <a href="#"><img src="layout/image/catalog/menu/megabanner/image-3.jpg" alt="banner3"></a>
+                                                                                <a href="#"><img src="layout/images/catalog/menu/megabanner/images-3.jpg" alt="banner3"></a>
                                                                             </div>
                                                                             <div class="col-md-3 img img4">
-                                                                                <a href="#"><img src="layout/image/catalog/menu/megabanner/image-4.jpg" alt="banner4"></a>
+                                                                                <a href="#"><img src="layout/images/catalog/menu/megabanner/images-4.jpg" alt="banner4"></a>
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -491,7 +491,7 @@
                                                         <li class="item-vertical  with-sub-menu hover">
                                                             <p class="close-menu"></p>
                                                             <a href="#" class="clearfix">
-                                                                <img src="layout/image/catalog/menu/icons/ico10.png" alt="icon">
+                                                                <img src="layout/images/catalog/menu/icons/ico10.png" alt="icon">
                                                                 <span>Gifts & Toys</span>
                                                                 <b class="caret"></b>
                                                             </a>
@@ -571,7 +571,7 @@
                                                         <li class="item-vertical">
                                                             <p class="close-menu"></p>
                                                             <a href="#" class="clearfix">
-                                                                <img src="layout/image/catalog/menu/icons/ico1.png" alt="icon">
+                                                                <img src="layout/images/catalog/menu/icons/ico1.png" alt="icon">
                                                                 <span>Fashion & Accessories</span>
                                                                 
                                                             </a>
@@ -580,7 +580,7 @@
                                                             <p class="close-menu"></p>
                                                             <a href="#" class="clearfix">
                                                                 <span class="label"></span>
-                                                                <img src="layout/image/catalog/menu/icons/ico9.png" alt="icon">
+                                                                <img src="layout/images/catalog/menu/icons/ico9.png" alt="icon">
                                                                 <span>Electronic</span>
                                                                  
                                                                 <b class="caret"></b>
@@ -627,7 +627,7 @@
                                                                         <div class="col-md-6">
                                                                             <div class="row banner">
                                                                                 <a href="#">
-                                                                                    <img src="layout/image/catalog/menu/megabanner/vbanner1.jpg" alt="banner1">
+                                                                                    <img src="layout/images/catalog/menu/megabanner/vbanner1.jpg" alt="banner1">
                                                                                     </a>
                                                                                 </div>
                                                                             </div>
@@ -638,7 +638,7 @@
                                                             <li class="item-vertical with-sub-menu hover">
                                                                 <p class="close-menu"></p>
                                                                 <a href="#" class="clearfix">
-                                                                     <img src="layout/image/catalog/menu/icons/ico7.png" alt="icon">
+                                                                     <img src="layout/images/catalog/menu/icons/ico7.png" alt="icon">
                                                                     <span>Health &amp; Beauty</span>
                                                                     <b class="caret"></b>
                                                                 </a>
@@ -769,7 +769,7 @@
                                                                 <p class="close-menu"></p>
                                                                 <a href="#" class="clearfix">
                                                                     
-                                                                     <img src="layout/image/catalog/menu/icons/ico6.png" alt="icon">
+                                                                     <img src="layout/images/catalog/menu/icons/ico6.png" alt="icon">
                                                                     <span>Smartphone &amp; Tablets</span>
                                                                     <b class="caret"></b>
                                                                 </a>
@@ -808,7 +808,7 @@
                                                             <li class="item-vertical">
                                                                 <p class="close-menu"></p>
                                                                 <a href="#" class="clearfix">
-                                                                     <img src="layout/image/catalog/menu/icons/ico5.png" alt="icon">
+                                                                     <img src="layout/images/catalog/menu/icons/ico5.png" alt="icon">
                                                                     <span>Health & Beauty</span>
                                                                     
                                                                 </a>
@@ -816,21 +816,21 @@
                                                             <li class="item-vertical">
                                                                 <p class="close-menu"></p>
                                                                 <a href="#" class="clearfix">
-                                                                     <img src="layout/image/catalog/menu/icons/ico4.png" alt="icon">
+                                                                     <img src="layout/images/catalog/menu/icons/ico4.png" alt="icon">
                                                                     <span>Bathroom</span>
                                                                 </a>
                                                             </li>
                                                             <li class="item-vertical">
                                                                 <p class="close-menu"></p>
                                                                 <a href="#" class="clearfix">
-                                                                     <img src="layout/image/catalog/menu/icons/ico3.png" alt="icon">
+                                                                     <img src="layout/images/catalog/menu/icons/ico3.png" alt="icon">
                                                                     <span>Metallurgy</span>
                                                                 </a>
                                                             </li>
                                                             <li class="item-vertical" >
                                                                 <p class="close-menu"></p>
                                                                 <a href="#" class="clearfix">
-                                                                    <img src="layout/image/catalog/menu/icons/ico2.png" alt="icon">
+                                                                    <img src="layout/images/catalog/menu/icons/ico2.png" alt="icon">
                                                                     <span>Bedroom</span>
                                                                 </a>
                                                             </li>
@@ -838,35 +838,35 @@
                                                                 <p class="close-menu"></p>
                                                                 
                                                                 <a href="#" class="clearfix">
-                                                                     <img src="layout/image/catalog/menu/icons/ico1.png" alt="icon">
+                                                                     <img src="layout/images/catalog/menu/icons/ico1.png" alt="icon">
                                                                     <span>Health &amp; Beauty</span>
                                                                 </a>
                                                             </li>
                                                             <li class="item-vertical" style="display: none;">
                                                                 <p class="close-menu"></p>
                                                                 <a href="#" class="clearfix">
-                                                                     <img src="layout/image/catalog/menu/icons/ico11.png" alt="icon">
+                                                                     <img src="layout/images/catalog/menu/icons/ico11.png" alt="icon">
                                                                     <span>Toys &amp; Hobbies </span>
                                                                 </a>
                                                             </li>
                                                             <li class="item-vertical" style="display: none;">
                                                                 <p class="close-menu"></p>
                                                                 <a href="#" class="clearfix">
-                                                                     <img src="layout/image/catalog/menu/icons/ico12.png" alt="icon">
+                                                                     <img src="layout/images/catalog/menu/icons/ico12.png" alt="icon">
                                                                     <span>Jewelry &amp; Watches</span>
                                                                 </a>
                                                             </li>
                                                             <li class="item-vertical" style="display: none;">
                                                                 <p class="close-menu"></p>
                                                                 <a href="#" class="clearfix">
-                                                                     <img src="layout/image/catalog/menu/icons/ico9.png" alt="icon">
+                                                                     <img src="layout/images/catalog/menu/icons/ico9.png" alt="icon">
                                                                     <span>Home &amp; Lights</span>
                                                                 </a>
                                                             </li>
                                                             <li class="item-vertical" style="display: none;">
                                                                 <p class="close-menu"></p>
                                                                 <a href="#" class="clearfix">
-                                                                     <img src="layout/image/catalog/menu/icons/ico6.png" alt="icon">
+                                                                     <img src="layout/images/catalog/menu/icons/ico6.png" alt="icon">
                                                                     <span>Metallurgy</span>
                                                                 </a>
                                                             </li>
@@ -1058,10 +1058,10 @@
                             <div class=" extraslider-inner">
                                 <div class="item ">
                                     <div class="product-layout item-inner style1 ">
-                                        <div class="item-image">
+                                        <div class="item-images">
                                             <div class="item-img-info">
                                                 <a href="#" target="_self" title="Mandouille short ">
-                                                    <img src="layout/image/catalog/demo/product/80/8.jpg" alt="Mandouille short">
+                                                    <img src="layout/images/catalog/demo/product/80/8.jpg" alt="Mandouille short">
                                                     </a>
                                             </div>
                                             
@@ -1089,10 +1089,10 @@
                                     </div>
                                     <!-- End item-wrap -->
                                     <div class="product-layout item-inner style1 ">
-                                        <div class="item-image">
+                                        <div class="item-images">
                                             <div class="item-img-info">
                                                 <a href="#" target="_self" title="Xancetta bresao ">
-                                                        <img src="layout/image/catalog/demo/product/80/7.jpg" alt="Xancetta bresao">
+                                                        <img src="layout/images/catalog/demo/product/80/7.jpg" alt="Xancetta bresao">
                                                         </a>
                                             </div>
                                             
@@ -1124,10 +1124,10 @@
                                     </div>
                                     <!-- End item-wrap -->
                                     <div class="product-layout item-inner style1 ">
-                                        <div class="item-image">
+                                        <div class="item-images">
                                             <div class="item-img-info">
                                                 <a href="#" target="_self" title="Sausage cowbee ">
-                                                            <img src="layout/image/catalog/demo/product/80/6.jpg" alt="Sausage cowbee">
+                                                            <img src="layout/images/catalog/demo/product/80/6.jpg" alt="Sausage cowbee">
                                                             </a>
                                             </div>
                                            
@@ -1157,10 +1157,10 @@
                                     </div>
                                     <!-- End item-wrap -->
                                     <div class="product-layout item-inner style1 ">
-                                        <div class="item-image">
+                                        <div class="item-images">
                                             <div class="item-img-info">
                                                 <a href="#" target="_self" title="Chicken swinesha ">
-                                                <img src="layout/image/catalog/demo/product/80/5.jpg" alt="Chicken swinesha">
+                                                <img src="layout/images/catalog/demo/product/80/5.jpg" alt="Chicken swinesha">
                                                 </a>
                                             </div>
                                            
@@ -1201,8 +1201,8 @@
                 <div class="module banner-left hidden-xs ">
                 	<div class="banner-sidebar banners">
                       <div>
-                        <a title="Banner Image" href="#"> 
-                          <img src="layout/image/catalog/banners/banner-sidebar.jpg" alt="Banner Image"> 
+                        <a title="Banner images" href="#"> 
+                          <img src="layout/images/catalog/banners/banner-sidebar.jpg" alt="Banner images"> 
                         </a>
                       </div>
                     </div>
@@ -1217,26 +1217,26 @@
 					<div class="left-content-product">
 				
 						<div class="content-product-left class-honizol col-md-5 col-sm-12 col-xs-12">
-							<div class="large-image  ">
-								<img itemprop="image" class="product-image-zoom" src="layout/image/catalog/demo/product/funiture/1.jpg" data-zoom-image="layout/image/catalog/demo/product/funiture/1.jpg" title="Chicken swinesha" alt="Chicken swinesha">
+							<div class="large-images  ">
+								<img itemprop="images" class="product-images-zoom" src="layout/images/catalog/demo/product/funiture/1.jpg" data-zoom-images="layout/images/catalog/demo/product/funiture/1.jpg" title="Chicken swinesha" alt="Chicken swinesha">
 							</div>
 							<a class="thumb-video pull-left" href="https://www.youtube.com/watch?v=HhabgvIIXik"><i class="fa fa-youtube-play"></i></a>
 							
 							<div id="thumb-slider" class="yt-content-slider full_slider owl-drag" data-rtl="yes" data-autoplay="no" data-autoheight="no" data-delay="4" data-speed="0.6" data-margin="10" data-items_column0="4" data-items_column1="3" data-items_column2="4"  data-items_column3="1" data-items_column4="1" data-arrows="yes" data-pagination="no" data-lazyload="yes" data-loop="no" data-hoverpause="yes">
-								<a data-index="0" class="img thumbnail " data-image="layout/image/catalog/demo/product/funiture/1.jpg" title="Chicken swinesha">
-									<img src="layout/image/catalog/demo/product/funiture/1.jpg" title="Chicken swinesha" alt="Chicken swinesha">
+								<a data-index="0" class="img thumbnail " data-images="layout/images/catalog/demo/product/funiture/1.jpg" title="Chicken swinesha">
+									<img src="layout/images/catalog/demo/product/funiture/1.jpg" title="Chicken swinesha" alt="Chicken swinesha">
 								</a>
-								<a data-index="1" class="img thumbnail " data-image="layout/image/catalog/demo/product/funiture/2.jpg" title="Chicken swinesha">
-									<img src="layout/image/catalog/demo/product/funiture/2.jpg" title="Chicken swinesha" alt="Chicken swinesha">
+								<a data-index="1" class="img thumbnail " data-images="layout/images/catalog/demo/product/funiture/2.jpg" title="Chicken swinesha">
+									<img src="layout/images/catalog/demo/product/funiture/2.jpg" title="Chicken swinesha" alt="Chicken swinesha">
 								</a>
-								<a data-index="2" class="img thumbnail " data-image="layout/image/catalog/demo/product/funiture/3.jpg" title="Chicken swinesha">
-									<img src="layout/image/catalog/demo/product/funiture/3.jpg" title="Chicken swinesha" alt="Chicken swinesha">
+								<a data-index="2" class="img thumbnail " data-images="layout/images/catalog/demo/product/funiture/3.jpg" title="Chicken swinesha">
+									<img src="layout/images/catalog/demo/product/funiture/3.jpg" title="Chicken swinesha" alt="Chicken swinesha">
 								</a>
-								<a data-index="3" class="img thumbnail " data-image="layout/image/catalog/demo/product/funiture/4.jpg" title="Chicken swinesha">
-									<img src="layout/image/catalog/demo/product/funiture/4.jpg" title="Chicken swinesha" alt="Chicken swinesha">
+								<a data-index="3" class="img thumbnail " data-images="layout/images/catalog/demo/product/funiture/4.jpg" title="Chicken swinesha">
+									<img src="layout/images/catalog/demo/product/funiture/4.jpg" title="Chicken swinesha" alt="Chicken swinesha">
 								</a>
-								<a data-index="4" class="img thumbnail " data-image="layout/image/catalog/demo/product/funiture/5.jpg" title="Chicken swinesha">
-									<img src="layout/image/catalog/demo/product/funiture/5.jpg" title="Chicken swinesha" alt="Chicken swinesha">
+								<a data-index="4" class="img thumbnail " data-images="layout/images/catalog/demo/product/funiture/5.jpg" title="Chicken swinesha">
+									<img src="layout/images/catalog/demo/product/funiture/5.jpg" title="Chicken swinesha" alt="Chicken swinesha">
 								</a>
 							</div>
 							
@@ -1283,26 +1283,26 @@
 
 							<div id="product">
 								<h4>Available Options</h4>
-								<div class="image_option_type form-group required">
+								<div class="images_option_type form-group required">
 									<label class="control-label">Colors</label>
 									<ul class="product-options clearfix"id="input-option231">
 										<li class="radio">
 											<label>
-												<input class="image_radio" type="radio" name="option[231]" value="33"> 
-												<img src="layout/image/demo/colors/blue.jpg" data-original-title="blue +$12.00" class="img-thumbnail icon icon-color">				<i class="fa fa-check"></i>
+												<input class="images_radio" type="radio" name="option[231]" value="33"> 
+												<img src="layout/images/demo/colors/blue.jpg" data-original-title="blue +$12.00" class="img-thumbnail icon icon-color">				<i class="fa fa-check"></i>
 												<label> </label>
 											</label>
 										</li>
 										<li class="radio">
 											<label>
-												<input class="image_radio" type="radio" name="option[231]" value="34"> 
-												<img src="layout/image/demo/colors/brown.jpg" data-original-title="brown -$12.00" class="img-thumbnail icon icon-color">				<i class="fa fa-check"></i>
+												<input class="images_radio" type="radio" name="option[231]" value="34"> 
+												<img src="layout/images/demo/colors/brown.jpg" data-original-title="brown -$12.00" class="img-thumbnail icon icon-color">				<i class="fa fa-check"></i>
 												<label> </label>
 											</label>
 										</li>
 										<li class="radio">
 											<label>
-												<input class="image_radio" type="radio" name="option[231]" value="35"> <img src="layout/image/demo/colors/green.jpg"
+												<input class="images_radio" type="radio" name="option[231]" value="35"> <img src="layout/images/demo/colors/green.jpg"
 												data-original-title="green +$12.00" class="img-thumbnail icon icon-color">				<i class="fa fa-check"></i>
 												<label> </label>
 											</label>
@@ -1382,7 +1382,7 @@
 								<p>
 									The 30-inch Apple Cinema HD Display delivers an amazing 2560 x 1600 pixel resolution. Designed specifically for the creative professional, this display provides more space for easier access to all the tools and palettes needed to edit, format and composite your work. Combine this display with a Mac Pro, MacBook Pro, or PowerMac G5 and there's no limit to what you can achieve. <br>
 									<br>
-									The Cinema HD features an active-matrix liquid crystal display that produces flicker-free images that deliver twice the brightness, twice the sharpness and twice the contrast ratio of a typical CRT display. Unlike other flat panels, it's designed with a pure digital interface to deliver distortion-free images that never need adjusting. With over 4 million digital pixels, the display is uniquely suited for scientific and technical applications such as visualizing molecular structures or analyzing geological data. <br>
+									The Cinema HD features an active-matrix liquid crystal display that produces flicker-free imagess that deliver twice the brightness, twice the sharpness and twice the contrast ratio of a typical CRT display. Unlike other flat panels, it's designed with a pure digital interface to deliver distortion-free imagess that never need adjusting. With over 4 million digital pixels, the display is uniquely suited for scientific and technical applications such as visualizing molecular structures or analyzing geological data. <br>
 									<br>
 									Offering accurate, brilliant color performance, the Cinema HD delivers up to 16.7 million colors across a wide gamut allowing you to see subtle nuances between colors from soft pastels to rich jewel tones. A wide viewing angle ensures uniform color from edge to edge. Apple's ColorSync technology allows you to create custom profiles to maintain consistent color onscreen and in print. The result: You can confidently use this display in all your color-critical applications. <br>
 									<br>
@@ -1396,9 +1396,9 @@
 									Unrivaled display performance</p>
 								<ul>
 									<li>
-										30-inch (viewable) active-matrix liquid crystal display provides breathtaking image quality and vivid, richly saturated color.</li>
+										30-inch (viewable) active-matrix liquid crystal display provides breathtaking images quality and vivid, richly saturated color.</li>
 									<li>
-										Support for 2560-by-1600 pixel resolution for display of high definition still and video imagery.</li>
+										Support for 2560-by-1600 pixel resolution for display of high definition still and video imagesry.</li>
 									<li>
 										Wide-format design for simultaneous display of two full pages of text and graphics.</li>
 									<li>
@@ -1435,7 +1435,7 @@
 								<h3>
 									Technical specifications</h3>
 								<p>
-									<b>Screen size (diagonal viewable image size)</b></p>
+									<b>Screen size (diagonal viewable images size)</b></p>
 								<ul>
 									<li>
 										Apple Cinema HD Display: 30 inches (29.7-inch viewable)</li>
@@ -1738,10 +1738,10 @@
                         <div class="item-inner product-layout transition product-grid">
                             <div class="product-item-container">
                                 <div class="left-block">
-                                    <div class="product-image-container second_img">
+                                    <div class="product-images-container second_img">
                                         <a href="product.html" target="_self" title="Pastrami bacon">
-                                            <img src="layout/image/catalog/demo/product/320/9.jpg" class="img-1 img-responsive" alt="Pastrami bacon">
-                                            <img src="layout/image/catalog/demo/product/320/2.jpg" class="img-2 img-responsive" alt="Pastrami bacon">
+                                            <img src="layout/images/catalog/demo/product/320/9.jpg" class="img-1 img-responsive" alt="Pastrami bacon">
+                                            <img src="layout/images/catalog/demo/product/320/2.jpg" class="img-2 img-responsive" alt="Pastrami bacon">
                                         </a>
                                     </div>
                                     
@@ -1778,10 +1778,10 @@
                         <div class="item-inner product-layout transition product-grid">
                             <div class="product-item-container">
                                 <div class="left-block">
-                                    <div class="product-image-container second_img">
+                                    <div class="product-images-container second_img">
                                         <a href="product.html" target="_self" title="Chicken swinesha">
-                                            <img src="layout/image/catalog/demo/product/320/8.jpg" class="img-1 img-responsive" alt="image">
-                                            <img src="layout/image/catalog/demo/product/320/3.jpg" class="img-2 img-responsive" alt="image">
+                                            <img src="layout/images/catalog/demo/product/320/8.jpg" class="img-1 img-responsive" alt="images">
+                                            <img src="layout/images/catalog/demo/product/320/3.jpg" class="img-2 img-responsive" alt="images">
                                         </a>
                                     </div>
                                     <div class="box-label"> <span class="label-product label-sale"> -16% </span></div>
@@ -1820,10 +1820,10 @@
                         <div class="item-inner product-layout transition product-grid">
                             <div class="product-item-container">
                                 <div class="left-block">
-                                    <div class="product-image-container second_img">
+                                    <div class="product-images-container second_img">
                                         <a href="product.html" target="_self" title="Kielbasa hamburg">
-                                            <img src="layout/image/catalog/demo/product/320/5.jpg" class="img-1 img-responsive" alt="Pastrami bacon">
-                                            <img src="layout/image/catalog/demo/product/320/6.jpg" class="img-2 img-responsive" alt="Pastrami bacon">
+                                            <img src="layout/images/catalog/demo/product/320/5.jpg" class="img-1 img-responsive" alt="Pastrami bacon">
+                                            <img src="layout/images/catalog/demo/product/320/6.jpg" class="img-2 img-responsive" alt="Pastrami bacon">
                                         </a>
                                     </div>
                                     <div class="box-label"> <span class="label-product label-new"> New </span></div>
@@ -1860,10 +1860,10 @@
                         <div class="item-inner product-layout transition product-grid">
                             <div class="product-item-container">
                                 <div class="left-block">
-                                    <div class="product-image-container second_img">
+                                    <div class="product-images-container second_img">
                                         <a href="product.html" target="_self" title="Sausage cowbee">
-                                            <img src="layout/image/catalog/demo/product/320/7.jpg" class="img-1 img-responsive" alt="image">
-                                            <img src="layout/image/catalog/demo/product/320/4.jpg" class="img-2 img-responsive" alt="image">
+                                            <img src="layout/images/catalog/demo/product/320/7.jpg" class="img-1 img-responsive" alt="images">
+                                            <img src="layout/images/catalog/demo/product/320/4.jpg" class="img-2 img-responsive" alt="images">
                                         </a>
                                     </div>
                                     
@@ -1900,10 +1900,10 @@
                         <div class="item-inner product-layout transition product-grid">
                             <div class="product-item-container">
                                 <div class="left-block">
-                                    <div class="product-image-container second_img">
+                                    <div class="product-images-container second_img">
                                         <a href="product.html" target="_self" title="Kielbasa hamburg">
-                                            <img src="layout/image/catalog/demo/product/320/2.jpg" class="img-1 img-responsive" alt="Pastrami bacon">
-                                            <img src="layout/image/catalog/demo/product/320/6.jpg" class="img-2 img-responsive" alt="Pastrami bacon">
+                                            <img src="layout/images/catalog/demo/product/320/2.jpg" class="img-1 img-responsive" alt="Pastrami bacon">
+                                            <img src="layout/images/catalog/demo/product/320/6.jpg" class="img-2 img-responsive" alt="Pastrami bacon">
                                         </a>
                                     </div>
                                     
@@ -1940,10 +1940,10 @@
                         <div class="item-inner product-layout transition product-grid">
                             <div class="product-item-container">
                                 <div class="left-block">
-                                    <div class="product-image-container second_img">
+                                    <div class="product-images-container second_img">
                                         <a href="product.html" target="_self" title="Balltip nullaelit">
-                                            <img src="layout/image/catalog/demo/product/320/8.jpg" class="img-1 img-responsive" alt="image">
-                                            <img src="layout/image/catalog/demo/product/320/2.jpg" class="img-2 img-responsive" alt="image">
+                                            <img src="layout/images/catalog/demo/product/320/8.jpg" class="img-1 img-responsive" alt="images">
+                                            <img src="layout/images/catalog/demo/product/320/2.jpg" class="img-2 img-responsive" alt="images">
                                         </a>
                                     </div>
                                     <div class="box-label"> <span class="label-product label-new"> New </span></div>
@@ -1980,10 +1980,10 @@
                         <div class="item-inner product-layout transition product-grid">
                             <div class="product-item-container">
                                 <div class="left-block">
-                                    <div class="product-image-container second_img">
+                                    <div class="product-images-container second_img">
                                         <a href="product.html" target="_self" title="Lamboudin ribeye">
-                                            <img src="layout/image/catalog/demo/product/320/3.jpg" class="img-1 img-responsive" alt="image">
-                                            <img src="layout/image/catalog/demo/product/320/9.jpg" class="img-2 img-responsive" alt="image">
+                                            <img src="layout/images/catalog/demo/product/320/3.jpg" class="img-1 img-responsive" alt="images">
+                                            <img src="layout/images/catalog/demo/product/320/9.jpg" class="img-2 img-responsive" alt="images">
                                         </a>
                                     </div>
                                     
@@ -2100,7 +2100,7 @@
                 <div class="row">
                     <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 col-style">
                         <div class="infos-footer">
-                            <a href="#"><img src="layout/image/catalog/logo-footer.png" alt="image"></a>
+                            <a href="#"><img src="layout/images/catalog/logo-footer.png" alt="images"></a>
                             <ul class="menu">
                                 <li class="adres">
                                     San Luis potosí, centro historico, 78000 san luis potosí, SPL, Mexico
@@ -2194,8 +2194,8 @@
 
                                             <div class="instagram_users">
                                                 <div class="img_users">
-                                                    <a title="Emarket" data-href="https://www.instagram.com/p/BWcLaN9DQfW/" class="instagram_gallery_image gallery_image_instagram17356972741514990310" href="../../../../scontent.cdninstagram.com/t51.2885-15/s320x320/e35/19985119_1789473437940076_2055170824985378816_nb25f.jpg?taken-by=swhotdeal">
-                                                        <img class="image_users" src="https://cdn.trendhunterstatic.com/thumbs/june-2016-food-product.jpeg" title="Emarket" alt="Emarket">
+                                                    <a title="Emarket" data-href="https://www.instagram.com/p/BWcLaN9DQfW/" class="instagram_gallery_images gallery_images_instagram17356972741514990310" href="../../../../scontent.cdninstagram.com/t51.2885-15/s320x320/e35/19985119_1789473437940076_2055170824985378816_nb25f.jpg?taken-by=swhotdeal">
+                                                        <img class="images_users" src="https://cdn.trendhunterstatic.com/thumbs/june-2016-food-product.jpeg" title="Emarket" alt="Emarket">
                                                     </a>
                                                 </div>
                                             </div>
@@ -2207,8 +2207,8 @@
 
                                             <div class="instagram_users">
                                                 <div class="img_users">
-                                                    <a title="Emarket" data-href="https://www.instagram.com/p/BWcLY9XDLRu/" class="instagram_gallery_image gallery_image_instagram17356972741514990310" href="../../../../scontent.cdninstagram.com/t51.2885-15/s320x320/e35/19955766_152435575317196_2812535432292597760_nb25f.jpg?taken-by=swhotdeal">
-                                                        <img class="image_users" src="https://cdn.trendhunterstatic.com/thumbs/june-2016-food-product.jpeg" title="Emarket" alt="Emarket">
+                                                    <a title="Emarket" data-href="https://www.instagram.com/p/BWcLY9XDLRu/" class="instagram_gallery_images gallery_images_instagram17356972741514990310" href="../../../../scontent.cdninstagram.com/t51.2885-15/s320x320/e35/19955766_152435575317196_2812535432292597760_nb25f.jpg?taken-by=swhotdeal">
+                                                        <img class="images_users" src="https://cdn.trendhunterstatic.com/thumbs/june-2016-food-product.jpeg" title="Emarket" alt="Emarket">
                                                     </a>
                                                 </div>
                                             </div>
@@ -2220,8 +2220,8 @@
 
                                             <div class="instagram_users">
                                                 <div class="img_users">
-                                                    <a title="Emarket" data-href="https://www.instagram.com/p/BWcLT-rD17U/" class="instagram_gallery_image gallery_image_instagram17356972741514990310" href="../../../../scontent.cdninstagram.com/t51.2885-15/s320x320/e35/19933192_2345189812372940_1937990403319922688_nb25f.jpg?taken-by=swhotdeal">
-                                                        <img class="image_users" src="https://cdn.trendhunterstatic.com/thumbs/june-2016-food-product.jpeg" title="Emarket" alt="Emarket">
+                                                    <a title="Emarket" data-href="https://www.instagram.com/p/BWcLT-rD17U/" class="instagram_gallery_images gallery_images_instagram17356972741514990310" href="../../../../scontent.cdninstagram.com/t51.2885-15/s320x320/e35/19933192_2345189812372940_1937990403319922688_nb25f.jpg?taken-by=swhotdeal">
+                                                        <img class="images_users" src="https://cdn.trendhunterstatic.com/thumbs/june-2016-food-product.jpeg" title="Emarket" alt="Emarket">
                                                     </a>
                                                 </div>
                                             </div>
@@ -2233,8 +2233,8 @@
 
                                             <div class="instagram_users">
                                                 <div class="img_users">
-                                                    <a title="Emarket" data-href="https://www.instagram.com/p/BWcLS_vjGhx/" class="instagram_gallery_image gallery_image_instagram17356972741514990310" href="../../../../scontent.cdninstagram.com/t51.2885-15/s320x320/e35/19984602_1912942795641671_1075249881506906112_nb25f.jpg?taken-by=swhotdeal">
-                                                        <img class="image_users" src="https://cdn.trendhunterstatic.com/thumbs/june-2016-food-product.jpeg" title="Emarket" alt="Emarket">
+                                                    <a title="Emarket" data-href="https://www.instagram.com/p/BWcLS_vjGhx/" class="instagram_gallery_images gallery_images_instagram17356972741514990310" href="../../../../scontent.cdninstagram.com/t51.2885-15/s320x320/e35/19984602_1912942795641671_1075249881506906112_nb25f.jpg?taken-by=swhotdeal">
+                                                        <img class="images_users" src="https://cdn.trendhunterstatic.com/thumbs/june-2016-food-product.jpeg" title="Emarket" alt="Emarket">
                                                     </a>
                                                 </div>
                                             </div>
@@ -2246,8 +2246,8 @@
 
                                             <div class="instagram_users">
                                                 <div class="img_users">
-                                                    <a title="Emarket" data-href="https://www.instagram.com/p/BWcLSNnDpJp/" class="instagram_gallery_image gallery_image_instagram17356972741514990310" href="../../../../scontent.cdninstagram.com/t51.2885-15/s320x320/e35/19985191_1485570878166875_6297995079118225408_nb25f.jpg?taken-by=swhotdeal">
-                                                        <img class="image_users" src="https://cdn.trendhunterstatic.com/thumbs/june-2016-food-product.jpeg" title="Emarket" alt="Emarket">
+                                                    <a title="Emarket" data-href="https://www.instagram.com/p/BWcLSNnDpJp/" class="instagram_gallery_images gallery_images_instagram17356972741514990310" href="../../../../scontent.cdninstagram.com/t51.2885-15/s320x320/e35/19985191_1485570878166875_6297995079118225408_nb25f.jpg?taken-by=swhotdeal">
+                                                        <img class="images_users" src="https://cdn.trendhunterstatic.com/thumbs/june-2016-food-product.jpeg" title="Emarket" alt="Emarket">
                                                     </a>
                                                 </div>
                                             </div>
@@ -2295,7 +2295,7 @@
 
                     </div>
                     <div class="col-lg-12 col-xs-12 text-center">
-                        <img src="layout/image/catalog/demo/payment/payment.png" alt="imgpayment">
+                        <img src="layout/images/catalog/demo/payment/payment.png" alt="imgpayment">
                     </div>
                 </div>
             </div>

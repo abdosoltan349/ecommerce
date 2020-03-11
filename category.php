@@ -26,7 +26,7 @@
     <!-- Favicon
     ============================================ -->
    
-    <link rel="shortcut icon" type="image/png" href="ico/favicon-16x16.png"/>
+    <link rel="shortcut icon" type="images/png" href="ico/favicon-16x16.png"/>
     
    
     <!-- Libs CSS
@@ -105,13 +105,13 @@
                                 <div class="btn-group languages-block ">
                                     <form action="http://demo.smartaddons.com/templates/html/emarket/index.html" method="post" enctype="multipart/form-data" id="bt-language">
                                         <a class="btn btn-link dropdown-toggle" data-toggle="dropdown">
-                                            <img src="layout/image/catalog/flags/gb.png" alt="English" title="English">
+                                            <img src="layout/images/catalog/flags/gb.png" alt="English" title="English">
                                             <span class="">English</span>
                                             <span class="fa fa-angle-down"></span>
                                         </a>
                                         <ul class="dropdown-menu">
-                                            <li><a href="index.html"><img class="image_flag" src="layout/image/catalog/flags/gb.png" alt="English" title="English" /> English </a></li>
-                                            <li> <a href="index.html"> <img class="image_flag" src="layout/image/catalog/flags/ar.png" alt="Arabic" title="Arabic" /> Arabic </a> </li>
+                                            <li><a href="index.html"><img class="images_flag" src="layout/images/catalog/flags/gb.png" alt="English" title="English" /> English </a></li>
+                                            <li> <a href="index.html"> <img class="images_flag" src="layout/images/catalog/flags/ar.png" alt="Arabic" title="Arabic" /> Arabic </a> </li>
                                         </ul>
                                     </form>
                                 </div>
@@ -133,7 +133,7 @@
                 <div class="row">
                     <!-- Logo -->
                     <div class="navbar-logo col-lg-2 col-md-2 col-sm-12 col-xs-12">
-                        <div class="logo"><a href="index.html"><img src="layout/image/catalog/logo.png" title="Your Store" alt="Your Store" /></a></div>
+                        <div class="logo"><a href="index.html"><img src="layout/images/catalog/logo.png" title="Your Store" alt="Your Store" /></a></div>
                     </div>
                     <!-- //end Logo -->
 
@@ -161,9 +161,9 @@
                                                             <div class="content" >
                                                                 <div class="row">
                                                                     <div class="col-md-3">
-                                                                        <a href="index.html" class="image-link"> 
+                                                                        <a href="index.html" class="images-link"> 
                                                                             <span class="thumbnail">
-                                                                                <img class="img-responsive img-border" src="layout/image/catalog/menu/home-1.jpg" alt="">
+                                                                                <img class="img-responsive img-border" src="layout/images/catalog/menu/home-1.jpg" alt="">
                                                                                 
                                                                             </span> 
                                                                             <h3 class="figcaption">Home page - (Default)</h3> 
@@ -171,9 +171,9 @@
                                                                         
                                                                     </div>
                                                                     <div class="col-md-3">
-                                                                        <a href="home2.html" class="image-link"> 
+                                                                        <a href="home2.html" class="images-link"> 
                                                                             <span class="thumbnail">
-                                                                                <img class="img-responsive img-border" src="layout/image/catalog/menu/home-2.jpg" alt="">
+                                                                                <img class="img-responsive img-border" src="layout/images/catalog/menu/home-2.jpg" alt="">
                                                                                
                                                                             </span> 
                                                                             <h3 class="figcaption">Home page - Layout 2</h3> 
@@ -181,9 +181,9 @@
                                                                         
                                                                     </div>
                                                                     <div class="col-md-3">
-                                                                        <a href="home3.html" class="image-link"> 
+                                                                        <a href="home3.html" class="images-link"> 
                                                                             <span class="thumbnail">
-                                                                                <img class="img-responsive img-border" src="layout/image/catalog/menu/home-3.jpg" alt="">
+                                                                                <img class="img-responsive img-border" src="layout/images/catalog/menu/home-3.jpg" alt="">
                                                                                
                                                                             </span> 
                                                                             <h3 class="figcaption">Home page - Layout 3</h3> 
@@ -191,9 +191,9 @@
                                                                         
                                                                     </div>
                                                                     <div class="col-md-3">
-                                                                        <a href="home4.html" class="image-link"> 
+                                                                        <a href="home4.html" class="images-link"> 
                                                                             <span class="thumbnail">
-                                                                                <img class="img-responsive img-border" src="layout/image/catalog/menu/home-4.jpg" alt="">
+                                                                                <img class="img-responsive img-border" src="layout/images/catalog/menu/home-4.jpg" alt="">
                                                                                 
                                                                             </span> 
                                                                             <h3 class="figcaption">Home page - Layout 4</h3> 
@@ -202,9 +202,9 @@
                                                                     </div>
                                                                     
                                                                     <!-- <div class="col-md-15">
-                                                                        <a href="#" class="image-link"> 
+                                                                        <a href="#" class="imagess-link"> 
                                                                             <span class="thumbnail">
-                                                                                <img class="img-responsive img-border" src="image/demo/feature/comming-soon.png" alt="">
+                                                                                <img class="img-responsive img-border" src="images/demo/feature/comming-soon.png" alt="">
                                                                                 
                                                                             </span> 
                                                                             <h3 class="figcaption">Comming soon</h3> 
@@ -219,7 +219,7 @@
                                                         <p class="close-menu"></p>
                                                         <a href="#" class="clearfix">
                                                             <strong>Features</strong>
-                                                            <img class="label-hot" src="layout/image/catalog/menu/new-icon.png" alt="icon items">
+                                                            <img class="label-hot" src="layout/images/catalog/menu/new-icon.png" alt="icon items">
                                                             <b class="caret"></b>
                                                         </a>
                                                         <div class="sub-menu" style="width: 100%; right: auto;">
@@ -245,7 +245,7 @@
                                                                                 <ul class="row-list">
                                                                                     <li><a href="product.html">Product page 1</a></li>
                                                                                     <li><a href="product-v2.html">Product page 2</a></li>
-                                                                                    <!-- <li><a href="product-v3.html">Image size - small</a></li> -->
+                                                                                    <!-- <li><a href="product-v3.html">images size - small</a></li> -->
                                                                                 </ul>
                                                                             </div>
                                                                         </div>
@@ -318,7 +318,7 @@
                                                         <p class="close-menu"></p>
                                                         <a href="#" class="clearfix">
                                                             <strong>Categories</strong>
-                                                            <img class="label-hot" src="layout/image/catalog/menu/hot-icon.png" alt="icon items">
+                                                            <img class="label-hot" src="layout/images/catalog/menu/hot-icon.png" alt="icon items">
                                                   
                                                             <b class="caret"></b>
                                                         </a>
@@ -328,16 +328,16 @@
                                                                     <div class="col-sm-12">
                                                                         <div class="row">
                                                                             <div class="col-md-3 img img1">
-                                                                                <a href="#"><img src="layout/image/catalog/menu/megabanner/image-1.jpg" alt="banner1"></a>
+                                                                                <a href="#"><img src="layout/images/catalog/menu/megabanner/images-1.jpg" alt="banner1"></a>
                                                                             </div>
                                                                             <div class="col-md-3 img img2">
-                                                                                <a href="#"><img src="layout/image/catalog/menu/megabanner/image-2.jpg" alt="banner2"></a>
+                                                                                <a href="#"><img src="layout/images/catalog/menu/megabanner/images-2.jpg" alt="banner2"></a>
                                                                             </div>
                                                                             <div class="col-md-3 img img3">
-                                                                                <a href="#"><img src="layout/image/catalog/menu/megabanner/image-3.jpg" alt="banner3"></a>
+                                                                                <a href="#"><img src="layout/images/catalog/menu/megabanner/images-3.jpg" alt="banner3"></a>
                                                                             </div>
                                                                             <div class="col-md-3 img img4">
-                                                                                <a href="#"><img src="layout/image/catalog/menu/megabanner/image-4.jpg" alt="banner4"></a>
+                                                                                <a href="#"><img src="layout/images/catalog/menu/megabanner/images-4.jpg" alt="banner4"></a>
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -494,7 +494,7 @@
                                                         <li class="item-vertical  with-sub-menu hover">
                                                             <p class="close-menu"></p>
                                                             <a href="#" class="clearfix">
-                                                                <img src="layout/image/catalog/menu/icons/ico10.png" alt="icon">
+                                                                <img src="layout/images/catalog/menu/icons/ico10.png" alt="icon">
                                                                 <span>Gifts & Toys</span>
                                                                 <b class="caret"></b>
                                                             </a>
@@ -574,7 +574,7 @@
                                                         <li class="item-vertical">
                                                             <p class="close-menu"></p>
                                                             <a href="#" class="clearfix">
-                                                                <img src="layout/image/catalog/menu/icons/ico1.png" alt="icon">
+                                                                <img src="layout/images/catalog/menu/icons/ico1.png" alt="icon">
                                                                 <span>Fashion & Accessories</span>
                                                                 
                                                             </a>
@@ -583,7 +583,7 @@
                                                             <p class="close-menu"></p>
                                                             <a href="#" class="clearfix">
                                                                 <span class="label"></span>
-                                                                <img src="layout/image/catalog/menu/icons/ico9.png" alt="icon">
+                                                                <img src="layout/images/catalog/menu/icons/ico9.png" alt="icon">
                                                                 <span>Electronic</span>
                                                                  
                                                                 <b class="caret"></b>
@@ -630,7 +630,7 @@
                                                                         <div class="col-md-6">
                                                                             <div class="row banner">
                                                                                 <a href="#">
-                                                                                    <img src="layout/image/catalog/menu/megabanner/vbanner1.jpg" alt="banner1">
+                                                                                    <img src="layout/images/catalog/menu/megabanner/vbanner1.jpg" alt="banner1">
                                                                                     </a>
                                                                                 </div>
                                                                             </div>
@@ -641,7 +641,7 @@
                                                             <li class="item-vertical with-sub-menu hover">
                                                                 <p class="close-menu"></p>
                                                                 <a href="#" class="clearfix">
-                                                                     <img src="layout/image/catalog/menu/icons/ico7.png" alt="icon">
+                                                                     <img src="layout/images/catalog/menu/icons/ico7.png" alt="icon">
                                                                     <span>Health &amp; Beauty</span>
                                                                     <b class="caret"></b>
                                                                 </a>
@@ -772,7 +772,7 @@
                                                                 <p class="close-menu"></p>
                                                                 <a href="#" class="clearfix">
                                                                     
-                                                                     <img src="layout/image/catalog/menu/icons/ico6.png" alt="icon">
+                                                                     <img src="layout/images/catalog/menu/icons/ico6.png" alt="icon">
                                                                     <span>Smartphone &amp; Tablets</span>
                                                                     <b class="caret"></b>
                                                                 </a>
@@ -811,7 +811,7 @@
                                                             <li class="item-vertical">
                                                                 <p class="close-menu"></p>
                                                                 <a href="#" class="clearfix">
-                                                                     <img src="layout/image/catalog/menu/icons/ico5.png" alt="icon">
+                                                                     <img src="layout/images/catalog/menu/icons/ico5.png" alt="icon">
                                                                     <span>Health & Beauty</span>
                                                                     
                                                                 </a>
@@ -819,21 +819,21 @@
                                                             <li class="item-vertical">
                                                                 <p class="close-menu"></p>
                                                                 <a href="#" class="clearfix">
-                                                                     <img src="layout/image/catalog/menu/icons/ico4.png" alt="icon">
+                                                                     <img src="layout/images/catalog/menu/icons/ico4.png" alt="icon">
                                                                     <span>Bathroom</span>
                                                                 </a>
                                                             </li>
                                                             <li class="item-vertical">
                                                                 <p class="close-menu"></p>
                                                                 <a href="#" class="clearfix">
-                                                                     <img src="layout/image/catalog/menu/icons/ico3.png" alt="icon">
+                                                                     <img src="layout/images/catalog/menu/icons/ico3.png" alt="icon">
                                                                     <span>Metallurgy</span>
                                                                 </a>
                                                             </li>
                                                             <li class="item-vertical" >
                                                                 <p class="close-menu"></p>
                                                                 <a href="#" class="clearfix">
-                                                                    <img src="layout/image/catalog/menu/icons/ico2.png" alt="icon">
+                                                                    <img src="layout/images/catalog/menu/icons/ico2.png" alt="icon">
                                                                     <span>Bedroom</span>
                                                                 </a>
                                                             </li>
@@ -841,35 +841,35 @@
                                                                 <p class="close-menu"></p>
                                                                 
                                                                 <a href="#" class="clearfix">
-                                                                     <img src="layout/image/catalog/menu/icons/ico1.png" alt="icon">
+                                                                     <img src="layout/images/catalog/menu/icons/ico1.png" alt="icon">
                                                                     <span>Health &amp; Beauty</span>
                                                                 </a>
                                                             </li>
                                                             <li class="item-vertical" style="display: none;">
                                                                 <p class="close-menu"></p>
                                                                 <a href="#" class="clearfix">
-                                                                     <img src="layout/image/catalog/menu/icons/ico11.png" alt="icon">
+                                                                     <img src="layout/images/catalog/menu/icons/ico11.png" alt="icon">
                                                                     <span>Toys &amp; Hobbies </span>
                                                                 </a>
                                                             </li>
                                                             <li class="item-vertical" style="display: none;">
                                                                 <p class="close-menu"></p>
                                                                 <a href="#" class="clearfix">
-                                                                     <img src="layout/image/catalog/menu/icons/ico12.png" alt="icon">
+                                                                     <img src="layout/images/catalog/menu/icons/ico12.png" alt="icon">
                                                                     <span>Jewelry &amp; Watches</span>
                                                                 </a>
                                                             </li>
                                                             <li class="item-vertical" style="display: none;">
                                                                 <p class="close-menu"></p>
                                                                 <a href="#" class="clearfix">
-                                                                     <img src="layout/image/catalog/menu/icons/ico9.png" alt="icon">
+                                                                     <img src="layout/images/catalog/menu/icons/ico9.png" alt="icon">
                                                                     <span>Home &amp; Lights</span>
                                                                 </a>
                                                             </li>
                                                             <li class="item-vertical" style="display: none;">
                                                                 <p class="close-menu"></p>
                                                                 <a href="#" class="clearfix">
-                                                                     <img src="layout/image/catalog/menu/icons/ico6.png" alt="icon">
+                                                                     <img src="layout/images/catalog/menu/icons/ico6.png" alt="icon">
                                                                     <span>Metallurgy</span>
                                                                 </a>
                                                             </li>
@@ -1057,10 +1057,10 @@
                             <div class="yt-content-slider extraslider-inner">
                                 <div class="item ">
                                     <div class="product-layout item-inner style1 ">
-                                        <div class="item-image">
+                                        <div class="item-images">
                                             <div class="item-img-info">
                                                 <a href="#" target="_self" title="Mandouille short ">
-                                                    <img src="layout/image/catalog/demo/product/80/8.jpg" alt="Mandouille short">
+                                                    <img src="layout/images/catalog/demo/product/80/8.jpg" alt="Mandouille short">
                                                     </a>
                                             </div>
                                             
@@ -1088,10 +1088,10 @@
                                     </div>
                                     <!-- End item-wrap -->
                                     <div class="product-layout item-inner style1 ">
-                                        <div class="item-image">
+                                        <div class="item-images">
                                             <div class="item-img-info">
                                                 <a href="#" target="_self" title="Xancetta bresao ">
-                                                        <img src="layout/image/catalog/demo/product/80/7.jpg" alt="Xancetta bresao">
+                                                        <img src="layout/images/catalog/demo/product/80/7.jpg" alt="Xancetta bresao">
                                                         </a>
                                             </div>
                                             
@@ -1123,10 +1123,10 @@
                                     </div>
                                     <!-- End item-wrap -->
                                     <div class="product-layout item-inner style1 ">
-                                        <div class="item-image">
+                                        <div class="item-images">
                                             <div class="item-img-info">
                                                 <a href="#" target="_self" title="Sausage cowbee ">
-                                                            <img src="layout/image/catalog/demo/product/80/6.jpg" alt="Sausage cowbee">
+                                                            <img src="layout/images/catalog/demo/product/80/6.jpg" alt="Sausage cowbee">
                                                             </a>
                                             </div>
                                            
@@ -1156,10 +1156,10 @@
                                     </div>
                                     <!-- End item-wrap -->
                                     <div class="product-layout item-inner style1 ">
-                                        <div class="item-image">
+                                        <div class="item-images">
                                             <div class="item-img-info">
                                                 <a href="#" target="_self" title="Chicken swinesha ">
-                                                <img src="layout/image/catalog/demo/product/80/5.jpg" alt="Chicken swinesha">
+                                                <img src="layout/images/catalog/demo/product/80/5.jpg" alt="Chicken swinesha">
                                                 </a>
                                             </div>
                                            
@@ -1199,8 +1199,8 @@
                 <div class="module banner-left hidden-xs ">
                 	<div class="banner-sidebar banners">
                       <div>
-                        <a title="Banner Image" href="#"> 
-                          <img src="layout/image/catalog/banners/banner-sidebar.jpg" alt="Banner Image"> 
+                        <a title="Banner images" href="#"> 
+                          <img src="layout/images/catalog/banners/banner-sidebar.jpg" alt="Banner images"> 
                         </a>
                       </div>
                     </div>
@@ -1217,7 +1217,7 @@
         					<div class="col-sm-12">
         						<div class="banners">
         							<div>
-        								<a  href="#"><img src="layout/image/catalog/demo/category/img-cate.jpg" alt="img cate"><br></a>
+        								<a  href="#"><img src="layout/images/catalog/demo/category/img-cate.jpg" alt="img cate"><br></a>
         							</div>
         						</div>
         					
@@ -1278,10 +1278,10 @@
         				<div class="product-layout col-lg-15 col-md-4 col-sm-6 col-xs-12">
                             <div class="product-item-container">
                                 <div class="left-block">
-                                    <div class="product-image-container second_img">
+                                    <div class="product-images-container second_img">
                                         <a href="product.html" target="_self" title="Chicken swinesha">
-                                            <img src="layout/image/catalog/demo/product/funiture/1.jpg" class="img-1 img-responsive" alt="image">
-                                            <img src="layout/image/catalog/demo/product/funiture/2.jpg" class="img-2 img-responsive" alt="image">
+                                            <img src="layout/images/catalog/demo/product/funiture/1.jpg" class="img-1 img-responsive" alt="images">
+                                            <img src="layout/images/catalog/demo/product/funiture/2.jpg" class="img-2 img-responsive" alt="images">
                                         </a>
                                     </div>
                                     <div class="box-label"> <span class="label-product label-sale"> -16% </span></div>
@@ -1332,10 +1332,10 @@
                         <div class="product-layout col-lg-15 col-md-4 col-sm-6 col-xs-12">
                             <div class="product-item-container">
                                 <div class="left-block">
-                                    <div class="product-image-container second_img">
+                                    <div class="product-images-container second_img">
                                         <a href="product.html" target="_self" title="Cupim should ">
-                                            <img src="layout/image/catalog/demo/product/funiture/3.jpg" class="img-1 img-responsive" alt="image">
-                                            <img src="layout/image/catalog/demo/product/funiture/4.jpg" class="img-2 img-responsive" alt="image">
+                                            <img src="layout/images/catalog/demo/product/funiture/3.jpg" class="img-1 img-responsive" alt="images">
+                                            <img src="layout/images/catalog/demo/product/funiture/4.jpg" class="img-2 img-responsive" alt="images">
                                         </a>
                                     </div>
                                     
@@ -1385,10 +1385,10 @@
                         <div class="product-layout col-lg-15 col-md-4 col-sm-6 col-xs-12">
                             <div class="product-item-container">
                                 <div class="left-block">
-                                    <div class="product-image-container second_img">
+                                    <div class="product-images-container second_img">
                                         <a href="product.html" target="_self" title="Doenpuis consuat ">
-                                            <img src="layout/image/catalog/demo/product/funiture/5.jpg" class="img-1 img-responsive" alt="image">
-                                            <img src="layout/image/catalog/demo/product/funiture/6.jpg" class="img-2 img-responsive" alt="image">
+                                            <img src="layout/images/catalog/demo/product/funiture/5.jpg" class="img-1 img-responsive" alt="images">
+                                            <img src="layout/images/catalog/demo/product/funiture/6.jpg" class="img-2 img-responsive" alt="images">
                                         </a>
                                     </div>
                                     <div class="box-label"> <span class="label-product label-sale"> -13% </span><span class="label-product label-new"> New </span></div>
@@ -1438,10 +1438,10 @@
                         <div class="product-layout col-lg-15 col-md-4 col-sm-6 col-xs-12">
                             <div class="product-item-container">
                                 <div class="left-block">
-                                    <div class="product-image-container second_img">
+                                    <div class="product-images-container second_img">
                                         <a href="product.html" target="_self" title="Drutick lanaeger">
-                                            <img src="layout/image/catalog/demo/product/funiture/7.jpg" class="img-1 img-responsive" alt="image">
-                                            <img src="layout/image/catalog/demo/product/funiture/8.jpg" class="img-2 img-responsive" alt="image">
+                                            <img src="layout/images/catalog/demo/product/funiture/7.jpg" class="img-1 img-responsive" alt="images">
+                                            <img src="layout/images/catalog/demo/product/funiture/8.jpg" class="img-2 img-responsive" alt="images">
                                         </a>
                                     </div>
                                     
@@ -1490,10 +1490,10 @@
                         <div class="product-layout col-lg-15 col-md-4 col-sm-6 col-xs-12">
                             <div class="product-item-container">
                                 <div class="left-block">
-                                    <div class="product-image-container second_img">
+                                    <div class="product-images-container second_img">
                                         <a href="product.html" target="_self" title="Ercitation incididunt">
-                                            <img src="layout/image/catalog/demo/product/funiture/9.jpg" class="img-1 img-responsive" alt="image">
-                                            <img src="layout/image/catalog/demo/product/funiture/10.jpg" class="img-2 img-responsive" alt="image">
+                                            <img src="layout/images/catalog/demo/product/funiture/9.jpg" class="img-1 img-responsive" alt="images">
+                                            <img src="layout/images/catalog/demo/product/funiture/10.jpg" class="img-2 img-responsive" alt="images">
                                         </a>
                                     </div>
                                     
@@ -1543,10 +1543,10 @@
                         <div class="product-layout col-lg-15 col-md-4 col-sm-6 col-xs-12">
                             <div class="product-item-container">
                                 <div class="left-block">
-                                    <div class="product-image-container second_img">
+                                    <div class="product-images-container second_img">
                                         <a href="product.html" target="_self" title="Fatback picanha">
-                                            <img src="layout/image/catalog/demo/product/funiture/11.jpg" class="img-1 img-responsive" alt="image">
-                                            <img src="layout/image/catalog/demo/product/funiture/12.jpg" class="img-2 img-responsive" alt="image">
+                                            <img src="layout/images/catalog/demo/product/funiture/11.jpg" class="img-1 img-responsive" alt="images">
+                                            <img src="layout/images/catalog/demo/product/funiture/12.jpg" class="img-2 img-responsive" alt="images">
                                         </a>
                                     </div>
                                     <div class="box-label"> <span class="label-product label-new"> New </span></div>
@@ -1596,10 +1596,10 @@
                         <div class="product-layout col-lg-15 col-md-4 col-sm-6 col-xs-12">
                             <div class="product-item-container">
                                 <div class="left-block">
-                                    <div class="product-image-container second_img">
+                                    <div class="product-images-container second_img">
                                         <a href="product.html" target="_self" title="Jalapeno dolore">
-                                            <img src="layout/image/catalog/demo/product/funiture/13.jpg" class="img-1 img-responsive" alt="image">
-                                            <img src="layout/image/catalog/demo/product/funiture/14.jpg" class="img-2 img-responsive" alt="image">
+                                            <img src="layout/images/catalog/demo/product/funiture/13.jpg" class="img-1 img-responsive" alt="images">
+                                            <img src="layout/images/catalog/demo/product/funiture/14.jpg" class="img-2 img-responsive" alt="images">
                                         </a>
                                     </div>
                                     
@@ -1649,10 +1649,10 @@
                         <div class="product-layout col-lg-15 col-md-4 col-sm-6 col-xs-12">
                             <div class="product-item-container">
                                 <div class="left-block">
-                                    <div class="product-image-container second_img">
+                                    <div class="product-images-container second_img">
                                         <a href="product.html" target="_self" title="Mapicola incididuv">
-                                            <img src="layout/image/catalog/demo/product/funiture/15.jpg" class="img-1 img-responsive" alt="image">
-                                            <img src="layout/image/catalog/demo/product/funiture/16.jpg" class="img-2 img-responsive" alt="image">
+                                            <img src="layout/images/catalog/demo/product/funiture/15.jpg" class="img-1 img-responsive" alt="images">
+                                            <img src="layout/images/catalog/demo/product/funiture/16.jpg" class="img-2 img-responsive" alt="images">
                                         </a>
                                     </div>
                                     <div class="box-label"><span class="label-product label-new"> New </span></div>
@@ -1701,10 +1701,10 @@
                         <div class="product-layout col-lg-15 col-md-4 col-sm-6 col-xs-12">
                             <div class="product-item-container">
                                 <div class="left-block">
-                                    <div class="product-image-container second_img">
+                                    <div class="product-images-container second_img">
                                         <a href="product.html" target="_self" title="Ullamco occaeca">
-                                            <img src="layout/image/catalog/demo/product/funiture/17.jpg" class="img-1 img-responsive" alt="image">
-                                            <img src="layout/image/catalog/demo/product/funiture/18.jpg" class="img-2 img-responsive" alt="image">
+                                            <img src="layout/images/catalog/demo/product/funiture/17.jpg" class="img-1 img-responsive" alt="images">
+                                            <img src="layout/images/catalog/demo/product/funiture/18.jpg" class="img-2 img-responsive" alt="images">
                                         </a>
                                     </div>
                                     
@@ -1753,10 +1753,10 @@
                         <div class="product-layout col-lg-15 col-md-4 col-sm-6 col-xs-12">
                             <div class="product-item-container">
                                 <div class="left-block">
-                                    <div class="product-image-container second_img">
+                                    <div class="product-images-container second_img">
                                         <a href="product.html" target="_self" title="Pariatur porking">
-                                            <img src="layout/image/catalog/demo/product/funiture/19.jpg" class="img-1 img-responsive" alt="image">
-                                            <img src="layout/image/catalog/demo/product/funiture/20.jpg" class="img-2 img-responsive" alt="image">
+                                            <img src="layout/images/catalog/demo/product/funiture/19.jpg" class="img-1 img-responsive" alt="images">
+                                            <img src="layout/images/catalog/demo/product/funiture/20.jpg" class="img-2 img-responsive" alt="images">
                                         </a>
                                     </div>
                                     
@@ -1805,10 +1805,10 @@
                         <div class="product-layout col-lg-15 col-md-4 col-sm-6 col-xs-12">
                             <div class="product-item-container">
                                 <div class="left-block">
-                                    <div class="product-image-container second_img">
+                                    <div class="product-images-container second_img">
                                         <a href="product.html" target="_self" title="Doenpuis consuat ">
-                                            <img src="layout/image/catalog/demo/product/funiture/6.jpg" class="img-1 img-responsive" alt="image">
-                                            <img src="layout/image/catalog/demo/product/funiture/5.jpg" class="img-2 img-responsive" alt="image">
+                                            <img src="layout/images/catalog/demo/product/funiture/6.jpg" class="img-1 img-responsive" alt="images">
+                                            <img src="layout/images/catalog/demo/product/funiture/5.jpg" class="img-2 img-responsive" alt="images">
                                         </a>
                                     </div>
                                     <div class="box-label"> <span class="label-product label-sale"> -13% </span><span class="label-product label-new"> New </span></div>
@@ -1858,10 +1858,10 @@
                         <div class="product-layout col-lg-15 col-md-4 col-sm-6 col-xs-12">
                             <div class="product-item-container">
                                 <div class="left-block">
-                                    <div class="product-image-container second_img">
+                                    <div class="product-images-container second_img">
                                         <a href="product.html" target="_self" title="Drutick lanaeger">
-                                            <img src="layout/image/catalog/demo/product/funiture/8.jpg" class="img-1 img-responsive" alt="image">
-                                            <img src="layout/image/catalog/demo/product/funiture/7.jpg" class="img-2 img-responsive" alt="image">
+                                            <img src="layout/images/catalog/demo/product/funiture/8.jpg" class="img-1 img-responsive" alt="images">
+                                            <img src="layout/images/catalog/demo/product/funiture/7.jpg" class="img-2 img-responsive" alt="images">
                                         </a>
                                     </div>
                                     
@@ -1910,10 +1910,10 @@
                         <div class="product-layout col-lg-15 col-md-4 col-sm-6 col-xs-12">
                             <div class="product-item-container">
                                 <div class="left-block">
-                                    <div class="product-image-container second_img">
+                                    <div class="product-images-container second_img">
                                         <a href="product.html" target="_self" title="Ercitation incididunt">
-                                            <img src="layout/image/catalog/demo/product/funiture/10.jpg" class="img-1 img-responsive" alt="image">
-                                            <img src="layout/image/catalog/demo/product/funiture/9.jpg" class="img-2 img-responsive" alt="image">
+                                            <img src="layout/images/catalog/demo/product/funiture/10.jpg" class="img-1 img-responsive" alt="images">
+                                            <img src="layout/images/catalog/demo/product/funiture/9.jpg" class="img-2 img-responsive" alt="images">
                                         </a>
                                     </div>
                                     
@@ -1963,10 +1963,10 @@
                         <div class="product-layout col-lg-15 col-md-4 col-sm-6 col-xs-12">
                             <div class="product-item-container">
                                 <div class="left-block">
-                                    <div class="product-image-container second_img">
+                                    <div class="product-images-container second_img">
                                         <a href="product.html" target="_self" title="Fatback picanha">
-                                            <img src="layout/image/catalog/demo/product/funiture/4.jpg" class="img-1 img-responsive" alt="image">
-                                            <img src="layout/image/catalog/demo/product/funiture/11.jpg" class="img-2 img-responsive" alt="image">
+                                            <img src="layout/images/catalog/demo/product/funiture/4.jpg" class="img-1 img-responsive" alt="images">
+                                            <img src="layout/images/catalog/demo/product/funiture/11.jpg" class="img-2 img-responsive" alt="images">
                                         </a>
                                     </div>
                                     <div class="box-label"> <span class="label-product label-new"> New </span></div>
@@ -2016,10 +2016,10 @@
                         <div class="product-layout col-lg-15 col-md-4 col-sm-6 col-xs-12">
                             <div class="product-item-container">
                                 <div class="left-block">
-                                    <div class="product-image-container second_img">
+                                    <div class="product-images-container second_img">
                                         <a href="product.html" target="_self" title="Jalapeno dolore">
-                                            <img src="layout/image/catalog/demo/product/funiture/14.jpg" class="img-1 img-responsive" alt="image">
-                                            <img src="layout/image/catalog/demo/product/funiture/13.jpg" class="img-2 img-responsive" alt="image">
+                                            <img src="layout/images/catalog/demo/product/funiture/14.jpg" class="img-1 img-responsive" alt="images">
+                                            <img src="layout/images/catalog/demo/product/funiture/13.jpg" class="img-2 img-responsive" alt="images">
                                         </a>
                                     </div>
                                     
@@ -2152,7 +2152,7 @@
                 <div class="row">
                     <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 col-style">
                         <div class="infos-footer">
-                            <a href="#"><img src="layout/image/catalog/logo-footer.png" alt="image"></a>
+                            <a href="#"><img src="layout/images/catalog/logo-footer.png" alt="images"></a>
                             <ul class="menu">
                                 <li class="adres">
                                     San Luis potosí, centro historico, 78000 san luis potosí, SPL, Mexico
@@ -2246,8 +2246,8 @@
 
                                             <div class="instagram_users">
                                                 <div class="img_users">
-                                                    <a title="Emarket" data-href="https://www.instagram.com/p/BWcLaN9DQfW/" class="instagram_gallery_image gallery_image_instagram17356972741514990310" href="../../../../scontent.cdninstagram.com/t51.2885-15/s320x320/e35/19985119_1789473437940076_2055170824985378816_nb25f.jpg?taken-by=swhotdeal">
-                                                        <img class="image_users" src="https://cdn.trendhunterstatic.com/thumbs/june-2016-food-product.jpeg" title="Emarket" alt="Emarket">
+                                                    <a title="Emarket" data-href="https://www.instagram.com/p/BWcLaN9DQfW/" class="instagram_gallery_images gallery_images_instagram17356972741514990310" href="../../../../scontent.cdninstagram.com/t51.2885-15/s320x320/e35/19985119_1789473437940076_2055170824985378816_nb25f.jpg?taken-by=swhotdeal">
+                                                        <img class="images_users" src="https://cdn.trendhunterstatic.com/thumbs/june-2016-food-product.jpeg" title="Emarket" alt="Emarket">
                                                     </a>
                                                 </div>
                                             </div>
@@ -2259,8 +2259,8 @@
 
                                             <div class="instagram_users">
                                                 <div class="img_users">
-                                                    <a title="Emarket" data-href="https://www.instagram.com/p/BWcLY9XDLRu/" class="instagram_gallery_image gallery_image_instagram17356972741514990310" href="../../../../scontent.cdninstagram.com/t51.2885-15/s320x320/e35/19955766_152435575317196_2812535432292597760_nb25f.jpg?taken-by=swhotdeal">
-                                                        <img class="image_users" src="https://cdn.trendhunterstatic.com/thumbs/june-2016-food-product.jpeg" title="Emarket" alt="Emarket">
+                                                    <a title="Emarket" data-href="https://www.instagram.com/p/BWcLY9XDLRu/" class="instagram_gallery_images gallery_images_instagram17356972741514990310" href="../../../../scontent.cdninstagram.com/t51.2885-15/s320x320/e35/19955766_152435575317196_2812535432292597760_nb25f.jpg?taken-by=swhotdeal">
+                                                        <img class="images_users" src="https://cdn.trendhunterstatic.com/thumbs/june-2016-food-product.jpeg" title="Emarket" alt="Emarket">
                                                     </a>
                                                 </div>
                                             </div>
@@ -2272,8 +2272,8 @@
 
                                             <div class="instagram_users">
                                                 <div class="img_users">
-                                                    <a title="Emarket" data-href="https://www.instagram.com/p/BWcLT-rD17U/" class="instagram_gallery_image gallery_image_instagram17356972741514990310" href="../../../../scontent.cdninstagram.com/t51.2885-15/s320x320/e35/19933192_2345189812372940_1937990403319922688_nb25f.jpg?taken-by=swhotdeal">
-                                                        <img class="image_users" src="https://cdn.trendhunterstatic.com/thumbs/june-2016-food-product.jpeg" title="Emarket" alt="Emarket">
+                                                    <a title="Emarket" data-href="https://www.instagram.com/p/BWcLT-rD17U/" class="instagram_gallery_images gallery_images_instagram17356972741514990310" href="../../../../scontent.cdninstagram.com/t51.2885-15/s320x320/e35/19933192_2345189812372940_1937990403319922688_nb25f.jpg?taken-by=swhotdeal">
+                                                        <img class="images_users" src="https://cdn.trendhunterstatic.com/thumbs/june-2016-food-product.jpeg" title="Emarket" alt="Emarket">
                                                     </a>
                                                 </div>
                                             </div>
@@ -2285,8 +2285,8 @@
 
                                             <div class="instagram_users">
                                                 <div class="img_users">
-                                                    <a title="Emarket" data-href="https://www.instagram.com/p/BWcLS_vjGhx/" class="instagram_gallery_image gallery_image_instagram17356972741514990310" href="../../../../scontent.cdninstagram.com/t51.2885-15/s320x320/e35/19984602_1912942795641671_1075249881506906112_nb25f.jpg?taken-by=swhotdeal">
-                                                        <img class="image_users" src="https://cdn.trendhunterstatic.com/thumbs/june-2016-food-product.jpeg" title="Emarket" alt="Emarket">
+                                                    <a title="Emarket" data-href="https://www.instagram.com/p/BWcLS_vjGhx/" class="instagram_gallery_images gallery_images_instagram17356972741514990310" href="../../../../scontent.cdninstagram.com/t51.2885-15/s320x320/e35/19984602_1912942795641671_1075249881506906112_nb25f.jpg?taken-by=swhotdeal">
+                                                        <img class="images_users" src="https://cdn.trendhunterstatic.com/thumbs/june-2016-food-product.jpeg" title="Emarket" alt="Emarket">
                                                     </a>
                                                 </div>
                                             </div>
@@ -2298,8 +2298,8 @@
 
                                             <div class="instagram_users">
                                                 <div class="img_users">
-                                                    <a title="Emarket" data-href="https://www.instagram.com/p/BWcLSNnDpJp/" class="instagram_gallery_image gallery_image_instagram17356972741514990310" href="../../../../scontent.cdninstagram.com/t51.2885-15/s320x320/e35/19985191_1485570878166875_6297995079118225408_nb25f.jpg?taken-by=swhotdeal">
-                                                        <img class="image_users" src="https://cdn.trendhunterstatic.com/thumbs/june-2016-food-product.jpeg" title="Emarket" alt="Emarket">
+                                                    <a title="Emarket" data-href="https://www.instagram.com/p/BWcLSNnDpJp/" class="instagram_gallery_images gallery_images_instagram17356972741514990310" href="../../../../scontent.cdninstagram.com/t51.2885-15/s320x320/e35/19985191_1485570878166875_6297995079118225408_nb25f.jpg?taken-by=swhotdeal">
+                                                        <img class="images_users" src="https://cdn.trendhunterstatic.com/thumbs/june-2016-food-product.jpeg" title="Emarket" alt="Emarket">
                                                     </a>
                                                 </div>
                                             </div>
@@ -2347,7 +2347,7 @@
 
                     </div>
                     <div class="col-lg-12 col-xs-12 text-center">
-                        <img src="layout/image/catalog/demo/payment/payment.png" alt="imgpayment">
+                        <img src="layout/images/catalog/demo/payment/payment.png" alt="imgpayment">
                     </div>
                 </div>
             </div>

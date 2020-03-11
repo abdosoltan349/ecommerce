@@ -1,31 +1,30 @@
 <!DOCTYPE HTML>
+<?php
+	include "init.php";
+?>
 <html>
 	<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>checkout</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
 	
- 
+	<title>checkout</title>
 	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-	
-	<!-- Icomoon Icon Fonts-->
 	<link rel="stylesheet" href="layout/css/checkout-css/icomoon.css">
 	<!-- Bootstrap  -->
 	<link rel="stylesheet" href="layout/css/checkout-css/bootstrap.css">
     <!-- Theme style  -->
 	<link rel="stylesheet" href="layout/css/checkout-css/style.css">
-
+	<?php
+	include $tpl."head.php";
+	?>
 	
 	</head>
 	<body>
-		
-
 	<div id="page">
-		
-		<aside id="colorlib-hero" class="breadcrumbs">
+	<?php
+	include $tpl."header.php";
+	?>
+	
+		<!--aside id="colorlib-hero" class="breadcrumbs">
 			<div class="flexslider">
 				<ul class="slides">
 			   	<li style="background-image: url(layout/images/checkout-images/Banner---Shopping.jpg);">
@@ -33,8 +32,8 @@
 			    </li>
 			  	</ul>
 		  	</div>
-		</aside>
-
+		</aside-->
+			
 		<div class="colorlib-shop">
 			<div class="container">
 				<div class="row row-pb-md">
@@ -190,33 +189,11 @@
 			</div>
 		</div>
 
-		
-
-		
-	<div class="gototop js-top">
-		<a href="#" class="js-gotop"><i class="icon-arrow-up2"></i></a>
-	</div>
-	<!-- jQuery -->
-	<script src="layout/js/checkout-js/jquery.min.js"></script>
-	<!-- jQuery Easing -->
-	<script src="layout/js/checkout-js/jquery.easing.1.3.js"></script>
-	<!-- Bootstrap -->
-	<script src="layout/js/checkout-js/bootstrap.min.js"></script>
-	<!-- Waypoints -->
-	<script src="layout/js/checkout-js/jquery.waypoints.min.js"></script>
-	<!-- Flexslider -->
-	<script src="layout/js/checkout-js/jquery.flexslider-min.js"></script>
-	<!-- Owl carousel -->
-	<script src="layout/js/checkout-js/owl.carousel.min.js"></script>
-	<!-- Magnific Popup -->
-	<script src="layout/js/checkout-js/jquery.magnific-popup.min.js"></script>
-	<script src="layout/js/checkout-js/magnific-popup-options.js"></script>
-	<!-- Date Picker -->
-	<script src="layout/js/checkout-js/bootstrap-datepicker.js"></script>
-	<!-- Stellar Parallax -->
-	<script src="layout/js/checkout-js/jquery.stellar.min.js"></script>
-	<!-- Main -->
-	<script src="layout/js/checkout-js/main.js"></script>
+	<?php
+	include $tpl."footer.php";
+	include $tpl."jslink.php";
+	?>
+	
         </div>
 	</body>
 </html>
