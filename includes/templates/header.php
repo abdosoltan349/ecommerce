@@ -201,9 +201,9 @@
 									<div class="nav-inner">
 										<ul class="nav main-menu menu navbar-nav">
 											<li class="active"><a href="#">Home</a></li>
-											<li><a href="#">Product</a></li>
+											<li><a href="product.php">Product</a></li>
 											<li><a href="#">Service</a></li>
-											<li><a href="#">Shop</i><span class="new">New</span></a></li>
+											<li><a href="category.php">Shop<span class="new">New</span></a></li>
 											<li><a href="#">Pages</a></li>
 											<li><a href="#">Blog<i class="ti-angle-down"></i></a>
 												<ul class="dropdown">
