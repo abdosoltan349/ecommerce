@@ -7,4 +7,4 @@
 	$fonts = "layout/fonts/";
 	$js = "layout/js/";
 	$vendors = "layout/vendors/";
-	
+	$hover = "/ecommerce/admin/";
