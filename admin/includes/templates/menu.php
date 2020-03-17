@@ -309,15 +309,14 @@
                 </li>
                 <li class=" nav-item"><a href="https://abdosoltan.me"><i class="feather icon-life-buoy"></i><span class="menu-title" data-i18n="Raise Support">Raise Support</span></a>
                 </li>
-<<<<<<< HEAD
+
                   <li class=" navigation-header"><span>Coupon</span></li>
                    <li class=" nav-item"><a href="coupon.php"><i class="fa fa-tag"></i><span class="menu-title" data-i18n="Email">Coupon</span></a>
                 </li>
                   <li class=" navigation-header"><span>TAX</span></li>                
                  <li class=" nav-item"><a href="tax.php"><i class="fa fa-percent"></i><span class="menu-title" data-i18n="Email">Tax</span></a>
                 </li>
-=======
->>>>>>> 9c05fa1b5b531bcf1e786349234d89e040736d29
+
             </ul>
         </div>
     </div>
