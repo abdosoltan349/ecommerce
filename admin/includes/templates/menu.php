@@ -301,7 +301,25 @@
                         </li>
                     </ul>
                 </li>
+                
                 <li class="disabled nav-item"><a href="#"><i class="feather icon-eye-off"></i><span class="menu-title" data-i18n="Disabled Menu">Disabled Menu</span></a>
+                </li>
+                <li class=" navigation-header"><span>Orders</span>
+                </li>
+                <li class=" nav-item"><a href="#"><i class="feather icon-menu"></i><span class="menu-title" data-i18n="Menu Levels">Orders</span></a>
+                    <ul class="menu-content">
+                        <li><a href="all-orders.php"><i class="feather icon-circle"></i><span class="menu-item" data-i18n="Second Level">all orders</span></a>
+                        </li>
+                        <li><a href="pending-orders.php"><i class="feather icon-circle"></i><span class="menu-item" data-i18n="Second Level">pending orders</span></a>
+                        </li>
+                        <li><a href="canceled-orders.php"><i class="feather icon-circle"></i><span class="menu-item" data-i18n="Second Level">canceled</span></a>
+                        </li>
+                        <li><a href="onhold-orders.php"><i class="feather icon-circle"></i><span class="menu-item" data-i18n="Second Level">on hold</span></a>
+                        </li>
+                        <li><a href="deleverd-orders.php"><i class="feather icon-circle"></i><span class="menu-item" data-i18n="Second Level">deleverd</span></a>
+                        </li>
+                        
+                    </ul>
                 </li>
                 <li class=" navigation-header"><span>Support</span>
                 </li>
@@ -316,6 +334,8 @@
                   <li class=" navigation-header"><span>TAX</span></li>                
                  <li class=" nav-item"><a href="tax.php"><i class="fa fa-percent"></i><span class="menu-title" data-i18n="Email">Tax</span></a>
                 </li>
+                
+                
 
             </ul>
         </div>
