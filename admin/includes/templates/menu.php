@@ -327,7 +327,16 @@
                 </li>
                 <li class=" nav-item"><a href="https://abdosoltan.me"><i class="feather icon-life-buoy"></i><span class="menu-title" data-i18n="Raise Support">Raise Support</span></a>
                 </li>
-
+					<li class=" navigation-header"><span>categories</span></li>
+					 <li class=" nav-item"><a href="#"><i class="fa fa-th"></i><span class="menu-title" data-i18n="Card">Categories</span></a>
+                    <ul class="menu-content">
+                        <li><a href="categorie.php"><i class="feather icon-circle"></i><span class="menu-item" data-i18n="Basic">categorie</span></a>
+                        </li>
+                        <li><a href="sub_categorie.php"><i class="feather icon-circle"></i><span class="menu-item" data-i18n="Advance">sub categorie</span></a>
+                        </li>
+                       
+                    </ul>
+                </li>
                   <li class=" navigation-header"><span>Coupon</span></li>
                    <li class=" nav-item"><a href="coupon.php"><i class="fa fa-tag"></i><span class="menu-title" data-i18n="Email">Coupon</span></a>
                 </li>
