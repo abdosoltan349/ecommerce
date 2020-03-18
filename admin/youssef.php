@@ -198,8 +198,9 @@
                                             <input name = "x" type="text" class="form-control" id="data-price" form = "dataListUpload">
                                         </div>
                                         <div class="col-sm-12 data-field-col data-list-upload">
-                                            <form method = "post" action="test.php" class="dropzone dropzone-area" id="dataListUpload">
-                                                <div name = "y" class="dz-message">Upload Image</div>
+										
+                                            <form method = "post" action="test.php" class="dropzone dropzone-area" id="dataListUpload" enctype="multipart/form-data">
+                                                <input   name = "y" type="file" class="dz-message">Upload Image</input>
                                             </form>
                                         </div>
                                     </div>
@@ -237,7 +238,7 @@
     <!-- BEGIN Vendor JS-->
 
     <!-- BEGIN: Page Vendor JS-->
-    <script src="<?php echo $vendors ?>js/extensions/dropzone.min.js"></script>
+    
     <script src="<?php echo $vendors ?>js/tables/datatable/datatables.min.js"></script>
     <script src="<?php echo $vendors ?>js/tables/datatable/datatables.buttons.min.js"></script>
     <script src="<?php echo $vendors ?>js/tables/datatable/datatables.bootstrap4.min.js"></script>
@@ -260,67 +261,3 @@
 <!-- END: Body-->
 
 </html>
-
-
-<?php 
-    
-
-    if(isset($_GET["name"] )){
-    $target_dir = "../uploads/";
-    $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
-    $uploadOk = 1;
-    $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
-    // Check if image file is a actual image or fake image
-    if(isset($_POST["submit"])) {
-        $check = getimagesize($_FILES["fileToUpload"]["tmp_name"]);
-        if($check !== false) {
-            echo "File is an image - " . $check["mime"] . ".";
-            $uploadOk = 1;
-        } else {
-            echo "File is not an image.";
-            $uploadOk = 0;
-        }
-    }
-    // Check if file already exists
-    if (file_exists($target_file)) {
-        echo "Sorry, file already exists.";
-        $uploadOk = 0;
-    }
-    // Check file size
-    if ($_FILES["fileToUpload"]["size"] > 500000) {
-        echo "Sorry, your file is too large.";
-        $uploadOk = 0;
-    }
-
-    // Check if $uploadOk is set to 0 by an error
-    if ($uploadOk == 0) {
-        echo "Sorry, your file was not uploaded.";
-        
-    } else {
-        if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
-            echo '<script>'.
-            '$(document).ready(()=>{'.
-            
-               ' $("#tabelBody").append( <tr> <td></td>'.
-                                        ' <td class="product-img"><img src="<?php echo $images ?>elements/apple-watch.png" alt="Img placeholder"></td>'
-                                        
-                                        .'<td class="product-name">'+$_GET["name"]+'</td>'
-                                        .'<td class="product-category">'. $_GET["categorySelector"].'</td><td><div class="progress progress-bar-success"> <div class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="40" aria-valuemax="100" style="width:97%"></div></div></td><td><div class="chip chip-warning"><div class="chip-body">'
-                                            .'<div class="chip-text">'.$_GET["statusSelector"].'</div></div> </div></td>'
-                                                
-                                            
-                                        
-                                        .'<td class="product-price">'.$_GET["price"].'</td><td class="product-action"><span class="action-edit"><i class="feather icon-edit"></i></span><span class="action-delete"><i class="feather icon-trash"></i></span></td></tr>)})</script>';
-                                        
-            
-                
-            
-        } else {
-            echo "Sorry, there was an error uploading your file.";
-        }
-    }
-}
-    
-?>
-
-
