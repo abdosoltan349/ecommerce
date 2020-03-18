@@ -117,248 +117,21 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
-                                    <td></td>
-                                    <td class="product-name">Apple Watch series 4 GPS</td>
-                                    <td class="product-category">Computers</td>
-                                   
-                                    <td class="product-price">$69.99</td>
-                                    <td class="product-action">
-                                        <span class="action-edit"><i class="feather icon-edit"></i></span>
-                                        <span class="action-delete"><i class="feather icon-trash"></i></span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td class="product-name">Beats HeadPhones</td>
-                                    <td class="product-category">Computers</td>
-                                  
-                                    <td class="product-price">$69.99</td>
-                                    <td class="product-action">
-                                        <span class="action-edit"><i class="feather icon-edit"></i></span>
-                                        <span class="action-delete"><i class="feather icon-trash"></i></span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td class="product-name">Altec Lansing - Bluetooth Speaker</td>
-                                    <td class="product-category">Audio</td>
-                             
-                                    <td class="product-price">$199.99</td>
-                                    <td class="product-action">
-                                        <span class="action-edit"><i class="feather icon-edit"></i></span>
-                                        <span class="action-delete"><i class="feather icon-trash"></i></span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td class="product-name">Aluratek - Bluetooth Audio Receiver</td>
-                                    <td class="product-category">Computers</td>
-                             
-                                    <td class="product-price">$29.99</td>
-                                    <td class="product-action">
-                                        <span class="action-edit"><i class="feather icon-edit"></i></span>
-                                        <span class="action-delete"><i class="feather icon-trash"></i></span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td class="product-name">Aluratek - Bluetooth Audio Transmitter</td>
-                                    <td class="product-category">Audio</td>
-                                 
-                                    <td class="product-price">$199.99</td>
-                                    <td class="product-action">
-                                        <span class="action-edit"><i class="feather icon-edit"></i></span>
-                                        <span class="action-delete"><i class="feather icon-trash"></i></span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td class="product-name">Basis - Peak Fitness and Sleep Tracker</td>
-                                    <td class="product-category">Fitness</td>
-                                 
-                                    <td class="product-price">$199.99</td>
-                                    <td class="product-action">
-                                        <span class="action-edit"><i class="feather icon-edit"></i></span>
-                                        <span class="action-delete"><i class="feather icon-trash"></i></span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td class="product-name">Antec - Nano Diamond Thermal Compound</td>
-                                    <td class="product-category">Fitness</td>
-                             
-                                    <td class="product-price">$29.99</td>
-                                    <td class="product-action">
-                                        <span class="action-edit"><i class="feather icon-edit"></i></span>
-                                        <span class="action-delete"><i class="feather icon-trash"></i></span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td class="product-name">Antec - SmartBean Bluetooth Adapter</td>
-                                    <td class="product-category">Computer</td>
-                              
-                                    <td class="product-price">$39.99</td>
-                                    <td class="product-action">
-                                        <span class="action-edit"><i class="feather icon-edit"></i></span>
-                                        <span class="action-delete"><i class="feather icon-trash"></i></span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td class="product-name">Beats by Dr. Dre - 3' USB-to-Micro USB Cable</td>
-                                    <td class="product-category">Computer</td>
-                               
-                                    <td class="product-price">$199.99</td>
-                                    <td class="product-action">
-                                        <span class="action-edit"><i class="feather icon-edit"></i></span>
-                                        <span class="action-delete"><i class="feather icon-trash"></i></span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td class="product-name">Beats by Dr. Dre - Bike Mount for Pill Speakers</td>
-                                    <td class="product-category">Audio</td>
-                             
-                                    <td class="product-price">$49.99</td>
-                                    <td class="product-action">
-                                        <span class="action-edit"><i class="feather icon-edit"></i></span>
-                                        <span class="action-delete"><i class="feather icon-trash"></i></span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td class="product-name">Bose® - SoundLink® Color Bluetooth Speaker</td>
-                                    <td class="product-category">Fitness</td>
-                             
-                                    <td class="product-price">$129.99</td>
-                                    <td class="product-action">
-                                        <span class="action-edit"><i class="feather icon-edit"></i></span>
-                                        <span class="action-delete"><i class="feather icon-trash"></i></span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td class="product-name">BRAVEN - Portable Bluetooth Speaker</td>
-                                    <td class="product-category">Fitness</td>
-                               
-                                    <td class="product-price">$199.99</td>
-                                    <td class="product-action">
-                                        <span class="action-edit"><i class="feather icon-edit"></i></span>
-                                        <span class="action-delete"><i class="feather icon-trash"></i></span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td class="product-name">Craig - Portable Wireless Speaker</td>
-                                    <td class="product-category">Computers</td>
-                             
-                                    <td class="product-price">$199.99</td>
-                                    <td class="product-action">
-                                        <span class="action-edit"><i class="feather icon-edit"></i></span>
-                                        <span class="action-delete"><i class="feather icon-trash"></i></span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td class="product-name">Definitive Technology - Wireless Speaker</td>
-                                    <td class="product-category">Fitness</td>
-                             
-                                    <td class="product-price">$399.99</td>
-                                    <td class="product-action">
-                                        <span class="action-edit"><i class="feather icon-edit"></i></span>
-                                        <span class="action-delete"><i class="feather icon-trash"></i></span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td class="product-name">Fitbit - Charge HR Activity Tracker + Heart Rate (Large)</td>
-                                    <td class="product-category">Audio</td>
-                          
-                                    <td class="product-price">$149.99</td>
-                                    <td class="product-action">
-                                        <span class="action-edit"><i class="feather icon-edit"></i></span>
-                                        <span class="action-delete"><i class="feather icon-trash"></i></span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td class="product-name">Fitbit - Flex 1" USB Charging Cable</td>
-                                    <td class="product-category">Fitness</td>
-                                  
-                                    <td class="product-price">$14.99</td>
-                                    <td class="product-action">
-                                        <span class="action-edit"><i class="feather icon-edit"></i></span>
-                                        <span class="action-delete"><i class="feather icon-trash"></i></span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td class="product-name">Fitbit - Activity Tracker</td>
-                                    <td class="product-category">Fitness</td>
-                               
-                                    <td class="product-price">$99.99</td>
-                                    <td class="product-action">
-                                        <span class="action-edit"><i class="feather icon-edit"></i></span>
-                                        <span class="action-delete"><i class="feather icon-trash"></i></span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td class="product-name">Fitbit - Charge Wireless Activity Tracker (Large)</td>
-                                    <td class="product-category">Computers</td>
-                                
-                                    <td class="product-price">$129.99</td>
-                                    <td class="product-action">
-                                        <span class="action-edit"><i class="feather icon-edit"></i></span>
-                                        <span class="action-delete"><i class="feather icon-trash"></i></span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td class="product-name">Craig - Tower Speaker</td>
-                                    <td class="product-category">Audio</td>
-                               
-                                    <td class="product-price">$69.99</td>
-                                    <td class="product-action">
-                                        <span class="action-edit"><i class="feather icon-edit"></i></span>
-                                        <span class="action-delete"><i class="feather icon-trash"></i></span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td class="product-name">BRAVEN - Outdoor Speaker</td>
-                                    <td class="product-category">Computers</td>
-                                 
-                                    <td class="product-price">$199.99</td>
-                                    <td class="product-action">
-                                        <span class="action-edit"><i class="feather icon-edit"></i></span>
-                                        <span class="action-delete"><i class="feather icon-trash"></i></span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td class="product-name">Bose® - Bluetooth Speaker Travel Bag</td>
-                                    <td class="product-category">Computers</td>
-                                 
-                                    <td class="product-price">$44.99</td>
-                                    <td class="product-action">
-                                        <span class="action-edit"><i class="feather icon-edit"></i></span>
-                                        <span class="action-delete"><i class="feather icon-trash"></i></span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td class="product-name">Altec Lansing - Mini H2O Bluetooth Speaker</td>
-                                    <td class="product-category">Fitness</td>
-                            
-                                    <td class="product-price">$199.99</td>
-                                    <td class="product-action">
-                                        <span class="action-edit"><i class="feather icon-edit"></i></span>
-                                        <span class="action-delete"><i class="feather icon-trash"></i></span>
-                                    </td>
-                                </tr>
+							<?php
+							for($i = 0; $i<80;$i++){
+							echo '<tr>';
+							echo '<td></td>';
+							echo '<td class="coupon-name">Coupon'.$i.'</td>';
+							echo '<td class="coupon-value">'.bin2hex(random_bytes(4)).'</td>';
+							echo '<td class="coupon-price">$'.rand(5,264).'</td>';
+							echo '<td class="coupon-action">';
+							echo '<span class="action-edit"><i class="feather icon-edit"></i></span>';
+							echo '<span class="action-delete"><i class="feather icon-trash"></i></span>';
+							echo '</td>';
+							echo ' </tr>';
+							}
+							?>
+
                             </tbody>
                         </table>
                     </div>
@@ -384,8 +157,8 @@
                                             <input type="text" class="form-control" id="data-name">
                                         </div>
                                         <div class="col-sm-12 data-field-col">
-                                            <label for="data-name">Code</label>
-                                            <input type="text" class="form-control" id="data-name">
+                                            <label for="data-code">Code</label>
+                                            <input type="text" class="form-control" id="data-code">
                                         </div>
                                        
                                         <div class="col-sm-12 data-field-col">
@@ -444,7 +217,7 @@
     <!-- END: Theme JS-->
 
     <!-- BEGIN: Page JS-->
-    <script src="layout/js/scripts/ui/data-list-view.js"></script>
+    <script src="layout/js/scripts/ui/copons.js"></script>
     <!-- END: Page JS-->
 
 </body>
