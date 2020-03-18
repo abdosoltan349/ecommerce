@@ -125,7 +125,8 @@
                                     <th>ACTION</th>
                                 </tr>
                             </thead>
-                            <tbody id="tabelBody">
+                            <tbody>
+                             
                             <tr>
                                     <td></td>
                                     <td class="product-img"><img src="<?php echo $images ?>elements/apple-watch.png" alt="Img placeholder">
@@ -150,7 +151,6 @@
                                         <span class="action-delete"><i class="feather icon-trash"></i></span>
                                     </td>
                                 </tr>
-                                
                             </tbody>
                         </table>
                     </div>
@@ -173,18 +173,11 @@
                                     <div class="row">
                                         <div class="col-sm-12 data-field-col">
                                             <label for="data-name">Name</label>
-                                            <input type="text" class="form-control" id="data-name" form="dataListUpload" name="name"> 
-                                        </div>
-                                        <div class="col-sm-12 data-field-col">
-                                            <label for="data-category"> Category </label>
-                                            <select class="form-control" id="data-category" form="dataListUpload" name="categorySelector">
-
                                             <input name= "v" type="text" class="form-control" id="data-name" form = "dataListUpload">
                                         </div>
                                         <div class="col-sm-12 data-field-col">
                                             <label for="data-category"> Category </label>
                                             <select name = "c" class="form-control" id="data-category" form = "dataListUpload">
-
                                                 <option>Audio</option>
                                                 <option>Computers</option>
                                                 <option>Fitness</option>
@@ -193,10 +186,7 @@
                                         </div>
                                         <div class="col-sm-12 data-field-col">
                                             <label for="data-status">Order Status</label>
-                                            <select class="form-control" id="data-status" form="dataListUpload" name="statusSelector"> 
-
                                             <select name = "z" class="form-control" id="data-status" form = "dataListUpload">
-
                                                 <option>Pending</option>
                                                 <option>Canceled</option>
                                                 <option>Delivered</option>
@@ -205,35 +195,20 @@
                                         </div>
                                         <div class="col-sm-12 data-field-col">
                                             <label for="data-price">Price</label>
-
-                                            <input type="text" class="form-control" id="data-price" form="dataListUpload" name="price">
-                                        </div>
-                                        <div class="col-sm-12 data-field-col data-list-upload">
-                                        <form action='<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>' method="POST" id="dataListUpload" >
-                                            Select image to upload:
-                                            <input type="file" name="fileToUpload" id="fileToUpload">
-                                            <input type="submit" value="Upload Image" name="submit">
-                                        </form>
-
                                             <input name = "x" type="text" class="form-control" id="data-price" form = "dataListUpload">
                                         </div>
                                         <div class="col-sm-12 data-field-col data-list-upload">
                                             <form method = "post" action="test.php" class="dropzone dropzone-area" id="dataListUpload">
                                                 <div name = "y" class="dz-message">Upload Image</div>
                                             </form>
-
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="add-data-footer d-flex justify-content-around px-3 mt-2">
-
-                                
-
                                 <div class="add-data-btn">
                                     <input type = "submit"  value = "Add Data" class="btn btn-primary" form = "dataListUpload"></input>
                                 </div>
-
                                 <div class="cancel-data-btn">
                                     <button class="btn btn-outline-danger">Cancel</button>
                                 </div>
@@ -281,14 +256,10 @@
     <script src="layout/js/scripts/ui/data-list-view.js"></script>
     <!-- END: Page JS-->
 
-    
-
-
 </body>
 <!-- END: Body-->
 
 </html>
-
 
 
 <?php 
