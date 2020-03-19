@@ -121,8 +121,9 @@
                                     <th>address</th>
                                     <th>town</th>
                                     <th>city</th>
+								 <th>PRICE</th>
                                     <th>ORDER STATUS</th>
-                                    <th>PRICE</th>
+
                                     <th>ACTION</th>
                                     
                                 </tr>
@@ -137,7 +138,7 @@
                                     <td class="customer-address">USA</td>
                                      <td class="customer-country">USA</td>
                                      <td class="customer-town">USA</td>
-
+<td class="product-price">$69.99</td>
                                    
                                     <td>
                                         <div class="chip chip-warning">
@@ -146,7 +147,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td class="product-price">$69.99</td>
+                                    
                                     <td class="product-action">
                                         <span class="action-edit"><i class="feather icon-edit"></i></span>
                                         <span class="action-delete"><i class="feather icon-trash"></i></span>
@@ -161,6 +162,7 @@
                                     <td class="customer-address">USA</td>
                                      <td class="customer-country">USA</td>
                                      <td class="customer-town">USA</td>
+									 <td class="product-price">$69.99</td>
                                     <td>
                                         <div class="chip chip-success">
                                             <div class="chip-body">
@@ -168,7 +170,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td class="product-price">$69.99</td>
+                                    
                                     <td class="product-action">
                                         <span class="action-edit"><i class="feather icon-edit"></i></span>
                                         <span class="action-delete"><i class="feather icon-trash"></i></span>
@@ -183,6 +185,7 @@
                                     <td class="customer-address">USA</td>
                                      <td class="customer-country">USA</td>
                                      <td class="customer-town">USA</td>
+									  <td class="product-price">$199.99</td>
                                     <td>
                                         <div class="chip chip-danger">
                                             <div class="chip-body">
@@ -190,7 +193,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td class="product-price">$199.99</td>
+                                   
                                     <td class="product-action">
                                         <span class="action-edit"><i class="feather icon-edit"></i></span>
                                         <span class="action-delete"><i class="feather icon-trash"></i></span>
@@ -205,7 +208,7 @@
                                     <td class="customer-address">USA</td>
                                      <td class="customer-country">USA</td>
                                      <td class="customer-town">USA</td>
-                                   
+<td class="product-price">$29.99</td>
                                     <td>
                                         <div class="chip chip-warning">
                                             <div class="chip-body">
@@ -213,7 +216,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td class="product-price">$29.99</td>
+                                    
                                     <td class="product-action">
                                         <span class="action-edit"><i class="feather icon-edit"></i></span>
                                         <span class="action-delete"><i class="feather icon-trash"></i></span>
@@ -228,6 +231,7 @@
                                     <td class="customer-address">USA</td>
                                      <td class="customer-country">USA</td>
                                      <td class="customer-town">USA</td>
+									  <td class="product-price">$199.99</td>
                                     <td>
                                         <div class="chip chip-danger">
                                             <div class="chip-body">
@@ -235,7 +239,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td class="product-price">$199.99</td>
+                                   
                                     <td class="product-action">
                                         <span class="action-edit"><i class="feather icon-edit"></i></span>
                                         <span class="action-delete"><i class="feather icon-trash"></i></span>
@@ -250,6 +254,7 @@
                                     <td class="customer-address">USA</td>
                                      <td class="customer-country">USA</td>
                                      <td class="customer-town">USA</td>
+									  <td class="product-price">$199.99</td>
                                     <td>
                                         <div class="chip chip-warning">
                                             <div class="chip-body">
@@ -257,7 +262,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td class="product-price">$199.99</td>
+                                   
                                     <td class="product-action">
                                         <span class="action-edit"><i class="feather icon-edit"></i></span>
                                         <span class="action-delete"><i class="feather icon-trash"></i></span>
@@ -272,6 +277,7 @@
                                     <td class="customer-address">USA</td>
                                      <td class="customer-country">USA</td>
                                      <td class="customer-town">USA</td>
+									   <td class="product-price">$29.99</td>
                                     <td>
                                         <div class="chip chip-primary">
                                             <div class="chip-body">
@@ -279,7 +285,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td class="product-price">$29.99</td>
+                                  
                                     <td class="product-action">
                                         <span class="action-edit"><i class="feather icon-edit"></i></span>
                                         <span class="action-delete"><i class="feather icon-trash"></i></span>
@@ -294,6 +300,7 @@
                                     <td class="customer-address">USA</td>
                                      <td class="customer-country">USA</td>
                                      <td class="customer-town">USA</td>
+									  <td class="product-price">$39.99</td>
                                     <td>
                                         <div class="chip chip-danger">
                                             <div class="chip-body">
@@ -301,7 +308,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td class="product-price">$39.99</td>
+                                   
                                     <td class="product-action">
                                         <span class="action-edit"><i class="feather icon-edit"></i></span>
                                         <span class="action-delete"><i class="feather icon-trash"></i></span>
@@ -403,7 +410,7 @@
     <!-- END: Theme JS-->
 
     <!-- BEGIN: Page JS-->
-    <script src="layout/js/scripts/ui/data-list-view.js"></script>
+    <script src="layout/js/scripts/ui/orders.js"></script>
     <!-- END: Page JS-->
 
 </body>

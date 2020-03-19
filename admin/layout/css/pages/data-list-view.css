@@ -25,6 +25,7 @@
           left: 0; }
     .data-list-view-header .table-responsive .top .action-btns .dt-buttons .btn,
     .data-thumb-view-header .table-responsive .top .action-btns .dt-buttons .btn {
+		display : none;
       padding: 0.9rem 0.938rem; }
   .data-list-view-header .table-responsive .top .dataTables_length,
   .data-thumb-view-header .table-responsive .top .dataTables_length {
@@ -320,7 +321,9 @@ table.data-thumb-view.dataTable tbody tr td {
   #data-list-view .table-responsive .dt-buttons,
   #data-thumb-view .table-responsive .dt-buttons {
     width: auto;
-    text-align: left; }
+    text-align: left;
+	display : none;
+	}
   #data-list-view .table-responsive .dataTables_length,
   #data-list-view .table-responsive .dataTables_filter,
   #data-thumb-view .table-responsive .dataTables_length,
