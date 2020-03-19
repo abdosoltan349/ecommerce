@@ -337,6 +337,24 @@
                        
                     </ul>
                 </li>
+                
+                <li class=" navigation-header"><span>Payment</span></li>
+					 <li class=" nav-item"><a href="#"><i class="feather icon-credit-card "></i><span class="menu-title" data-i18n="Card">Payments</span></a>
+                    <ul class="menu-content">
+                        <li><a href="paybal.php"><i class="feather icon-circle"></i><span class="menu-item" data-i18n="Basic">Paybal</span></a>
+                        </li>
+                        <li><a href=""><i class="feather icon-circle"></i><span class="menu-item" data-i18n="Advance">Cash on Delivery</span></a>
+                            <ul>
+                            <li><a href=""><i class="feather icon-triangle"></i><span class="menu-item" data-i18n="Basic"> ...Active</span></a>
+                        </li> 
+                        <li><a href=""><i class="feather icon-triangle"></i><span class="menu-item" data-i18n="Advance"> ...Disactive</span></a>
+                            </ul>
+                        </li>
+                       
+                    </ul>
+                </li>
+                
+                
                   <li class=" navigation-header"><span>Coupon</span></li>
                    <li class=" nav-item"><a href="coupon.php"><i class="fa fa-tag"></i><span class="menu-title" data-i18n="Email">Coupon</span></a>
                 </li>
