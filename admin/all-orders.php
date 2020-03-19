@@ -121,8 +121,9 @@
                                     <th>address</th>
                                     <th>town</th>
                                     <th>city</th>
-                                    <th>ORDER STATUS</th>
+    
                                     <th>PRICE</th>
+									 <th>ORDER STATUS</th>
                                     <th>ACTION</th>
                                     
                                 </tr>
@@ -139,14 +140,15 @@
                                      <td class="customer-town">USA</td>
 
                                    
-                                    <td>
+                                   
+                                    <td class="product-price">$69.99</td>
+									 <td>
                                         <div class="chip chip-warning">
                                             <div class="chip-body">
                                                 <div class="chip-text">on hold</div>
                                             </div>
                                         </div>
                                     </td>
-                                    <td class="product-price">$69.99</td>
                                     <td class="product-action">
                                         <span class="action-edit"><i class="feather icon-edit"></i></span>
                                         <span class="action-delete"><i class="feather icon-trash"></i></span>
@@ -161,14 +163,15 @@
                                     <td class="customer-address">USA</td>
                                      <td class="customer-country">USA</td>
                                      <td class="customer-town">USA</td>
-                                    <td>
+                                    
+                                    <td class="product-price">$69.99</td>
+									<td>
                                         <div class="chip chip-success">
                                             <div class="chip-body">
                                                 <div class="chip-text">Delivered</div>
                                             </div>
                                         </div>
                                     </td>
-                                    <td class="product-price">$69.99</td>
                                     <td class="product-action">
                                         <span class="action-edit"><i class="feather icon-edit"></i></span>
                                         <span class="action-delete"><i class="feather icon-trash"></i></span>
@@ -183,133 +186,21 @@
                                     <td class="customer-address">USA</td>
                                      <td class="customer-country">USA</td>
                                      <td class="customer-town">USA</td>
-                                    <td>
+                                    
+                                    <td class="product-price">$199.99</td>
+									<td>
                                         <div class="chip chip-danger">
                                             <div class="chip-body">
                                                 <div class="chip-text">canceled</div>
                                             </div>
                                         </div>
                                     </td>
-                                    <td class="product-price">$199.99</td>
                                     <td class="product-action">
                                         <span class="action-edit"><i class="feather icon-edit"></i></span>
                                         <span class="action-delete"><i class="feather icon-trash"></i></span>
                                     </td>
                                 </tr>
-                                <tr>
-                                    <td></td>
-                                    <td class="product-img"><img src="<?php echo $images ?>elements/ipad-pro.png" alt="Img placeholder">
-                                    </td>
-                                    <td class="product-name">Aluratek - Bluetooth Audio Receiver</td>
-                                      <td class="customer-name">John</td>
-                                    <td class="customer-address">USA</td>
-                                     <td class="customer-country">USA</td>
-                                     <td class="customer-town">USA</td>
-                                   
-                                    <td>
-                                        <div class="chip chip-warning">
-                                            <div class="chip-body">
-                                                <div class="chip-text">on hold</div>
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td class="product-price">$29.99</td>
-                                    <td class="product-action">
-                                        <span class="action-edit"><i class="feather icon-edit"></i></span>
-                                        <span class="action-delete"><i class="feather icon-trash"></i></span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td class="product-img"><img src="<?php echo $images ?>elements/jbl-speaker.png" alt="Img placeholder">
-                                    </td>
-                                    <td class="product-name">Aluratek - Bluetooth Audio Transmitter</td>
-                                      <td class="customer-name">John</td>
-                                    <td class="customer-address">USA</td>
-                                     <td class="customer-country">USA</td>
-                                     <td class="customer-town">USA</td>
-                                    <td>
-                                        <div class="chip chip-danger">
-                                            <div class="chip-body">
-                                                <div class="chip-text">canceled</div>
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td class="product-price">$199.99</td>
-                                    <td class="product-action">
-                                        <span class="action-edit"><i class="feather icon-edit"></i></span>
-                                        <span class="action-delete"><i class="feather icon-trash"></i></span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td class="product-img"><img src="<?php echo $images ?>elements/beats-headphones.png" alt="Img placeholder">
-                                    </td>
-                                    <td class="product-name">Basis - Peak Fitness and Sleep Tracker</td>
-                                      <td class="customer-name">John</td>
-                                    <td class="customer-address">USA</td>
-                                     <td class="customer-country">USA</td>
-                                     <td class="customer-town">USA</td>
-                                    <td>
-                                        <div class="chip chip-warning">
-                                            <div class="chip-body">
-                                                <div class="chip-text">on hold</div>
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td class="product-price">$199.99</td>
-                                    <td class="product-action">
-                                        <span class="action-edit"><i class="feather icon-edit"></i></span>
-                                        <span class="action-delete"><i class="feather icon-trash"></i></span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td class="product-img"><img src="<?php echo $images ?>elements/homepod.png" alt="Img placeholder">
-                                    </td>
-                                    <td class="product-name">Antec - Nano Diamond Thermal Compound</td>
-                                      <td class="customer-name">John</td>
-                                    <td class="customer-address">USA</td>
-                                     <td class="customer-country">USA</td>
-                                     <td class="customer-town">USA</td>
-                                    <td>
-                                        <div class="chip chip-primary">
-                                            <div class="chip-body">
-                                                <div class="chip-text">pending</div>
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td class="product-price">$29.99</td>
-                                    <td class="product-action">
-                                        <span class="action-edit"><i class="feather icon-edit"></i></span>
-                                        <span class="action-delete"><i class="feather icon-trash"></i></span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td class="product-img"><img src="<?php echo $images ?>elements/macbook-pro.png" alt="Img placeholder">
-                                    </td>
-                                    <td class="product-name">Antec - SmartBean Bluetooth Adapter</td>
-                                      <td class="customer-name">John</td>
-                                    <td class="customer-address">USA</td>
-                                     <td class="customer-country">USA</td>
-                                     <td class="customer-town">USA</td>
-                                    <td>
-                                        <div class="chip chip-danger">
-                                            <div class="chip-body">
-                                                <div class="chip-text">canceled</div>
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td class="product-price">$39.99</td>
-                                    <td class="product-action">
-                                        <span class="action-edit"><i class="feather icon-edit"></i></span>
-                                        <span class="action-delete"><i class="feather icon-trash"></i></span>
-                                    </td>
-                                </tr>
-                                
-                                
-                            </tbody>
+                              
                         </table>
                     </div>
                     <!-- dataTable ends -->
@@ -347,11 +238,7 @@
                                             <label for="data-price">Price</label>
                                             <input type="text" class="form-control" id="data-price">
                                         </div>
-                                        <div class="col-sm-12 data-field-col data-list-upload">
-                                            <form action="#" class="dropzone dropzone-area" id="dataListUpload">
-                                                <div class="dz-message">Upload Image</div>
-                                            </form>
-                                        </div>
+                                       
                                     </div>
                                 </div>
                             </div>
@@ -403,7 +290,7 @@
     <!-- END: Theme JS-->
 
     <!-- BEGIN: Page JS-->
-    <script src="layout/js/scripts/ui/data-list-view.js"></script>
+    <script src="layout/js/scripts/ui/orders.js"></script>
     <!-- END: Page JS-->
 
 </body>
