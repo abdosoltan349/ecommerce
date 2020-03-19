@@ -25,7 +25,9 @@
           left: 0; }
     .data-list-view-header .table-responsive .top .action-btns .dt-buttons .btn,
     .data-thumb-view-header .table-responsive .top .action-btns .dt-buttons .btn {
-      padding: 0.9rem 0.938rem; }
+      padding: 0.9rem 0.938rem;
+	  display: none;
+	  }
   .data-list-view-header .table-responsive .top .dataTables_length,
   .data-thumb-view-header .table-responsive .top .dataTables_length {
     display: inline-block; }

@@ -37,7 +37,7 @@
     <link rel="stylesheet" type="text/css" href="<?php echo $css ?>core/menu/menu-types/vertical-menu.css">
     <link rel="stylesheet" type="text/css" href="<?php echo $css ?>core/colors/palette-gradient.css">
     <link rel="stylesheet" type="text/css" href="<?php echo $css ?>plugins/file-uploaders/dropzone.css">
-    <link rel="stylesheet" type="text/css" href="<?php echo $css ?>pages/data-list-view.css">
+    <link rel="stylesheet" type="text/css" href="<?php echo $css ?>pages/orders.css">
     <!-- END: Page CSS-->
 
     <!-- BEGIN: Custom CSS-->
