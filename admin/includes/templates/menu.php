@@ -23,7 +23,7 @@
                 
              
                
-                <li class=" nav-item"><a href="page-account-settings"><i class="feather icon-settings"></i><span class="menu-title" data-i18n="Account Settings">Account Settings</span></a>
+                <li class=" nav-item"><a href="page-account-settings"><i class="feather icon-settings"></i><span class="menu-title" data-i18n="Account Settings">Website Settings</span></a>
                 </li>
                
                
