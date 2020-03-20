@@ -1,5 +1,6 @@
 <?php
-	
+	include "../config.php";
+	$auth= "includes/functions/";
 	$tpl = "includes/templates/";
 	$images = "layout/images/";
 	$css = "layout/css/";

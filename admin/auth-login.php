@@ -1,8 +1,32 @@
-<!DOCTYPE html>
-
 <?php
+$GLOBALS['wrong'] = "";
+session_start();
+if(isset($_SESSION["adminid"])){
+    header("Location: index.php");
+    exit();
+}
+
  include "init.php";
+ include "includes/functions/authorization.php";
+ if ($_SERVER["REQUEST_METHOD"] == "POST") {
+	 $email = $_POST["email"];
+     $pass = $_POST["password"];
+     $admins = isadmin($email,$pass);
+     if (count($admins) > 0) {
+         foreach ($admins as $admin) {
+             $_SESSION["adminid"] = $admin['adminid'];
+			 $_SESSION["adminname"] = $admin['name'];
+			  $_SESSION["adminrole"] = $admin['role'];
+         }
+		 header("Location: index.php");
+		exit();
+     } else {
+		 
+         $wrong =  "Email or Password is Wrong";
+     }
+ }
 	?>
+<!DOCTYPE html>
 <html class="loading" lang="en" data-textdirection="ltr">
 <!-- BEGIN: Head-->
 
@@ -13,7 +37,7 @@
     <meta name="description" content="Vuexy admin is super flexible, powerful, clean &amp; modern responsive bootstrap 4 admin template with unlimited possibilities.">
     <meta name="keywords" content="admin template, Vuexy admin template, dashboard template, flat admin template, responsive admin template, web app">
     <meta name="author" content="Error 404">
-    <title>Login Page - Vuexy - Bootstrap HTML admin template</title>
+    <title>Admin Login</title>
     <link rel="apple-touch-icon" href="<?php echo $images ?>ico/apple-icon-120.png">
     <link rel="shortcut icon" type="image/x-icon" href="<?php echo $images ?>ico/favicon.ico">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600" rel="stylesheet">
@@ -68,20 +92,20 @@
                                                 <h4 class="mb-0">Login</h4>
                                             </div>
                                         </div>
-                                        <p class="px-2">Welcome back, please login to your account.</p>
+                                        <p class="px-2" style = "color : red;  font-size: 16px;"><?php echo $wrong;?></p>
                                         <div class="card-content">
                                             <div class="card-body pt-1">
-                                                <form action="index">
+                                                <form action = "<?php echo $_SERVER["PHP_SELF"]?>" method = "POST">
                                                     <fieldset class="form-label-group form-group position-relative has-icon-left">
-                                                        <input type="text" class="form-control" id="user-name" placeholder="Username" required>
+                                                        <input name = "email" type="text" class="form-control" id="email" placeholder="Email" required>
                                                         <div class="form-control-position">
                                                             <i class="feather icon-user"></i>
                                                         </div>
-                                                        <label for="user-name">Username</label>
+                                                        <label for="email">Email</label>
                                                     </fieldset>
 
                                                     <fieldset class="form-label-group position-relative has-icon-left">
-                                                        <input type="password" class="form-control" id="user-password" placeholder="Password" required>
+                                                        <input name = "password" type="password" class="form-control" id="user-password" placeholder="Password" required>
                                                         <div class="form-control-position">
                                                             <i class="feather icon-lock"></i>
                                                         </div>
