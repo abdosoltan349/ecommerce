@@ -131,6 +131,8 @@ $(document).ready(function() {
   // On Delete
   $('.action-delete').on("click", function(e){
     e.stopPropagation();
+	
+	
     $(this).closest('td').parent('tr').fadeOut();
   });
 

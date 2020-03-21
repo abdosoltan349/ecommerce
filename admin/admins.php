@@ -3,7 +3,15 @@
 <?php
  include "init.php";
  include "includes/functions/admins.php";
-	?>
+  $admins = new admins();
+  if ($_SERVER["REQUEST_METHOD"] == "POST") {
+	  $name = $_POST["adminname"];
+	  $email = $_POST["adminemail"];
+	  $password = $_POST["adminpassword"];
+	  $role = $_POST["adminrole"];
+	  $admins ->set_admins($name,$email,$password,$role);
+  }
+?>
 <html class="loading" lang="en" data-textdirection="ltr">
 <!-- BEGIN: Head-->
 
@@ -129,9 +137,9 @@
                             <tbody>
 							<?php
                            
-                            $admins = new admins();
+                           
                             
-                           ;
+               
                             
 							foreach ( $admins->get_admins() as $admin) {
                                echo '<tr>';
@@ -148,11 +156,12 @@
                                echo '</div>';
                                echo '</td>';
                                echo '<td class="product-action">';
-                               echo '<span class="action-edit"><i class="feather icon-edit"></i></span>';
-                               echo '<span class="action-delete"><i class="feather icon-trash"></i></span>';
-                               echo '</td>';
+                               echo '<button class="action-edit"><i class="feather icon-edit"></i></button>';
+							   echo '<form action = "deleteadmin.php" method = "post">';
+                               echo '<button name = "admindelete" class="action-delete" value ='.$admin["adminid"].'><i class="feather icon-trash"></i></button>';
+							   echo '</form>';
+ 							   echo '</td>';
                                echo '</tr>';
-                              
                             }
 							?>
                              
@@ -178,30 +187,32 @@
                                     <div class="row">
                                         <div class="col-sm-12 data-field-col">
                                             <label for="data-name">Name</label>
-                                            <input type="text" class="form-control" id="data-name">
+                                            <input form = "addadmin" name = "adminname" type="text" class="form-control" id="data-name">
                                         </div>
                                         <div class="col-sm-12 data-field-col">
                                             <label for="data-email">Email</label>
-                                            <input type="text" class="form-control" id="data-email">
+                                            <input form = "addadmin"  name = "adminemail" type="text" class="form-control" id="data-email">
                                         </div>
                                         <div class="col-sm-12 data-field-col">
                                             <label for="data-status">Role</label>
-                                            <select class="form-control" id="data-status">
-                                                <option>Admin</option>
-                                                <option>Supervisor</option>
-                                                <option>Accountant</option>
+                                            <select form = "addadmin"  name = "adminrole" class="form-control" id="data-status">
+                                                <option value = "Admin">Admin</option>
+                                                <option value = "Supervisor">Supervisor</option>
+                                                <option value = "Accountant">Accountant</option>
                                             </select>
                                         </div>
                                         <div class="col-sm-12 data-field-col">
                                             <label for="data-pass">Password</label>
-                                            <input type="password" class="form-control" id="data-pass">
+                                            <input form = "addadmin"  name = "adminpassword" type="password" class="form-control" id="data-pass">
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="add-data-footer d-flex justify-content-around px-3 mt-2">
                                 <div class="add-data-btn">
-                                    <button class="btn btn-primary">Add Data</button>
+									<form id= "addadmin" method = "post" action = "<?php echo $_SERVER['PHP_SELF']; ?>">
+                                    <button type = "submit" class="btn btn-primary">Add Data</button>
+									</form>
                                 </div>
                                 <div class="cancel-data-btn">
                                     <button class="btn btn-outline-danger">Cancel</button>
