@@ -189,9 +189,9 @@
                                             <label for="data-name">Name</label>
                                             <input form = "addadmin" name = "adminname" type="text" class="form-control" id="data-name">
                                         </div>
-                                        <div class="col-sm-12 data-field-col">
+                                        <div class="col-sm-12 data-field-col controls">
                                             <label for="data-email">Email</label>
-                                            <input form = "addadmin"  name = "adminemail" type="text" class="form-control" id="data-email">
+                                            <input form = "addadmin"  name = "adminemail"  data-validation-required-message="Must be a valid email" placeholder="Email" aria-invalid="false" type="email" class="form-control" id="data-email">
                                         </div>
                                         <div class="col-sm-12 data-field-col">
                                             <label for="data-status">Role</label>
@@ -250,7 +250,11 @@
     <script src="<?php echo $vendors ?>js/tables/datatable/dataTables.select.min.js"></script>
     <script src="<?php echo $vendors ?>js/tables/datatable/datatables.checkboxes.min.js"></script>
     <!-- END: Page Vendor JS-->
-
+<script>
+    if ( window.history.replaceState ) {
+        window.history.replaceState( null, null, window.location.href );
+    }
+</script>
     <!-- BEGIN: Theme JS-->
     <script src="layout/js/core/app-menu.js"></script>
     <script src="layout/js/core/app.js"></script>
@@ -259,6 +263,7 @@
 
     <!-- BEGIN: Page JS-->
     <script src="layout/js/scripts/ui/admins.js"></script>
+	 <script src="layout/js/scripts/forms/validation/form-validation.js"></script>
     <!-- END: Page JS-->
 
 </body>
