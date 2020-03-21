@@ -66,6 +66,11 @@
                   <li class=" navigation-header"><span>TAX</span></li>                
                  <li class=" nav-item"><a href="tax.php"><i class="fa fa-percent"></i><span class="menu-title" data-i18n="Email">Tax</span></a>
                 </li>
+
+                </li>
+                  <li class=" navigation-header"><span>Product Panel</span></li>                
+                 <li class=" nav-item"><a href="producat-panel.php"><i class="fa fa-percent"></i><span class="menu-title" data-i18n="Email">Products</span></a>
+                </li>
                 
                 
 

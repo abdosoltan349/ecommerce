@@ -44,6 +44,17 @@
     <link rel="stylesheet" type="text/css" href="<?php echo $css ?>style.css">
     <!-- END: Custom CSS-->
 
+    <?php 
+
+       
+       
+
+
+
+
+
+    ?>
+
 </head>
 <!-- END: Head-->
 
@@ -199,7 +210,7 @@
                                         </div>
                                         <div class="col-sm-12 data-field-col data-list-upload">
 										
-                                            <form method = "post" action="test.php" class="dropzone dropzone-area" id="dataListUpload" enctype="multipart/form-data">
+                                            <form method = "post" action="uplode.php" class="dropzone dropzone-area" id="dataListUpload" enctype="multipart/form-data">
                                                 <input   name = "y" type="file" class="dz-message">Upload Image</input>
                                             </form>
                                         </div>
