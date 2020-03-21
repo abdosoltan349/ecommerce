@@ -2,6 +2,7 @@
 
 <?php
  include "init.php";
+ include "includes/functions/admins.php";
 	?>
 <html class="loading" lang="en" data-textdirection="ltr">
 <!-- BEGIN: Head-->
@@ -118,6 +119,7 @@
                             <thead>
                                 <tr>
                                     <th></th>
+                                    <th hidden>id</th>
                                     <th>NAME</th>
                                     <th>EMAIL</th>
                                     <th>MANAGEMENT TYPE</th>
@@ -125,24 +127,35 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
-                                    <td></td>
-                                    <td class="admin-name">Ahmed Mohamed Mahmoud</td>
-                                    <td class="admin-email">ahmedmohamed@gmail.com</td>
-                                    <td class = "status">
-                                        <div class="chip chip-warning">
-                                            <div class="chip-body">
-                                                <div class="chip-text">Admin</div>
-                                            </div>
-                                        </div>
-                                    </td>
-                                   
-                                    <td class="product-action">
-                                        <span class="action-edit"><i class="feather icon-edit"></i></span>
-                                        <span class="action-delete"><i class="feather icon-trash"></i></span>
-                                    </td>
-                                </tr>
-                               
+							<?php
+                           
+                            $admins = new admins();
+                            
+                           ;
+                            
+							foreach ( $admins->get_admins() as $admin) {
+                               echo '<tr>';
+                               echo '<td></td>';
+                               echo '<td hidden class="admin-id">'.$admin["adminid"].'</td>';
+                               echo '<td class="admin-name">'.$admin["name"].'</td>';
+                               echo '<td class="admin-email">'.$admin["email"].'</td>';
+                               echo '<td class = "status">';
+                             
+                               echo '<div class="chip '.$admins->Role($admin["role"]).'">';
+                               echo '<div class="chip-body">';
+                               echo '<div class="chip-text">'.$admin["role"].'</div>';
+                               echo '</div>';
+                               echo '</div>';
+                               echo '</td>';
+                               echo '<td class="product-action">';
+                               echo '<span class="action-edit"><i class="feather icon-edit"></i></span>';
+                               echo '<span class="action-delete"><i class="feather icon-trash"></i></span>';
+                               echo '</td>';
+                               echo '</tr>';
+                              
+                            }
+							?>
+                             
                             </tbody>
                         </table>
                     </div>
