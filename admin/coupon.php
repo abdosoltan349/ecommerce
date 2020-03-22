@@ -2,6 +2,27 @@
 
 <?php
  include "init.php";
+ include "includes/functions/coupons.php";
+   $coupons = new coupons();
+ 
+  if(!isset($_GET['do'])){
+	  $_GET['do']= "notset";
+  }
+  if($_GET["do"] == "add"){
+  if ($_SERVER["REQUEST_METHOD"] == "POST") {
+      $couponid= $_POST["couponid"]
+	  $name = $_POST["name"];
+	  $code = $_POST["code"];
+	  $value = $_POST["value"];
+	  $coupons ->set_coupon($couponid,$name,$code,$value);
+  }
+  }
+  if($_GET["do"] == "delete"){
+  if ($_SERVER["REQUEST_METHOD"] == "POST") {
+	   $couponid = $_POST["cdelete"];
+       $coupon->delete_coupon($couponid);
+  }}  
+
 	?>
 <html class="loading" lang="en" data-textdirection="ltr">
 <!-- BEGIN: Head-->
@@ -118,15 +139,22 @@
                             </thead>
                             <tbody>
 							<?php
-							for($i = 0; $i<80;$i++){
+							foreach ( $coupon->get_coupon() as $coupons) {
 							echo '<tr>';
 							echo '<td></td>';
-							echo '<td class="coupon-name">Coupon'.$i.'</td>';
-							echo '<td class="coupon-value">'.bin2hex(random_bytes(4)).'</td>';
-							echo '<td class="coupon-price">$'.rand(5,264).'</td>';
+                            echo '<td hidden class="coupon-id">'.$coupons["couponid"].'</td>';    
+							echo '<td class="coupon-name">'.$coupons["name"].'</td>';
+							echo '<td class="coupon-value">'.$coupons["code"].'</td>';
+							echo '<td class="coupon-price">$'.$coupons["value"].'</td>';
 							echo '<td class="coupon-action">';
-							echo '<span class="action-edit"><i class="feather icon-edit"></i></span>';
-							echo '<span class="action-delete"><i class="feather icon-trash"></i></span>';
+                                
+							echo '<form method = "post" action = "editadmin.php?id='.$coupons["couponid"]."&name=".$coupons["name"]."&code=".$coupons["code"]."&value=".$coupons["value"].'">';
+                            echo '<button class="editcoupon"><i class="feather icon-edit"></i></button>';
+				            echo '</form>';
+                            echo '<form action = "'.$_SERVER["PHP_SELF"]."?do=delete".'" method = "post">';
+							echo '<button name="cdelete" class="action-delete" value ='.$couponss["ccouponid"].'><i class="feather icon-trash"></i></button>';
+                            echo '</form>';
+                                
 							echo '</td>';
 							echo ' </tr>';
 							}
@@ -171,7 +199,9 @@
                             </div>
                             <div class="add-data-footer d-flex justify-content-around px-3 mt-2">
                                 <div class="add-data-btn">
-                                    <button class="btn btn-primary">Add Data</button>
+                                   	<form id= "addadmin" method = "post" action = "<?php echo $_SERVER['PHP_SELF']."?do=add"; ?>">
+                                    <button type = "submit" class="btn btn-primary">Add Data</button>
+									</form>
                                 </div>
                                 <div class="cancel-data-btn">
                                     <button class="btn btn-outline-danger">Cancel</button>
@@ -223,4 +253,4 @@
 </body>
 <!-- END: Body-->
 
-</html>
+</html>                                                                                                                                             
