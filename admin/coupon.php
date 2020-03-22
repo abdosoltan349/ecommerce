@@ -143,7 +143,7 @@
 							echo '<td class="coupon-price">$'.$coupon["value"].'</td>';
 							echo '<td class="coupon-action">';
                                 
-							echo '<a href ='"editcoupon.php ?do=update &id='.$coupon["couponid"]."&name=".$coupon["name"]."&code=".$coupon["code"]."&vlue=".$coupon["value"].'><span class="action-edit"><i class="feather icon-edit"></i></span></a>';
+							echo '<a href ="editcoupon.php?do=update&id='.$coupon["couponid"]."&name=".$coupon["name"]."&code=".$coupon["code"]."&value=".$coupon["value"].'"><span class="coupon-edit"><i class="feather icon-edit"></i></span></a>';
                                 
 							echo '<a href ='.$_SERVER["PHP_SELF"]."?do=delete&id=".$coupon["couponid"].'><span class="action-delete"><i class="feather icon-trash"></i></span></a>';
 							echo '</td>';

@@ -7,18 +7,9 @@
   }
   if($_GET["do"] == "update"){
   if ($_SERVER["REQUEST_METHOD"] == "POST") {
-	   $id = $_POST["couponid"];
-	  $name = $_POST["name"];
-	  $code = $_POST["code"];
-	  $value = $_POST["value"];
-	 $coupons->update_coupon($id,$name,$code,$value);
-	 if(strcmp($_SESSION["couponid"], $id) == 0){
-		  unset($_SESSION["couponid"]);
-		 unset($_SESSION["name"]);
-		   unset($_SESSION["code"]);
-           unset($_SESSION["value"]);
-	 }
-	  header("Location: coupons.php");
+	 
+	 $coupons->update_coupon($_POST["couponid"],$_POST["name"],$_POST["code"],$_POST["value"]);
+	  header("Location: coupon.php");
       exit();
   }}
 	?>
@@ -117,7 +108,7 @@
                                                         </div>
                                                     </div>
 											        <div class="form-group">
-                                                        <label>value</label>
+                                                        <label>Price</label>
                                                         <div class="controls">
                                                             <input value ="<?php echo  $_GET['value']; ?>" type="value" name="value" class="form-control" data-validation-required-message="Must be a valid price" placeholder="value">
                                                         </div>

@@ -74,10 +74,10 @@
                             </div>
                             <div class="sidebar-menu-list">
                                 <div class="list-group list-group-messages font-medium-1">
-                                    <a href="#" class="list-group-item list-group-item-action border-0 pt-0 active">
+                                    <a href="?type=inbox" class="list-group-item list-group-item-action border-0 pt-0 <?php if((!isset($_GET["type"])) || $_GET["type"] == "inbox"){echo "active";}?>">
                                         <i class="font-medium-5 feather icon-mail mr-50"></i> Inbox <span class="badge badge-primary badge-pill float-right">3</span>
                                     </a>
-                                    <a href="#" class="list-group-item list-group-item-action border-0"><i class="font-medium-5 fa fa-paper-plane-o mr-50"></i> Sent</a>
+                                    <a href="?type=sent" class="list-group-item list-group-item-action border-0 <?php if($_GET["type"] == "sent"){echo "active";}?>"><i class="font-medium-5 fa fa-paper-plane-o mr-50"></i> Sent</a>
                                    
                                 </div>
                                
@@ -171,9 +171,7 @@
                                                             <i class="feather icon-folder"></i>
                                                         </a>
                                                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="folder">
-                                                            <a class="dropdown-item d-flex font-medium-1" href="#"><i class="font-medium-3 feather icon-edit-2 mr-50"></i> Draft</a>
-                                                            <a class="dropdown-item d-flex font-medium-1" href="#"><i class="font-medium-3 feather icon-info mr-50"></i> Spam</a>
-                                                            <a class="dropdown-item d-flex font-medium-1" href="#"><i class="font-medium-3 feather icon-trash mr-50"></i> Trash</a>
+                                                            
                                                         </div>
                                                     </div>
                                                 </li>

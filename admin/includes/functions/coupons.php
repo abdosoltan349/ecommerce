@@ -24,10 +24,11 @@ function get_coupon() {
     return $coupon;
   }
 
-function update_coupon($name,$code,$value,$couponid) {
+function update_coupon($couponid,$couponname,$couponcode,$couponvalue) {
     include "init.php";
- $stmt = $conn->prepare("UPDATE coupon SET couponid=?,name=?,code=?,value=? WHERE couponid=?");
-	   $stmt->execute(array($name,$code,$value,$couponid));
+	
+		$stmt = $conn->prepare("UPDATE coupon SET name=?,code=?,value=? WHERE couponid=?");
+	   $stmt->execute(array($couponname,$couponcode,$couponvalue,$couponid));
   }
 
 function delete_coupon($couponid) {
