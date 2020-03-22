@@ -6,7 +6,7 @@ class Products {
 
   function get_products() {
     include "init.php";
-    $stmt = $conn->prepare("SELECT * FROM product WHERE 1 ");
+    $stmt = $conn->prepare("SELECT * FROM product,subcategorie WHERE product.subcategorieid = subcategorie.subcategorieid");
     $stmt->execute();
     $products = $stmt->fetchAll();
     return $products;

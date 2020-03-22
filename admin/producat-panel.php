@@ -136,45 +136,31 @@
                             <thead>
                                 <tr>
                                     <th></th>
+									<th hidden></th>
                                     <th>Image</th>
                                     <th>NAME</th>
                                     <th>CATEGORY</th>
-                                    <th>POPULARITY</th>
-                                    <th>ORDER STATUS</th>
                                     <th>PRICE</th>
+                             
                                     <th>ACTION</th>
                                 </tr>
                             </thead>
                             <tbody>
                            <?php   
                                 foreach($products->get_products() as $product){
-                                    
-                                    $quary = $conn->prepare("select subname from subcategorie where subcategorieid = ?");
-                                   
-                                    $quary->execute(array($product["subcategorieid"]));
-                                    $subCat = "" ;
-                                   
-                                     
-                                    foreach($quary->fetchAll() as $sub){
-                                         $subCat =  $sub["subname"];
-                                    break;
-                                    }
-                                   
-                            echo "<tr> <td></td>";
-                                   
-                                   echo '<td class="product-img"><img src="'. $product["image"]  .'" alt="Img placeholder"> </td>';
-                                   
-                                    echo '<td class="product-name">'. $product["name"].'</td>';
-                                    echo '<td class="product-category">' . $subCat .'</td><td> <div class="progress progress-bar-success">';
-                                    
-                                       
-                                    echo '<div class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="40" aria-valuemax="100" style="width:97%"></div></div> </td><td>';
-                                    echo '<div class="chip chip-warning"><div class="chip-body">';
-                                            
-                                    echo '<div class="chip-text">on hold</div></div></div></td>';
-                                    echo '<td class="product-price">'.$product["price"].'</td><td class="product-action">'  ;                                  
-                                    echo '<span class="action-edit"><i class="feather icon-edit"></i></span>';
-                                    echo '<span onclick="'.  $products->delete_product($product["productid"]) .'" class="action-delete"><i class="feather icon-trash"></i></span></td></tr>'   ;                                                                 
+                                 echo '<tr>';
+								echo '<td></td>';
+								echo '<td hidden class="product-id">'.$product["productid"].'</td>';
+								echo '<td class="product-img"><img src ="'.$product["image"].'"></td>';
+								echo '<td class="product-name">'.$product["name"].'</td>';
+								echo '<td class="product-category">'.$product["subname"].'</td>';
+								echo '<td class="product-number">'.$product["price"].'</td>';
+								echo '<td class="subcategory-action">';
+								echo '<span class="action-edit"><i class="feather icon-edit"></i></span>';
+								echo '<span class="action-delete" ><i class="feather icon-trash"></i></span>';
+								echo '</td>';
+								echo '</tr>';
+									                                            
                                 }
                                 
                                 ?>
