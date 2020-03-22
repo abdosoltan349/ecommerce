@@ -1,5 +1,26 @@
 <?php
  include "init.php";
+ include "includes/functions/admins.php";
+  $admins = new admins();
+ if(!isset($_GET['do'])){
+	  $_GET['do']= "notset";
+  }
+  if($_GET["do"] == "update"){
+  if ($_SERVER["REQUEST_METHOD"] == "POST") {
+	   $id = $_POST["adminid"];
+	  $name = $_POST["adminname"];
+	  $email = $_POST["adminemail"];
+	  $password = $_POST["adminpassword"];
+	  $role = $_POST["adminrole"];
+	 $admins->update_admin($id,$name,$email,$password,$role);
+	 if(strcmp($_SESSION["adminid"], $id) == 0){
+		  unset($_SESSION["adminid"]);
+		 unset($_SESSION["adminname"]);
+		   unset($_SESSION["adminrole"]);
+	 }
+	  header("Location: admins.php");
+      exit();
+  }}
 	?>
 <!DOCTYPE html>
 
@@ -78,7 +99,7 @@
                                 </div>
                                 <div class="card-content">
                                     <div class="card-body">
-                                        <form class="form-horizontal" novalidate action = "updateadmin.php" method = "post" id="editadmin">
+                                        <form class="form-horizontal" novalidate action = "<?php echo $_SERVER["PHP_SELF"]."?do=update" ?>" method = "post" id="editadmin">
                                             <div class="row">
                                                 <div class="col-md-12">
 												 
