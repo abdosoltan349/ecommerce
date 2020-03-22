@@ -147,8 +147,7 @@
                                echo '<td hidden class="admin-id">'.$admin["adminid"].'</td>';
                                echo '<td class="admin-name">'.$admin["name"].'</td>';
                                echo '<td class="admin-email">'.$admin["email"].'</td>';
-                               echo '<td class = "status">';
-                             
+                               echo '<td class = "status">';                             
                                echo '<div class="chip '.$admins->Role($admin["role"]).'">';
                                echo '<div class="chip-body">';
                                echo '<div class="chip-text">'.$admin["role"].'</div>';
