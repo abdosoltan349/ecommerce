@@ -109,10 +109,10 @@
                             <thead>
                                 <tr>
                                     <th></th>
+									<th hidden></th>
                                     <th>NAME</th>
                                     <th>CODE</th>
-                                   
-                                    <th>PRICE</th>
+									<th>PRICE</th>
                                     <th>ACTION</th>
                                 </tr>
                             </thead>
@@ -121,6 +121,7 @@
 							for($i = 0; $i<80;$i++){
 							echo '<tr>';
 							echo '<td></td>';
+							echo '<td class="coupon-id" hidden></td>';
 							echo '<td class="coupon-name">Coupon'.$i.'</td>';
 							echo '<td class="coupon-value">'.bin2hex(random_bytes(4)).'</td>';
 							echo '<td class="coupon-price">$'.rand(5,264).'</td>';

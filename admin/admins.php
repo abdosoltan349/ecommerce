@@ -1,9 +1,13 @@
 <!DOCTYPE html>
-
 <?php
  include "init.php";
  include "includes/functions/admins.php";
   $admins = new admins();
+ // $do =isset($_GET['do']) ? $_GET['do'] : 'ff';
+  if(!isset($_GET['do'])){
+	  $_GET['do']= "notset";
+  }
+  if($_GET["do"] == "add"){
   if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	  $name = $_POST["adminname"];
 	  $email = $_POST["adminemail"];
@@ -11,7 +15,14 @@
 	  $role = $_POST["adminrole"];
 	  $admins ->set_admins($name,$email,$password,$role);
   }
+  }
+  if($_GET["do"] == "delete"){
+  if ($_SERVER["REQUEST_METHOD"] == "POST") {
+	   $id = $_POST["admindelete"];
+       $admins->delete_admins($id);
+  }}
 ?>
+
 <html class="loading" lang="en" data-textdirection="ltr">
 <!-- BEGIN: Head-->
 
@@ -141,7 +152,7 @@
                             
                
                             
-							foreach ( $admins->get_admins() as $admin) {
+							foreach ($admins->get_admins() as $admin) {
                                echo '<tr>';
                                echo '<td></td>';
                                echo '<td hidden class="admin-id">'.$admin["adminid"].'</td>';
@@ -155,8 +166,10 @@
                                echo '</div>';
                                echo '</td>';
                                echo '<td class="product-action">';
-                               echo '<button class="action-edit"><i class="feather icon-edit"></i></button>';
-							   echo '<form action = "deleteadmin.php" method = "post">';
+							   echo '<form method = "post" action = "editadmin.php?id='.$admin["adminid"]."&name=".$admin["name"]."&email=".$admin["email"]."&role=".$admin["role"].'">';
+                               echo '<button class="editadmins"><i class="feather icon-edit"></i></button>';
+							   echo '</form>';
+							   echo '<form action = "'.$_SERVER["PHP_SELF"]."?do=delete".'" method = "post">';
                                echo '<button name = "admindelete" class="action-delete" value ='.$admin["adminid"].'><i class="feather icon-trash"></i></button>';
 							   echo '</form>';
  							   echo '</td>';
@@ -209,7 +222,7 @@
                             </div>
                             <div class="add-data-footer d-flex justify-content-around px-3 mt-2">
                                 <div class="add-data-btn">
-									<form id= "addadmin" method = "post" action = "<?php echo $_SERVER['PHP_SELF']; ?>">
+									<form id= "addadmin" method = "post" action = "<?php echo $_SERVER['PHP_SELF']."?do=add"; ?>">
                                     <button type = "submit" class="btn btn-primary">Add Data</button>
 									</form>
                                 </div>
@@ -227,6 +240,7 @@
         </div>
     </div>
     <!-- END: Content-->
+	
 
     <div class="sidenav-overlay"></div>
     <div class="drag-target"></div>

@@ -53,9 +53,6 @@
 
    <?php
 	include $tpl."header.php";
-	 ?>
-  
-	<?php
 		include $tpl."menu.php";
 	 ?>
 

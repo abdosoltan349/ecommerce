@@ -43,5 +43,11 @@ class admins {
 	   $stmt =  $conn->prepare("DELETE FROM admins WHERE adminid = ? ");
 	   $stmt->execute(array($adminid));
    }
+   function update_admin($adminid,$adminname,$adminemail,$adminpassword,$adminrole) {
+	   include "init.php";
+	   $adminpassword = sha1($adminpassword);
+	   $stmt = $conn->prepare("UPDATE admins SET name=?,email=?,pass=?,role=? WHERE adminid=?");
+	   $stmt->execute(array($adminname,$adminemail,$adminpassword,$adminrole,$adminid));
+   }
 }
 ?>
