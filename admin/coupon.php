@@ -10,7 +10,7 @@
   }
   if($_GET["do"] == "add"){
   if ($_SERVER["REQUEST_METHOD"] == "POST") {
-      $couponid= $_POST["couponid"]
+      $couponid= $_POST["couponid"];
 	  $name = $_POST["name"];
 	  $code = $_POST["code"];
 	  $value = $_POST["value"];
@@ -139,22 +139,21 @@
                             </thead>
                             <tbody>
 							<?php
-							foreach ( $coupon->get_coupon() as $coupons) {
+							foreach ($coupons->get_coupon() as $coupon) {
 							echo '<tr>';
 							echo '<td></td>';
-                            echo '<td hidden class="coupon-id">'.$coupons["couponid"].'</td>';    
-							echo '<td class="coupon-name">'.$coupons["name"].'</td>';
-							echo '<td class="coupon-value">'.$coupons["code"].'</td>';
-							echo '<td class="coupon-price">$'.$coupons["value"].'</td>';
+                            echo '<td hidden class="coupon-id">'.$coupon["couponid"].'</td>';    
+							echo '<td class="coupon-name">'.$coupon["name"].'</td>';
+							echo '<td class="coupon-value">'.$coupon["code"].'</td>';
+							echo '<td class="coupon-price">$'.$coupon["value"].'</td>';
 							echo '<td class="coupon-action">';
                                 
-							echo '<form method = "post" action = "editadmin.php?id='.$coupons["couponid"]."&name=".$coupons["name"]."&code=".$coupons["code"]."&value=".$coupons["value"].'">';
+							echo '<form method = "post" action = "editadmin.php?id='.$coupon["couponid"]."&name=".$coupon["name"]."&code=".$coupon["code"]."&value=".$coupon["value"].'">';
                             echo '<button class="editcoupon"><i class="feather icon-edit"></i></button>';
 				            echo '</form>';
                             echo '<form action = "'.$_SERVER["PHP_SELF"]."?do=delete".'" method = "post">';
-							echo '<button name="cdelete" class="action-delete" value ='.$couponss["ccouponid"].'><i class="feather icon-trash"></i></button>';
+							echo '<button name="cdelete" class="action-delete" value ='.$coupon["ccouponid"].'><i class="feather icon-trash"></i></button>';
                             echo '</form>';
-                                
 							echo '</td>';
 							echo ' </tr>';
 							}

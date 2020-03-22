@@ -1,5 +1,5 @@
 <?php
-class coupon {
+class coupons{
     
 function set_coupon($ccouponid,$cName,$ccode,$cValue) {
     include "init.php";
@@ -24,7 +24,7 @@ function get_coupon() {
     return $coupon;
   }
 
-function update_coupon($$couponid,$name,$code,$value) {
+function update_coupon($couponid,$name,$code,$value) {
     include "init.php";
    	$stmt = $conn->prepare("UPDATE coupon (couponid,name,code, value)
 							SET (:couponid,:name,:code,:value)");
