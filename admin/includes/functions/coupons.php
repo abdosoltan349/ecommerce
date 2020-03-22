@@ -1,15 +1,15 @@
 <?php
 class coupons{
     
-function set_coupon($ccouponid,$cName,$ccode,$cValue) {
+function set_coupon($cName,$ccode,$cValue) {
     include "init.php";
-	   $stmt = $conn->prepare("INSERT INTO admins (couponid,name,code, value)
-							VALUES (:couponid,:name,:code,:value)");
+	   $stmt = $conn->prepare("INSERT INTO coupon (name,code,value)
+							VALUES (:name,:code,:value)");
 	   $stmt->execute(array(
-	        'couponid' => $couponid,		
-            'name' => $name,
-            'code' => $code,
-			'value' => $value
+	
+            'name' => $cName,
+            'code' => $ccode,
+			'value' => $cValue
             
 	   ));
     
