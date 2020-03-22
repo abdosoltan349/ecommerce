@@ -136,18 +136,19 @@
                             <thead>
                                 <tr>
                                     <th></th>
+									<th hidden></th>
                                     <th>Image</th>
                                     <th>NAME</th>
                                     <th>CATEGORY</th>
-                                    <th>POPULARITY</th>
-                                    <th>ORDER STATUS</th>
                                     <th>PRICE</th>
+                             
                                     <th>ACTION</th>
                                 </tr>
                             </thead>
                             <tbody>
                            <?php   
                                 foreach($products->get_products() as $product){
+<<<<<<< HEAD:admin/producat-panel.php
                                     
                                     $quary = $conn->prepare("select subname from subcategorie where subcategorieid = ?");
                                    
@@ -175,6 +176,21 @@
                                     echo '<td class="product-price">'.$product["price"].'</td><td class="product-action">'  ;                                  
                                     echo '<span class="action-edit"><i class="feather icon-edit"></i></span>';
                                     echo '<span onclick="'.  $products->delete_product($product["productid"]) .'" class="action-delete"><i class="feather icon-trash"></i></span></td></tr>'   ;                                                                 
+=======
+                                 echo '<tr>';
+								echo '<td></td>';
+								echo '<td hidden class="product-id">'.$product["productid"].'</td>';
+								echo '<td class="product-img"><img src ="'.$product["image"].'"></td>';
+								echo '<td class="product-name">'.$product["name"].'</td>';
+								echo '<td class="product-category">'.$product["subname"].'</td>';
+								echo '<td class="product-number">'.$product["price"].'</td>';
+								echo '<td class="subcategory-action">';
+								echo '<span class="action-edit"><i class="feather icon-edit"></i></span>';
+								echo '<span class="action-delete" ><i class="feather icon-trash"></i></span>';
+								echo '</td>';
+								echo '</tr>';
+									                                            
+>>>>>>> cc1ac0eb8ed0830c32f351e082057580276c1207:admin/youssef.php
                                 }
                                 
                                 ?>
