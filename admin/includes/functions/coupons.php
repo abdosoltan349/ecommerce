@@ -18,7 +18,7 @@ function set_coupon($cName,$ccode,$cValue) {
 function get_coupon() {
     include "init.php";
 	
-    $stmt = $conn->prepare("SELECT couponid,name,code,value FROM coupon ");
+    $stmt = $conn->prepare("SELECT * FROM coupon WHERE 1 ");
     $stmt->execute();
     $coupon = $stmt->fetchAll();
     return $coupon;

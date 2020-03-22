@@ -6,7 +6,7 @@ class Products {
 
   function get_products() {
     include "init.php";
-    $stmt = $conn->prepare("SELECT * FROM product ");
+    $stmt = $conn->prepare("SELECT * FROM product WHERE 1 ");
     $stmt->execute();
     $products = $stmt->fetchAll();
     return $products;
@@ -16,15 +16,15 @@ class Products {
 	   include "init.php";
 	  
 	   $stmt = $conn->prepare("INSERT INTO product
-							VALUES (1,?,?,?,?,?,?,?)");
+							VALUES (:image,:name,:desc,:tags,:price,:discount,:subcategorieid)");
 	   $stmt->execute(array(
-      $image,
-			 $productName,
-       $description,
-       $tags,
-			 $price,
-       $discount,     
-       $subcategorieid,              
+		'image' => $image,
+		'name' =>  $productName,
+        'desc' =>  $description,
+        'tags' =>  $tags,
+		'price' =>  $price,
+        'discount' =>  $discount,     
+        'subcategorieid' =>  $subcategorieid            
      ));
      
      
