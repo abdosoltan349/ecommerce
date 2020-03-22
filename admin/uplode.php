@@ -1,3 +1,5 @@
+
+
 <?php
 $target_dir = "../data/uploads/";
 $target_file = $target_dir . basename($_FILES["y"]["name"]);
@@ -37,6 +39,8 @@ if ($uploadOk == 0) {
 } else {
     if (move_uploaded_file($_FILES["y"]["tmp_name"], $target_file)) {
         echo "The file ". basename( $_FILES["y"]["name"]). " has been uploaded.";
+        $conn->prepare("insert into product values('path','name','any dis','tags','123','50%' ,'sub'");
+        $conn->execute(array());
     } else {
         echo "Sorry, there was an error uploading your file.";
     }

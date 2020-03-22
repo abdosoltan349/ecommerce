@@ -1,8 +1,17 @@
 <!DOCTYPE html>
 
 <?php
- include "init.php";
-	?>
+    include "init.php";
+    include "includes/functions/products.php";
+
+    $products = new Products();
+  
+   // $products->set_product("any name" , "image path" , "15", " pro dis" , "50%" , "2","anytaag");
+    
+   
+    
+    
+?>
 <html class="loading" lang="en" data-textdirection="ltr">
 <!-- BEGIN: Head-->
 
@@ -43,6 +52,17 @@
     <!-- BEGIN: Custom CSS-->
     <link rel="stylesheet" type="text/css" href="<?php echo $css ?>style.css">
     <!-- END: Custom CSS-->
+
+    <?php 
+
+       
+       
+
+
+
+
+
+    ?>
 
 </head>
 <!-- END: Head-->
@@ -126,31 +146,38 @@
                                 </tr>
                             </thead>
                             <tbody>
-                             
-                            <tr>
-                                    <td></td>
-                                    <td class="product-img"><img src="<?php echo $images ?>elements/apple-watch.png" alt="Img placeholder">
-                                    </td>
-                                    <td class="product-name">Apple Watch series 4 GPS</td>
-                                    <td class="product-category">Computers</td>
-                                    <td>
-                                        <div class="progress progress-bar-success">
-                                            <div class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="40" aria-valuemax="100" style="width:97%"></div>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="chip chip-warning">
-                                            <div class="chip-body">
-                                                <div class="chip-text">on hold</div>
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td class="product-price">$69.99</td>
-                                    <td class="product-action">
-                                        <span class="action-edit"><i class="feather icon-edit"></i></span>
-                                        <span class="action-delete"><i class="feather icon-trash"></i></span>
-                                    </td>
-                                </tr>
+                           <?php   
+                                foreach($products->get_products() as $product){
+                                    
+                                    $quary = $conn->prepare("select subname from subcategorie where subcategorieid = ?");
+                                   
+                                    $quary->execute(array($product["subcategorieid"]));
+                                    $subCat = "" ;
+                                   
+                                     
+                                    foreach($quary->fetchAll() as $sub){
+                                         $subCat =  $sub["subname"];
+                                    break;
+                                    }
+                                   
+                            echo "<tr> <td></td>";
+                                   
+                                   echo '<td class="product-img"><img src="'. $product["image"]  .'" alt="Img placeholder"> </td>';
+                                   
+                                    echo '<td class="product-name">'. $product["name"].'</td>';
+                                    echo '<td class="product-category">' . $subCat .'</td><td> <div class="progress progress-bar-success">';
+                                    
+                                       
+                                    echo '<div class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="40" aria-valuemax="100" style="width:97%"></div></div> </td><td>';
+                                    echo '<div class="chip chip-warning"><div class="chip-body">';
+                                            
+                                    echo '<div class="chip-text">on hold</div></div></div></td>';
+                                    echo '<td class="product-price">'.$product["price"].'</td><td class="product-action">'  ;                                  
+                                    echo '<span class="action-edit"><i class="feather icon-edit"></i></span>';
+                                    echo '<span onclick="'.  $products->delete_product($product["productid"]) .'" class="action-delete"><i class="feather icon-trash"></i></span></td></tr>'   ;                                                                 
+                                }
+                                
+                                ?>
                             </tbody>
                         </table>
                     </div>
@@ -176,14 +203,19 @@
                                             <input name= "v" type="text" class="form-control" id="data-name" form = "dataListUpload">
                                         </div>
                                         <div class="col-sm-12 data-field-col">
-                                            <label for="data-category"> Category </label>
-                                            <select name = "c" class="form-control" id="data-category" form = "dataListUpload">
-                                                <option>Audio</option>
-                                                <option>Computers</option>
-                                                <option>Fitness</option>
-                                                <option>Appliance</option>
+                                            <label for="sel1">Select Subcatigory:</label>
+                                            <select class="form-control" name="subcategorie" id="sel1" form = "dataListUpload">
+                                                <?php
+                                                  $quary = $conn->prepare("SELECT * FROM subcategorie ");
+                                                  $quary->execute();
+                                                  $subcategorie = $quary->fetchAll();
+                                                  foreach($subcategorie as $sub){
+                                                   echo '<option value="'.$sub["subcategorieid"] .'">'
+                                                   . $sub["subname"].'</option>';
+                                                  }                                              
+                                                ?>                                                                                      
                                             </select>
-                                        </div>
+                                        </div>  
                                         <div class="col-sm-12 data-field-col">
                                             <label for="data-status">Order Status</label>
                                             <select name = "z" class="form-control" id="data-status" form = "dataListUpload">
@@ -197,9 +229,22 @@
                                             <label for="data-price">Price</label>
                                             <input name = "x" type="text" class="form-control" id="data-price" form = "dataListUpload">
                                         </div>
+                                        <div class="col-sm-12 data-field-col">
+                                            <label for="data-tags">Tags</label>
+                                            <input name = "tags" type="text" class="form-control" id="data-tags" form = "dataListUpload">
+                                        </div>
+                                        <div class="col-sm-12 data-field-col">
+                                            <label for="data-discount">Discount</label>
+                                            <input name = "discount" type="number" class="form-control" id="data-discount" form = "dataListUpload">
+                                        </div>
+                                        <div class="col-sm-12 data-field-col">
+                                            <label for="data-description">Description</label>
+                                            <textarea name= "description" rows="3" class="form-control" id="data-description" form = "dataListUpload"></textarea>
+                                        </div>
+                                                                             
                                         <div class="col-sm-12 data-field-col data-list-upload">
 										
-                                            <form method = "post" action="test.php" class="dropzone dropzone-area" id="dataListUpload" enctype="multipart/form-data">
+                                            <form method = "POST" action="<?php echo $_SERVER['PHP_SELF']; ?>" class="dropzone dropzone-area" id="dataListUpload" enctype="multipart/form-data">
                                                 <input   name = "y" type="file" class="dz-message">Upload Image</input>
                                             </form>
                                         </div>
@@ -223,6 +268,8 @@
             </div>
         </div>
     </div>
+
+
     <!-- END: Content-->
 
     <div class="sidenav-overlay"></div>
@@ -261,3 +308,52 @@
 <!-- END: Body-->
 
 </html>
+
+<?php
+    if($_SERVER["REQUEST_METHOD"] == "POST"){
+        $target_dir = "../data/uploads/";
+        $target_file = $target_dir . basename($_FILES["y"]["name"]);
+        $uploadOk = 1;
+
+
+        $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
+        // Check if image file is a actual image or fake image
+        if(isset($_POST["submit"])) {
+            $check = getimagesize($_FILES["y"]["tmp_name"]);
+            if($check !== false) {
+                echo "File is an image - " . $check["mime"] . ".";
+                $uploadOk = 1;
+            } else {
+                echo "File is not an image.";
+                $uploadOk = 0;
+            }
+        }
+        // Check if file already exists
+        if (file_exists($target_file)) {
+            $products->set_product($_POST["v"] ,$target_file, 
+            $_POST["x"],$_POST["description"]  ,  $_POST["discount"] , $_POST["subcategorie"], $_POST["tags"]);
+            
+            //header("Location: producat-panel.php");
+            $uploadOk = 0;
+        }
+        // Check file size
+        if ($_FILES["y"]["size"] > 500000) {   
+            $uploadOk = 0;
+          
+        }
+        
+      
+        // Check if $uploadOk is set to 0 by an error
+        if ($uploadOk == 0) {
+            echo "Sorry, your file was not uploaded.";
+        // if everything is ok, try to upload file
+        } else {
+            if (move_uploaded_file($_FILES["y"]["tmp_name"], $target_file)) {
+                
+                $products->set_product($_POST["v"] ,$target_file, 
+                $_POST["x"],$_POST["description"]  ,  $_POST["discount"] , $_POST["subcategorie"], $_POST["tags"]);
+              //  header("Location: producat-panel.php");
+            }
+        } 
+    }
+?>

@@ -158,8 +158,7 @@
                                echo '<td hidden class="admin-id">'.$admin["adminid"].'</td>';
                                echo '<td class="admin-name">'.$admin["name"].'</td>';
                                echo '<td class="admin-email">'.$admin["email"].'</td>';
-                               echo '<td class = "status">';
-                             
+                               echo '<td class = "status">';                             
                                echo '<div class="chip '.$admins->Role($admin["role"]).'">';
                                echo '<div class="chip-body">';
                                echo '<div class="chip-text">'.$admin["role"].'</div>';
@@ -167,9 +166,11 @@
                                echo '</div>';
                                echo '</td>';
                                echo '<td class="product-action">';
+                                
 							   echo '<form method = "post" action = "editadmin.php?id='.$admin["adminid"]."&name=".$admin["name"]."&email=".$admin["email"]."&role=".$admin["role"].'">';
                                echo '<button class="editadmins"><i class="feather icon-edit"></i></button>';
 							   echo '</form>';
+                                
 							   echo '<form action = "'.$_SERVER["PHP_SELF"]."?do=delete".'" method = "post">';
                                echo '<button name = "admindelete" class="action-delete" value ='.$admin["adminid"].'><i class="feather icon-trash"></i></button>';
 							   echo '</form>';

@@ -2,6 +2,22 @@
 
 <?php
  include "init.php";
+ include "includes/functions/coupons.php";
+   $coupons = new coupons();
+ 
+  if(!isset($_GET['do'])&&!isset($_GET['id'])){
+	  $_GET['do']= "notset";
+		$_GET['id']= "notset";}
+  if($_GET["do"] == "add"){
+  if ($_SERVER["REQUEST_METHOD"] == "POST") {
+ 
+	  $coupons ->set_coupon($_POST["couponname"],$_POST["couponcode"],$_POST["couponprice"]);
+  }
+  }
+  if($_GET["do"] == "delete"){
+	  if ($_SERVER["REQUEST_METHOD"] == "GET") {
+		  $coupons->delete_coupon($_GET["id"]);
+	  }}
 	?>
 <html class="loading" lang="en" data-textdirection="ltr">
 <!-- BEGIN: Head-->
@@ -118,20 +134,23 @@
                             </thead>
                             <tbody>
 							<?php
-							for($i = 0; $i<80;$i++){
+							foreach ($coupons->get_coupon() as $coupon) {
 							echo '<tr>';
 							echo '<td></td>';
-							echo '<td class="coupon-id" hidden></td>';
-							echo '<td class="coupon-name">Coupon'.$i.'</td>';
-							echo '<td class="coupon-value">'.bin2hex(random_bytes(4)).'</td>';
-							echo '<td class="coupon-price">$'.rand(5,264).'</td>';
+                            echo '<td hidden class="coupon-id">'.$coupon["couponid"].'</td>';    
+							echo '<td class="coupon-name">'.$coupon["name"].'</td>';
+							echo '<td class="coupon-value">'.$coupon["code"].'</td>';
+							echo '<td class="coupon-price">$'.$coupon["value"].'</td>';
 							echo '<td class="coupon-action">';
-							echo '<span class="action-edit"><i class="feather icon-edit"></i></span>';
-							echo '<span class="action-delete"><i class="feather icon-trash"></i></span>';
+                                
+							echo '<a href ='"editcoupon.php ?do=update &id='.$coupon["couponid"]."&name=".$coupon["name"]."&code=".$coupon["code"]."&vlue=".$coupon["value"].'><span class="action-edit"><i class="feather icon-edit"></i></span></a>';
+                                
+							echo '<a href ='.$_SERVER["PHP_SELF"]."?do=delete&id=".$coupon["couponid"].'><span class="action-delete"><i class="feather icon-trash"></i></span></a>';
 							echo '</td>';
 							echo ' </tr>';
 							}
 							?>
+							
 
                             </tbody>
                         </table>
@@ -155,16 +174,16 @@
                                     <div class="row">
                                         <div class="col-sm-12 data-field-col">
                                             <label for="data-name">Name</label>
-                                            <input type="text" class="form-control" id="data-name">
+                                            <input name = "couponname" type="text" class="form-control" id="data-name" form = "addcoupon">
                                         </div>
                                         <div class="col-sm-12 data-field-col">
                                             <label for="data-code">Code</label>
-                                            <input type="text" class="form-control" id="data-code">
+                                            <input name = "couponcode" type="text" class="form-control" id="data-code" form = "addcoupon">
                                         </div>
                                        
                                         <div class="col-sm-12 data-field-col">
                                             <label for="data-price">Price</label>
-                                            <input type="text" class="form-control" id="data-price">
+                                            <input name = "couponprice" type="text" class="form-control" id="data-price" form = "addcoupon">
                                         </div>
                                         
                                     </div>
@@ -172,8 +191,13 @@
                             </div>
                             <div class="add-data-footer d-flex justify-content-around px-3 mt-2">
                                 <div class="add-data-btn">
-                                    <button class="btn btn-primary">Add Data</button>
+								<form action = "coupon.php?do=add" method = "POST" id= "addcoupon">
+                                    <button type = "submit" class="btn btn-primary">Add Data</button>
+                                    </form>
                                 </div>
+                                
+                                
+                                
                                 <div class="cancel-data-btn">
                                     <button class="btn btn-outline-danger">Cancel</button>
                                 </div>
@@ -220,7 +244,11 @@
     <!-- BEGIN: Page JS-->
     <script src="layout/js/scripts/ui/copons.js"></script>
     <!-- END: Page JS-->
-
+<script>
+    if ( window.history.replaceState ) {
+        window.history.replaceState( null, null, window.location.href );
+    }
+</script>
 </body>
 <!-- END: Body-->
 

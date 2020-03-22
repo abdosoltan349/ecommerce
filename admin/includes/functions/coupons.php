@@ -1,15 +1,15 @@
 <?php
 class coupons{
     
-function set_coupon($ccouponid,$cName,$ccode,$cValue) {
+function set_coupon($cName,$ccode,$cValue) {
     include "init.php";
-	   $stmt = $conn->prepare("INSERT INTO admins (couponid,name,code, value)
-							VALUES (:couponid,:name,:code,:value)");
+	   $stmt = $conn->prepare("INSERT INTO coupon (name,code,value)
+							VALUES (:name,:code,:value)");
 	   $stmt->execute(array(
-	        'couponid' => $couponid,		
-            'name' => $name,
-            'code' => $code,
-			'value' => $value
+	
+            'name' => $cName,
+            'code' => $ccode,
+			'value' => $cValue
             
 	   ));
     
@@ -24,13 +24,10 @@ function get_coupon() {
     return $coupon;
   }
 
-function update_coupon($couponid,$name,$code,$value) {
+function update_coupon($name,$code,$value,$couponid) {
     include "init.php";
-   	$stmt = $conn->prepare("UPDATE coupon (couponid,name,code, value)
-							SET (:couponid,:name,:code,:value)");
-    $stmt->execute();
-    $UpdateCoupon = $stmt->fetchAll();
-    return $UpdateCoupon;
+ $stmt = $conn->prepare("UPDATE coupon SET couponid=?,name=?,code=?,value=? WHERE couponid=?");
+	   $stmt->execute(array($name,$code,$value,$couponid));
   }
 
 function delete_coupon($couponid) {
