@@ -152,7 +152,7 @@
                             echo '<button class="editcoupon"><i class="feather icon-edit"></i></button>';
 				            echo '</form>';
                             echo '<form action = "'.$_SERVER["PHP_SELF"]."?do=delete".'" method = "post">';
-							echo '<button name="cdelete" class="action-delete" value ='.$coupon["ccouponid"].'><i class="feather icon-trash"></i></button>';
+							echo '<button name="cdelete" class="action-delete" value ='.$coupon["couponid"].'><i class="feather icon-trash"></i></button>';
                             echo '</form>';
 							echo '</td>';
 							echo ' </tr>';
