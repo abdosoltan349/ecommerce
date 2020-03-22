@@ -2,6 +2,16 @@
 
 <?php
  include "init.php";
+ include "includes/functions/subcategory.php";
+  $subcategorys = new subcategory();
+ if(!isset($_GET['do'])&&!isset($_GET['id'])){
+	  $_GET['do']= "notset";
+ $_GET['id']= "notset";}
+	  if($_GET["do"] == "delete"){
+	  if ($_SERVER["REQUEST_METHOD"] == "GET") {
+		  $subcategorys->delete_subcategory($_GET["id"]);
+	  }}
+  
 	?>
 <html class="loading" lang="en" data-textdirection="ltr">
 <!-- BEGIN: Head-->
@@ -118,6 +128,8 @@
                             <thead>
                                 <tr>
                                     <th></th>
+									<th hidden></th>
+									<th hidden></th>
                                     <th>SUB CATEGORY NAME</th>
                                     <th>CATEGORY</th>
                                     <th>PRODUCTS NUMBER</th>
@@ -125,17 +137,24 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
-                                    <td></td>
-                                    <td class="subcategory-name">cable</td>
-                                    <td class="category">Computers</td>
-                                    <td class="product-number">9</td>
-                                    <td class="subcategory-action">
-                                        <span class="action-edit"><i class="feather icon-edit"></i></span>
-                                        <span class="action-delete"><i class="feather icon-trash"></i></span>
-                                    </td>
-                                </tr>
-                               
+							<?php
+							foreach ($subcategorys->get_subcategory() as $subcategory) {
+								echo '<tr>';
+								echo '<td></td>';
+								echo '<td hidden class="subcategory-id">'.$subcategory["subcategorieid"].'</td>';
+								echo '<td hidden class="category-id">'.$subcategory["categorieid"].'</td>';
+								echo '<td class="subcategory-name">'.$subcategory["subname"].'</td>';
+								echo '<td class="category">'.$subcategory["catename"].'</td>';
+								echo '<td class="product-number">9</td>';
+								echo '<td class="subcategory-action">';
+								echo '<span class="action-edit"><i class="feather icon-edit"></i></span>';
+								echo '<a href ='.$_SERVER["PHP_SELF"]."?do=delete&id=".$subcategory["subcategorieid"].'><span class="action-delete" ><i class="feather icon-trash"></i></span></a>';
+								echo '</td>';
+								echo '</tr>';
+							}
+						
+							?>
+                       
                             </tbody>
                         </table>
                     </div>
@@ -225,7 +244,11 @@
     <!-- BEGIN: Page JS-->
     <script src="layout/js/scripts/ui/sub_categorie.js"></script>
     <!-- END: Page JS-->
-
+<script>
+    if ( window.history.replaceState ) {
+        window.history.replaceState( null, null, window.location.href );
+    }
+</script>
 </body>
 <!-- END: Body-->
 

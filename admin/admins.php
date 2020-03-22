@@ -152,7 +152,7 @@
                             
                
                             
-							foreach ( $admins->get_admins() as $admin) {
+							foreach ($admins->get_admins() as $admin) {
                                echo '<tr>';
                                echo '<td></td>';
                                echo '<td hidden class="admin-id">'.$admin["adminid"].'</td>';
