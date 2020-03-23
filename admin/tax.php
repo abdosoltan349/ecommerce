@@ -2,7 +2,34 @@
 
 <?php
  include "init.php";
+ include "includes/functions/tax.php";
+   $tax = new tax();
+ 
+  if(!isset($_GET['do'])&&!isset($_GET['id'])){
+	  $_GET['do']= "notset";
+		$_GET['id']= "notset";}
+  
+  if($_GET["do"] == "add"){
+  if ($_SERVER["REQUEST_METHOD"] == "POST") {
+ 
+      $name = $_POST["taxname"];
+      $percentage = $_POST["taxpercentage"];
+
+     $tax ->setTax($name,$percentage);
+  }
+  }
+  if($_GET["do"] == "delete"){
+	  if ($_SERVER["REQUEST_METHOD"] == "GET") {
+           
+           $id = $_POST["taxid"];
+           $coupons->delete_coupon($id);
+	  }}
 	?>
+
+
+
+
+
 <html class="loading" lang="en" data-textdirection="ltr">
 <!-- BEGIN: Head-->
 
@@ -156,13 +183,13 @@
                                     <div class="row">
                                         <div class="col-sm-12 data-field-col">
                                             <label for="data-name">Name</label>
-                                            <input type="text" class="form-control" id="data-name">
+                                            <input type="text" class="form-control" id="data-name" name="taxname">
                                         </div>
                                       
                                        
                                         <div class="col-sm-12 data-field-col">
-                                            <label for="data-price">Price</label>
-                                            <input type="text" class="form-control" id="data-price">
+                                            <label for="data-price">percentage</label>
+                                            <input type="text" class="form-control" id="data-price" name="taxpercentage">
                                         </div>
                                         
                                     </div>
@@ -170,7 +197,7 @@
                             </div>
                             <div class="add-data-footer d-flex justify-content-around px-3 mt-2">
                                 <div class="add-data-btn">
-                                    <button class="btn btn-primary">Add Data</button>
+                                    <button class="btn btn-primary" name="addData">Add Data</button>
                                 </div>
                                 <div class="cancel-data-btn">
                                     <button class="btn btn-outline-danger">Cancel</button>

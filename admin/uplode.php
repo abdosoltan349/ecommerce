@@ -1,6 +1,7 @@
 
 
 <?php
+
 $target_dir = "../data/uploads/";
 $target_file = $target_dir . basename($_FILES["y"]["name"]);
 $uploadOk = 1;
