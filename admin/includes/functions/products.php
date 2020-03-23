@@ -6,11 +6,7 @@ class Products {
 
   function get_products() {
     include "init.php";
-<<<<<<< HEAD
-    $stmt = $conn->prepare("SELECT * FROM product ");
-=======
     $stmt = $conn->prepare("SELECT * FROM product,subcategorie WHERE product.subcategorieid = subcategorie.subcategorieid");
->>>>>>> cc1ac0eb8ed0830c32f351e082057580276c1207
     $stmt->execute();
     $products = $stmt->fetchAll();
     return $products;
@@ -20,17 +16,6 @@ class Products {
 	   include "init.php";
 	  
 	   $stmt = $conn->prepare("INSERT INTO product
-<<<<<<< HEAD
-							VALUES (1,?,?,?,?,?,?,?)");
-	   $stmt->execute(array(
-      $image,
-			 $productName,
-       $description,
-       $tags,
-			 $price,
-       $discount,     
-       $subcategorieid,              
-=======
 							VALUES (:image,:name,:desc,:tags,:price,:discount,:subcategorieid)");
 	   $stmt->execute(array(
 		'image' => $image,
@@ -40,7 +25,6 @@ class Products {
 		'price' =>  $price,
         'discount' =>  $discount,     
         'subcategorieid' =>  $subcategorieid            
->>>>>>> cc1ac0eb8ed0830c32f351e082057580276c1207
      ));
      
      

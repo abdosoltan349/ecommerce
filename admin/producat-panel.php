@@ -148,35 +148,6 @@
                             <tbody>
                            <?php   
                                 foreach($products->get_products() as $product){
-<<<<<<< HEAD:admin/producat-panel.php
-                                    
-                                    $quary = $conn->prepare("select subname from subcategorie where subcategorieid = ?");
-                                   
-                                    $quary->execute(array($product["subcategorieid"]));
-                                    $subCat = "" ;
-                                   
-                                     
-                                    foreach($quary->fetchAll() as $sub){
-                                         $subCat =  $sub["subname"];
-                                    break;
-                                    }
-                                   
-                            echo "<tr> <td></td>";
-                                   
-                                   echo '<td class="product-img"><img src="'. $product["image"]  .'" alt="Img placeholder"> </td>';
-                                   
-                                    echo '<td class="product-name">'. $product["name"].'</td>';
-                                    echo '<td class="product-category">' . $subCat .'</td><td> <div class="progress progress-bar-success">';
-                                    
-                                       
-                                    echo '<div class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="40" aria-valuemax="100" style="width:97%"></div></div> </td><td>';
-                                    echo '<div class="chip chip-warning"><div class="chip-body">';
-                                            
-                                    echo '<div class="chip-text">on hold</div></div></div></td>';
-                                    echo '<td class="product-price">'.$product["price"].'</td><td class="product-action">'  ;                                  
-                                    echo '<span class="action-edit"><i class="feather icon-edit"></i></span>';
-                                    echo '<span onclick="'.  $products->delete_product($product["productid"]) .'" class="action-delete"><i class="feather icon-trash"></i></span></td></tr>'   ;                                                                 
-=======
                                  echo '<tr>';
 								echo '<td></td>';
 								echo '<td hidden class="product-id">'.$product["productid"].'</td>';
@@ -190,7 +161,6 @@
 								echo '</td>';
 								echo '</tr>';
 									                                            
->>>>>>> cc1ac0eb8ed0830c32f351e082057580276c1207:admin/youssef.php
                                 }
                                 
                                 ?>
