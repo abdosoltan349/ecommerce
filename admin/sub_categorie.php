@@ -11,6 +11,11 @@
 	  if ($_SERVER["REQUEST_METHOD"] == "GET") {
 		  $subcategorys->delete_subcategory($_GET["id"]);
 	  }}
+	  if($_GET["do"] == "add"){
+		if ($_SERVER["REQUEST_METHOD"] == "POST") {
+		$subcategorys->set_subcategory($_POST["catid"],$_POST["subname"]);
+  }
+  }
   
 	?>
 <html class="loading" lang="en" data-textdirection="ltr">
@@ -83,9 +88,9 @@
                             <h2 class="content-header-title float-left mb-0">Sub Categorie</h2>
                             <div class="breadcrumb-wrapper col-12">
                                 <ol class="breadcrumb">
-                                    <li class="breadcrumb-item"><a href="index">Home</a>
+                                    <li class="breadcrumb-item"><a href="index.php">Home</a>
                                     </li>
-                                    <li class="breadcrumb-item"><a href="#">Categories</a>
+                                    <li class="breadcrumb-item"><a href="categorie.php">Categories</a>
                                     </li>
                                     <li class="breadcrumb-item active">Sub Categorie
                                     </li>
@@ -145,9 +150,9 @@
 								echo '<td hidden class="category-id">'.$subcategory["categorieid"].'</td>';
 								echo '<td class="subcategory-name">'.$subcategory["subname"].'</td>';
 								echo '<td class="category">'.$subcategory["catename"].'</td>';
-								echo '<td class="product-number">9</td>';
+								echo '<td class="product-number">'.count($subcategorys->productnum($subcategory["subcategorieid"])).'</td>';
 								echo '<td class="subcategory-action">';
-								echo '<span class="action-edit"><i class="feather icon-edit"></i></span>';
+								echo '<a href="editsubcategorie.php?subid='.$subcategory["subcategorieid"]."&subname=".$subcategory["subname"]."&catname=".$subcategory["catename"].'"><span class="sub-edit"><i class="feather icon-edit"></i></span></a>';
 								echo '<a href ='.$_SERVER["PHP_SELF"]."?do=delete&id=".$subcategory["subcategorieid"].'><span class="action-delete" ><i class="feather icon-trash"></i></span></a>';
 								echo '</td>';
 								echo '</tr>';
@@ -177,15 +182,20 @@
                                     <div class="row">
                                         <div class="col-sm-12 data-field-col">
                                             <label for="data-name">Name</label>
-                                            <input type="text" class="form-control" id="data-name">
+                                            <input form = "subadd" name = "subname" type="text" class="form-control" id="data-name">
                                         </div>
                                         <div class="col-sm-12 data-field-col">
                                             <label for="data-category"> Category </label>
-                                            <select class="form-control" id="data-category">
-                                                <option>Audio</option>
-                                                <option>Computers</option>
-                                                <option>Fitness</option>
-                                                <option>Appliance</option>
+                                            <select form = "subadd" name ="catid" class="form-control" id="data-category">
+												<?php 
+													include "includes/functions/category.php";
+													$categorys = new category();
+													foreach ($categorys->getCategorie() as $category) {
+													echo '<option value='.$category["categorieid"].'>'.$category["catename"].'</option>';
+														
+													}
+													?> 
+                                        
                                             </select>
                                         </div>
                                         
@@ -196,7 +206,9 @@
                             </div>
                             <div class="add-data-footer d-flex justify-content-around px-3 mt-2">
                                 <div class="add-data-btn">
-                                    <button class="btn btn-primary">Add Data</button>
+									<form action = "?do=add" id="subadd" method = "post">
+                                    <button type = "submit" class="btn btn-primary">Add Data</button>
+									</form>
                                 </div>
                                 <div class="cancel-data-btn">
                                     <button class="btn btn-outline-danger">Cancel</button>

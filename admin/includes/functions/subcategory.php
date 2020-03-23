@@ -13,7 +13,7 @@ class subcategory {
     return $subcategory;
   }
   
-   function set_subcategory($categorieid,$name) {
+   function set_subcategory($categorieid,$subname) {
 	   include "init.php";
 	   $stmt = $conn->prepare("INSERT INTO subcategorie (categorieid,subname)
 							VALUES (:categorieid,:subname)");
@@ -32,5 +32,12 @@ class subcategory {
 	   $stmt = $conn->prepare("UPDATE subcategorie SET categorieid=?,subname=? WHERE subcategorieid=?");
 	   $stmt->execute(array($categorieid,$subname,$subcategorieid));
    }
+   function productnum($subcatid){
+    include "init.php";
+    $stmt = $conn->prepare("SELECT * FROM product WHERE subcategorieid = ?");
+    $stmt->execute(array($subcatid));
+    $subcat = $stmt->fetchAll();
+    return $subcat;
+	}
 }
 ?>

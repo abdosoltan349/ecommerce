@@ -2,20 +2,20 @@
 
 <?php
  include "init.php";
-include "includes/functions/category.php";
-  $category = new category();
+  include "includes/functions/category.php";
+  $categorys = new category();
  if(!isset($_GET['do'])&&!isset($_GET['id'])){
 	  $_GET['do']= "notset";
  $_GET['id']= "notset";}
 	  if($_GET["do"] == "delete"){
 	  if ($_SERVER["REQUEST_METHOD"] == "GET") {
-		  $category->deleteCategorie($_GET["id"]);
+		  $categorys->deleteCategorie($_GET["id"]);
 	  }}
 
   if($_GET["do"] == "add"){
   if ($_SERVER["REQUEST_METHOD"] == "POST") {
  
-	  $category ->setCategorie($_POST["catename"]);
+	  $categorys ->setCategorie($_POST["catename"]);
   }
   }
   
@@ -142,12 +142,12 @@ include "includes/functions/category.php";
                             
                             <tbody>
                                <?php
-							foreach ($category->getCategorie() as $category) {
+							foreach ($categorys->getCategorie() as $category) {
 								echo '<tr>';
 								echo '<td></td>';
 								echo '<td hidden class="category-id">'.$category["categorieid"].'</td>';
 								echo '<td class="category-name">'.$category["catename"].'</td>';
-								echo '<td class="subcategory-number">9</td>';
+								echo '<td class="subcategory-number">'.count($categorys->subcatnum($category["categorieid"])).'</td>';
 								echo '<td class="category-action">';
 								echo '<a href="editCategorie.php?id='.$category["categorieid"]."&name=".$category["catename"].'"><span class="editCategory"><i class="feather icon-edit"></i></span> <a/>';
 								echo '<a href ='.$_SERVER["PHP_SELF"]."?do=delete&id=".$category["categorieid"].'><span class="action-delete" ><i class="feather icon-trash"></i></span></a>';

@@ -37,6 +37,13 @@ class category{
         
         
     }
+	function subcatnum($catid){
+    include "init.php";
+    $stmt = $conn->prepare("SELECT * FROM subcategorie WHERE categorieid = ?");
+    $stmt->execute(array($catid));
+    $subcat = $stmt->fetchAll();
+    return $subcat;
+	}
 }
 
 
