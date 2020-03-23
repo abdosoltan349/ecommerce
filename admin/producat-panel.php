@@ -4,7 +4,9 @@
     include "init.php";
     include "includes/functions/products.php";
     include "includes/functions/uplode.php";
-
+if(!isset($_GET['do'])){
+	  $_GET['do']= "notset";
+  }
     $products = new Products();
     $uplode =  new Uplode();
     
