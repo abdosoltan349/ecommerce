@@ -27,7 +27,7 @@ class tax {
                include "init.php";
 
         
-       $stmt = $conn->prepare("SELECT taxid,name,percentage FROM tax");
+       $stmt = $conn->prepare("SELECT * FROM tax WHERE 1");
        $stmt->execute();
        $admins = $stmt->fetchAll();
        return $admins;

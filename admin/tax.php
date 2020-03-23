@@ -3,7 +3,7 @@
 <?php
  include "init.php";
  include "includes/functions/tax.php";
-   $tax = new tax();
+   $taxs = new tax();
  
   if(!isset($_GET['do'])&&!isset($_GET['id'])){
 	  $_GET['do']= "notset";
@@ -15,14 +15,14 @@
       $name = $_POST["taxname"];
       $percentage = $_POST["taxpercentage"];
 
-     $tax ->setTax($name,$percentage);
+     $taxs->setTax($name,$percentage);
   }
   }
   if($_GET["do"] == "delete"){
 	  if ($_SERVER["REQUEST_METHOD"] == "GET") {
            
            $id = $_POST["taxid"];
-           $coupons->delete_coupon($id);
+          $taxs->deleteTax($id);
 	  }}
 	?>
 
@@ -136,22 +136,20 @@
                             <thead>
                                 <tr>
                                     <th></th>
+									<th hidden></th>
                                     <th>NAME</th>
-                                    
-                                   
                                     <th>percentage</th>
-									<th></th>
                                     <th>ACTION</th>
                                 </tr>
                             </thead>
                             <tbody>
 							<?php
-							for($i = 0; $i<80;$i++){
+							foreach ($taxs->getTax() as $tax) {
 							echo '<tr>';
 							echo '<td></td>';
-							echo '<td class="tax-name">TAX'.$i.'</td>';
-							echo '<td class="tax-price">%'.rand(1,100).'</td>';
-							echo '<td></td>';
+							echo '<td class "tax-id" hidden>'.$tax["taxid"].'</td>';
+							echo '<td class="tax-name">TAX'.$tax["name"].'</td>';
+							echo '<td class="tax-price">%'.$tax["percentage"].'</td>';
 							echo '<td class="tax-action">';
 							echo '<span class="action-edit"><i class="feather icon-edit"></i></span>';
 							echo '<span class="action-delete"><i class="feather icon-trash"></i></span>';
