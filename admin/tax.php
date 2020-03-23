@@ -12,17 +12,12 @@
   if($_GET["do"] == "add"){
   if ($_SERVER["REQUEST_METHOD"] == "POST") {
  
-      $name = $_POST["taxname"];
-      $percentage = $_POST["taxpercentage"];
-
-     $taxs->setTax($name,$percentage);
+     $taxs->setTax($_POST["taxn"],$_POST["taxp"]);
   }
   }
   if($_GET["do"] == "delete"){
 	  if ($_SERVER["REQUEST_METHOD"] == "GET") {
-           
-           $id = $_POST["taxid"];
-          $taxs->deleteTax($id);
+          $taxs->deleteTax($_GET["taxid"]);
 	  }}
 	?>
 
@@ -148,13 +143,13 @@
 							echo '<tr>';
 							echo '<td></td>';
 							echo '<td class "tax-id" hidden>'.$tax["taxid"].'</td>';
-							echo '<td class="tax-name">TAX'.$tax["name"].'</td>';
+							echo '<td class="tax-name">'.$tax["name"].'</td>';
 							echo '<td class="tax-price">%'.$tax["percentage"].'</td>';
 							echo '<td class="tax-action">';
-							echo '<span class="action-edit"><i class="feather icon-edit"></i></span>';
-							echo '<span class="action-delete"><i class="feather icon-trash"></i></span>';
+							echo '<a href=edittax.php?do=update&id='.$tax["taxid"]."&name=".$tax["name"]."&pe=".$tax["percentage"].'><span class="tax-edit"><i class="feather icon-edit"></i></span></a>';
+							echo '<a href ="?do=delete&taxid='.$tax["taxid"]."&taxn=".$tax["name"]."&taxp=".$tax["percentage"].'"><span class="action-delete"><i class="feather icon-trash"></i></span></a>';
 							echo '</td>';
-							echo ' </tr>';
+							echo '</tr>';
 							}
 							?>
                                 
@@ -181,13 +176,13 @@
                                     <div class="row">
                                         <div class="col-sm-12 data-field-col">
                                             <label for="data-name">Name</label>
-                                            <input type="text" class="form-control" id="data-name" name="taxname">
+                                            <input name = "taxn" type="text" class="form-control" id="data-name"  form="addtax">
                                         </div>
                                       
                                        
                                         <div class="col-sm-12 data-field-col">
                                             <label for="data-price">percentage</label>
-                                            <input type="text" class="form-control" id="data-price" name="taxpercentage">
+                                            <input name = "taxp" type="text" class="form-control" id="data-price"  form="addtax">
                                         </div>
                                         
                                     </div>
@@ -195,8 +190,10 @@
                             </div>
                             <div class="add-data-footer d-flex justify-content-around px-3 mt-2">
                                 <div class="add-data-btn">
-                                    <button class="btn btn-primary" name="addData">Add Data</button>
-                                </div>
+									<form action="tax.php?do=add" method ="post" id="addtax">
+                                    <button type = "submit" class="btn btn-primary" >Add Data</button>
+									</form>
+								</div>
                                 <div class="cancel-data-btn">
                                     <button class="btn btn-outline-danger">Cancel</button>
                                 </div>

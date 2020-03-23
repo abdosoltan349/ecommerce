@@ -3,9 +3,6 @@
 
 class tax {
     
-        
-            
-    
        function setTax($Tname,$Tpercentage){
                include "init.php";
 	  
@@ -46,7 +43,7 @@ class tax {
     
        function deleteTax($taxid){
        include "init.php";
-	   $stmt =  $conn->prepare("DELETE FROM tax WHERE taxid = ? ");
+	   $stmt =  $conn->prepare("DELETE FROM tax WHERE taxid = ?");
 	   $stmt->execute(array($taxid));
     }
     

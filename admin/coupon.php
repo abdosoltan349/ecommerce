@@ -15,7 +15,7 @@
   }
   }
   if($_GET["do"] == "delete"){
-	  if ($_SERVER["REQUEST_METHOD"] == "GET") {
+	  if ($_SERVER["REQUEST_METHOD"] == "GET"){
 		  $coupons->delete_coupon($_GET["id"]);
 	  }}
 	?>
