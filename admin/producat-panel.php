@@ -3,12 +3,26 @@
 <?php
     include "init.php";
     include "includes/functions/products.php";
+    include "includes/functions/uplode.php";
 
     $products = new Products();
+    $uplode =  new Uplode();
+    
   
    // $products->set_product("any name" , "image path" , "15", " pro dis" , "50%" , "2","anytaag");
     
-   
+   if($_GET["do"] == "delete"){
+    if ($_SERVER["REQUEST_METHOD"] == "GET") {
+        $products->delete_product($_GET["id"]);
+    }}
+
+    if($_SERVER["REQUEST_METHOD"] == "POST"){
+       
+       
+                $uplode->uplodeFile($products ,"add");
+        
+       
+    }
     
     
 ?>
@@ -156,8 +170,8 @@
 								echo '<td class="product-category">'.$product["subname"].'</td>';
 								echo '<td class="product-number">'.$product["price"].'</td>';
 								echo '<td class="subcategory-action">';
-								echo '<span class="action-edit"><i class="feather icon-edit"></i></span>';
-								echo '<span class="action-delete" ><i class="feather icon-trash"></i></span>';
+                                echo '<a href ="editproduct.php?id='.$product["productid"].'"><span class="coupon-edit"><i class="feather icon-edit"></i></span></a>';
+                                echo '<a href ="'.$_SERVER["PHP_SELF"]."?do=delete&id=".$product["productid"].'"><span class="action-delete"><i class="feather icon-trash"></i></span></a>';
 								echo '</td>';
 								echo '</tr>';
 									                                            
@@ -209,6 +223,16 @@
                                                 <option>Canceled</option>
                                                 <option>Delivered</option>
                                                 <option>On Hold</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-sm-12 data-field-col">
+                                            <label for="data-type">Order Status</label>
+                                            <select name = "type" class="form-control" id="data-type" form = "dataListUpload">
+                                                <option value="normal">Normal</option>
+                                                <option value="1900">Banner : 1900 X 700</option>
+                                                <option value="banner1">Banner 1 : 600 X 370</option>
+                                                <option value="banner2">Banner 2 : 600 X 370</option>
+                                                <option value="banner3">Banner 3 : 600 X 370</option>
                                             </select>
                                         </div>
                                         <div class="col-sm-12 data-field-col">
@@ -295,51 +319,3 @@
 
 </html>
 
-<?php
-    if($_SERVER["REQUEST_METHOD"] == "POST"){
-        $target_dir = "../data/uploads/";
-        $target_file = $target_dir . basename($_FILES["y"]["name"]);
-        $uploadOk = 1;
-
-
-        $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
-        // Check if image file is a actual image or fake image
-        if(isset($_POST["submit"])) {
-            $check = getimagesize($_FILES["y"]["tmp_name"]);
-            if($check !== false) {
-                echo "File is an image - " . $check["mime"] . ".";
-                $uploadOk = 1;
-            } else {
-                echo "File is not an image.";
-                $uploadOk = 0;
-            }
-        }
-        // Check if file already exists
-        if (file_exists($target_file)) {
-            $products->set_product($_POST["v"] ,$target_file, 
-            $_POST["x"],$_POST["description"]  ,  $_POST["discount"] , $_POST["subcategorie"], $_POST["tags"]);
-            
-            //header("Location: producat-panel.php");
-            $uploadOk = 0;
-        }
-        // Check file size
-        if ($_FILES["y"]["size"] > 500000) {   
-            $uploadOk = 0;
-          
-        }
-        
-      
-        // Check if $uploadOk is set to 0 by an error
-        if ($uploadOk == 0) {
-            echo "Sorry, your file was not uploaded.";
-        // if everything is ok, try to upload file
-        } else {
-            if (move_uploaded_file($_FILES["y"]["tmp_name"], $target_file)) {
-                
-                $products->set_product($_POST["v"] ,$target_file, 
-                $_POST["x"],$_POST["description"]  ,  $_POST["discount"] , $_POST["subcategorie"], $_POST["tags"]);
-              //  header("Location: producat-panel.php");
-            }
-        } 
-    }
-?>
