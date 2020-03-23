@@ -2,7 +2,25 @@
 
 <?php
  include "init.php";
+include "includes/functions/category.php";
+  $category = new category();
+ if(!isset($_GET['do'])&&!isset($_GET['id'])){
+	  $_GET['do']= "notset";
+ $_GET['id']= "notset";}
+	  if($_GET["do"] == "delete"){
+	  if ($_SERVER["REQUEST_METHOD"] == "GET") {
+		  $category->deleteCategorie($_GET["id"]);
+	  }}
+
+  if($_GET["do"] == "add"){
+  if ($_SERVER["REQUEST_METHOD"] == "POST") {
+ 
+	  $category ->setCategorie($_POST["catename"]);
+  }
+  }
+  
 	?>
+	
 <html class="loading" lang="en" data-textdirection="ltr">
 <!-- BEGIN: Head-->
 
@@ -115,23 +133,29 @@
                             <thead>
                                 <tr>
                                     <th></th>
+                                    <th hidden></th>
                                     <th>CATEGORY NAME</th>
                                     <th>SUB CATEGORY NUMBER</th>
                                     <th>ACTION</th>
                                 </tr>
                             </thead>
-                            <tbody>
-                                <tr>
-                                    <td></td>
-                                    <td class="category-name">Phones</td>
-                                    <td class="category-number">5</td>
                             
-                                    <td class="category-action">
-                                        <span class="action-edit"><i class="feather icon-edit"></i></span>
-                                        <span class="action-delete"><i class="feather icon-trash"></i></span>
-                                    </td>
-                                </tr>
-                               
+                            <tbody>
+                               <?php
+							foreach ($category->getCategorie() as $category) {
+								echo '<tr>';
+								echo '<td></td>';
+								echo '<td hidden class="category-id">'.$category["categorieid"].'</td>';
+								echo '<td class="category-name">'.$category["catename"].'</td>';
+								echo '<td class="subcategory-number">9</td>';
+								echo '<td class="category-action">';
+								echo '<a href="editCategorie.php?id='.$category["categorieid"]."&name=".$category["catename"].'"><span class="editCategory"><i class="feather icon-edit"></i></span> <a/>';
+								echo '<a href ='.$_SERVER["PHP_SELF"]."?do=delete&id=".$category["categorieid"].'><span class="action-delete" ><i class="feather icon-trash"></i></span></a>';
+								echo '</td>';
+								echo '</tr>';
+							}
+						
+							?>
                             </tbody>
                         </table>
                     </div>
@@ -154,7 +178,7 @@
                                     <div class="row">
                                         <div class="col-sm-12 data-field-col">
                                             <label for="data-name">Category Name</label>
-                                            <input type="text" class="form-control" id="data-name">
+                                            <input type="text" class="form-control" id="categorie-name" name="catename" form="addcategory">
                                         </div>
                                        
                                     </div>
@@ -162,7 +186,9 @@
                             </div>
                             <div class="add-data-footer d-flex justify-content-around px-3 mt-2">
                                 <div class="add-data-btn">
+                                    <form action = "categorie.php?do=add" method = "POST" id= "addcategory">
                                     <button class="btn btn-primary">Add Data</button>
+                                    </form>
                                 </div>
                                 <div class="cancel-data-btn">
                                     <button class="btn btn-outline-danger">Cancel</button>
